@@ -1,0 +1,902 @@
+[
+  {
+    "name" : "Phone",
+    "load_profile" : {
+      "x" : 14.44,
+      "y" : 92.87
+    },
+    "power_limit" : 1,
+    "capacity" : 98925
+  },
+  {
+    "name" : "Laptop",
+    "load_profile" : {
+      "x" : 62.77,
+      "y" : 57.55
+    },
+    "power_limit" : 8,
+    "capacity" : 374495
+  },
+  {
+    "name" : "Phone",
+    "load_profile" : {
+      "x" : 29.7,
+      "y" : 78.69
+    },
+    "power_limit" : 10,
+    "capacity" : 41783
+  },
+  {
+    "name" : "TV",
+    "load_profile" : {
+      "x" : 52.59,
+      "y" : 69.43
+    },
+    "power_limit" : 5,
+    "capacity" : 799891
+  },
+  {
+    "name" : "Phone",
+    "load_profile" : {
+      "x" : 60.09,
+      "y" : 33.21
+    },
+    "power_limit" : 7,
+    "capacity" : 891578
+  },
+  {
+    "name" : "Phone",
+    "load_profile" : {
+      "x" : 15.84,
+      "y" : 72.91
+    },
+    "power_limit" : 3,
+    "capacity" : 466751
+  },
+  {
+    "name" : "TV",
+    "load_profile" : {
+      "x" : 40.99,
+      "y" : 10.18
+    },
+    "power_limit" : 2,
+    "capacity" : 913045
+  },
+  {
+    "name" : "Laptop",
+    "load_profile" : {
+      "x" : 26.52,
+      "y" : 47.58
+    },
+    "power_limit" : 2,
+    "capacity" : 468365
+  },
+  {
+    "name" : "PC",
+    "load_profile" : {
+      "x" : 35.13,
+      "y" : 68.28
+    },
+    "power_limit" : 8,
+    "capacity" : 553792
+  },
+  {
+    "name" : "Headphones",
+    "load_profile" : {
+      "x" : 81.31,
+      "y" : 10.23
+    },
+    "power_limit" : 5,
+    "capacity" : 912241
+  },
+  {
+    "name" : "Phone",
+    "load_profile" : {
+      "x" : 32.61,
+      "y" : 84.85
+    },
+    "power_limit" : 10,
+    "capacity" : 432184
+  },
+  {
+    "name" : "Lamp",
+    "load_profile" : {
+      "x" : 25.26,
+      "y" : 92.83
+    },
+    "power_limit" : 9,
+    "capacity" : 665902
+  },
+  {
+    "name" : "Headphones",
+    "load_profile" : {
+      "x" : 20.25,
+      "y" : 58.65
+    },
+    "power_limit" : 6,
+    "capacity" : 210710
+  },
+  {
+    "name" : "Speakers",
+    "load_profile" : {
+      "x" : 74.87,
+      "y" : 82.65
+    },
+    "power_limit" : 1,
+    "capacity" : 263224
+  },
+  {
+    "name" : "Phone",
+    "load_profile" : {
+      "x" : 76.95,
+      "y" : 95.57
+    },
+    "power_limit" : 5,
+    "capacity" : 58458
+  },
+  {
+    "name" : "Laptop",
+    "load_profile" : {
+      "x" : 58.2,
+      "y" : 89.99
+    },
+    "power_limit" : 10,
+    "capacity" : 734271
+  },
+  {
+    "name" : "Headphones",
+    "load_profile" : {
+      "x" : 58.45,
+      "y" : 44.83
+    },
+    "power_limit" : 5,
+    "capacity" : 911319
+  },
+  {
+    "name" : "Headphones",
+    "load_profile" : {
+      "x" : 14.64,
+      "y" : 40.7
+    },
+    "power_limit" : 8,
+    "capacity" : 40296
+  },
+  {
+    "name" : "Speakers",
+    "load_profile" : {
+      "x" : 46.17,
+      "y" : 99.64
+    },
+    "power_limit" : 6,
+    "capacity" : 670457
+  },
+  {
+    "name" : "Laptop",
+    "load_profile" : {
+      "x" : 63.3,
+      "y" : 91.09
+    },
+    "power_limit" : 10,
+    "capacity" : 377929
+  },
+  {
+    "name" : "Lamp",
+    "load_profile" : {
+      "x" : 60.73,
+      "y" : 80.6
+    },
+    "power_limit" : 7,
+    "capacity" : 210018
+  },
+  {
+    "name" : "Phone",
+    "load_profile" : {
+      "x" : 5.03,
+      "y" : 69.13
+    },
+    "power_limit" : 1,
+    "capacity" : 793143
+  },
+  {
+    "name" : "Speakers",
+    "load_profile" : {
+      "x" : 78.22,
+      "y" : 51.41
+    },
+    "power_limit" : 3,
+    "capacity" : 785021
+  },
+  {
+    "name" : "TV",
+    "load_profile" : {
+      "x" : 1.06,
+      "y" : 97.78
+    },
+    "power_limit" : 10,
+    "capacity" : 909490
+  },
+  {
+    "name" : "Phone",
+    "load_profile" : {
+      "x" : 81.2,
+      "y" : 49.53
+    },
+    "power_limit" : 8,
+    "capacity" : 372091
+  },
+  {
+    "name" : "Speakers",
+    "load_profile" : {
+      "x" : 82.23,
+      "y" : 27.39
+    },
+    "power_limit" : 5,
+    "capacity" : 428780
+  },
+  {
+    "name" : "Laptop",
+    "load_profile" : {
+      "x" : 60.53,
+      "y" : 89.22
+    },
+    "power_limit" : 6,
+    "capacity" : 589664
+  },
+  {
+    "name" : "TV",
+    "load_profile" : {
+      "x" : 63.91,
+      "y" : 29.69
+    },
+    "power_limit" : 8,
+    "capacity" : 313744
+  },
+  {
+    "name" : "Speakers",
+    "load_profile" : {
+      "x" : 95.94,
+      "y" : 68.79
+    },
+    "power_limit" : 5,
+    "capacity" : 114656
+  },
+  {
+    "name" : "Lamp",
+    "load_profile" : {
+      "x" : 89.85,
+      "y" : 52.39
+    },
+    "power_limit" : 9,
+    "capacity" : 358621
+  },
+  {
+    "name" : "Laptop",
+    "load_profile" : {
+      "x" : 72.49,
+      "y" : 85.36
+    },
+    "power_limit" : 5,
+    "capacity" : 282345
+  },
+  {
+    "name" : "Lamp",
+    "load_profile" : {
+      "x" : 10.82,
+      "y" : 11.32
+    },
+    "power_limit" : 4,
+    "capacity" : 969395
+  },
+  {
+    "name" : "Lamp",
+    "load_profile" : {
+      "x" : 81.94,
+      "y" : 46.12
+    },
+    "power_limit" : 9,
+    "capacity" : 521836
+  },
+  {
+    "name" : "TV",
+    "load_profile" : {
+      "x" : 93.33,
+      "y" : 2.29
+    },
+    "power_limit" : 7,
+    "capacity" : 849511
+  },
+  {
+    "name" : "Headphones",
+    "load_profile" : {
+      "x" : 49.54,
+      "y" : 73.93
+    },
+    "power_limit" : 10,
+    "capacity" : 459872
+  },
+  {
+    "name" : "Lamp",
+    "load_profile" : {
+      "x" : 27.61,
+      "y" : 37.88
+    },
+    "power_limit" : 7,
+    "capacity" : 686145
+  },
+  {
+    "name" : "PC",
+    "load_profile" : {
+      "x" : 68.36,
+      "y" : 11.94
+    },
+    "power_limit" : 10,
+    "capacity" : 462480
+  },
+  {
+    "name" : "Car",
+    "load_profile" : {
+      "x" : 7.22,
+      "y" : 37.73
+    },
+    "power_limit" : 5,
+    "capacity" : 149639
+  },
+  {
+    "name" : "PC",
+    "load_profile" : {
+      "x" : 25.28,
+      "y" : 63.63
+    },
+    "power_limit" : 5,
+    "capacity" : 30089
+  },
+  {
+    "name" : "Phone",
+    "load_profile" : {
+      "x" : 92.37,
+      "y" : 36.8
+    },
+    "power_limit" : 9,
+    "capacity" : 4416
+  },
+  {
+    "name" : "Laptop",
+    "load_profile" : {
+      "x" : 99.51,
+      "y" : 14.38
+    },
+    "power_limit" : 1,
+    "capacity" : 800409
+  },
+  {
+    "name" : "Phone",
+    "load_profile" : {
+      "x" : 40.93,
+      "y" : 32.87
+    },
+    "power_limit" : 6,
+    "capacity" : 386817
+  },
+  {
+    "name" : "Speakers",
+    "load_profile" : {
+      "x" : 65.47,
+      "y" : 54
+    },
+    "power_limit" : 6,
+    "capacity" : 698040
+  },
+  {
+    "name" : "Car",
+    "load_profile" : {
+      "x" : 66.33,
+      "y" : 88.03
+    },
+    "power_limit" : 10,
+    "capacity" : 324624
+  },
+  {
+    "name" : "Laptop",
+    "load_profile" : {
+      "x" : 48.51,
+      "y" : 59.9
+    },
+    "power_limit" : 1,
+    "capacity" : 231671
+  },
+  {
+    "name" : "TV",
+    "load_profile" : {
+      "x" : 14.73,
+      "y" : 81.84
+    },
+    "power_limit" : 4,
+    "capacity" : 654493
+  },
+  {
+    "name" : "Speakers",
+    "load_profile" : {
+      "x" : 61.69,
+      "y" : 24.96
+    },
+    "power_limit" : 6,
+    "capacity" : 594446
+  },
+  {
+    "name" : "Laptop",
+    "load_profile" : {
+      "x" : 13.51,
+      "y" : 88.22
+    },
+    "power_limit" : 9,
+    "capacity" : 62621
+  },
+  {
+    "name" : "Laptop",
+    "load_profile" : {
+      "x" : 12.45,
+      "y" : 88.33
+    },
+    "power_limit" : 6,
+    "capacity" : 833269
+  },
+  {
+    "name" : "PC",
+    "load_profile" : {
+      "x" : 29.04,
+      "y" : 50.92
+    },
+    "power_limit" : 1,
+    "capacity" : 150866
+  },
+  {
+    "name" : "Car",
+    "load_profile" : {
+      "x" : 69.79,
+      "y" : 49.94
+    },
+    "power_limit" : 4,
+    "capacity" : 798908
+  },
+  {
+    "name" : "Car",
+    "load_profile" : {
+      "x" : 90.66,
+      "y" : 56.62
+    },
+    "power_limit" : 2,
+    "capacity" : 636825
+  },
+  {
+    "name" : "Phone",
+    "load_profile" : {
+      "x" : 21.92,
+      "y" : 56.81
+    },
+    "power_limit" : 10,
+    "capacity" : 799432
+  },
+  {
+    "name" : "PC",
+    "load_profile" : {
+      "x" : 64.49,
+      "y" : 75.17
+    },
+    "power_limit" : 5,
+    "capacity" : 851345
+  },
+  {
+    "name" : "Car",
+    "load_profile" : {
+      "x" : 40.96,
+      "y" : 77.94
+    },
+    "power_limit" : 9,
+    "capacity" : 55570
+  },
+  {
+    "name" : "Lamp",
+    "load_profile" : {
+      "x" : 49.75,
+      "y" : 8.46
+    },
+    "power_limit" : 6,
+    "capacity" : 534489
+  },
+  {
+    "name" : "Headphones",
+    "load_profile" : {
+      "x" : 45.77,
+      "y" : 37.9
+    },
+    "power_limit" : 10,
+    "capacity" : 626345
+  },
+  {
+    "name" : "Laptop",
+    "load_profile" : {
+      "x" : 82.52,
+      "y" : 95.42
+    },
+    "power_limit" : 6,
+    "capacity" : 809864
+  },
+  {
+    "name" : "Lamp",
+    "load_profile" : {
+      "x" : 82,
+      "y" : 36.78
+    },
+    "power_limit" : 9,
+    "capacity" : 64089
+  },
+  {
+    "name" : "TV",
+    "load_profile" : {
+      "x" : 1.46,
+      "y" : 7.9
+    },
+    "power_limit" : 1,
+    "capacity" : 886405
+  },
+  {
+    "name" : "PC",
+    "load_profile" : {
+      "x" : 32.51,
+      "y" : 59.46
+    },
+    "power_limit" : 1,
+    "capacity" : 880170
+  },
+  {
+    "name" : "Phone",
+    "load_profile" : {
+      "x" : 14.9,
+      "y" : 71.88
+    },
+    "power_limit" : 7,
+    "capacity" : 647459
+  },
+  {
+    "name" : "Lamp",
+    "load_profile" : {
+      "x" : 43.18,
+      "y" : 86.36
+    },
+    "power_limit" : 3,
+    "capacity" : 719663
+  },
+  {
+    "name" : "Phone",
+    "load_profile" : {
+      "x" : 18.74,
+      "y" : 15.47
+    },
+    "power_limit" : 9,
+    "capacity" : 291359
+  },
+  {
+    "name" : "Speakers",
+    "load_profile" : {
+      "x" : 74.96,
+      "y" : 35.21
+    },
+    "power_limit" : 9,
+    "capacity" : 671953
+  },
+  {
+    "name" : "Phone",
+    "load_profile" : {
+      "x" : 6.28,
+      "y" : 61.35
+    },
+    "power_limit" : 6,
+    "capacity" : 6646
+  },
+  {
+    "name" : "Lamp",
+    "load_profile" : {
+      "x" : 65.19,
+      "y" : 77.19
+    },
+    "power_limit" : 2,
+    "capacity" : 474698
+  },
+  {
+    "name" : "Headphones",
+    "load_profile" : {
+      "x" : 69.75,
+      "y" : 38.66
+    },
+    "power_limit" : 5,
+    "capacity" : 424159
+  },
+  {
+    "name" : "Phone",
+    "load_profile" : {
+      "x" : 58.63,
+      "y" : 15.95
+    },
+    "power_limit" : 2,
+    "capacity" : 370804
+  },
+  {
+    "name" : "TV",
+    "load_profile" : {
+      "x" : 8.81,
+      "y" : 27.15
+    },
+    "power_limit" : 6,
+    "capacity" : 761558
+  },
+  {
+    "name" : "PC",
+    "load_profile" : {
+      "x" : 22.93,
+      "y" : 68.01
+    },
+    "power_limit" : 6,
+    "capacity" : 774065
+  },
+  {
+    "name" : "TV",
+    "load_profile" : {
+      "x" : 24.9,
+      "y" : 90.3
+    },
+    "power_limit" : 2,
+    "capacity" : 281822
+  },
+  {
+    "name" : "PC",
+    "load_profile" : {
+      "x" : 52.68,
+      "y" : 77.83
+    },
+    "power_limit" : 7,
+    "capacity" : 270968
+  },
+  {
+    "name" : "Speakers",
+    "load_profile" : {
+      "x" : 76.31,
+      "y" : 43.02
+    },
+    "power_limit" : 8,
+    "capacity" : 872359
+  },
+  {
+    "name" : "Speakers",
+    "load_profile" : {
+      "x" : 47.6,
+      "y" : 18.05
+    },
+    "power_limit" : 4,
+    "capacity" : 330237
+  },
+  {
+    "name" : "TV",
+    "load_profile" : {
+      "x" : 15.81,
+      "y" : 66.8
+    },
+    "power_limit" : 9,
+    "capacity" : 505048
+  },
+  {
+    "name" : "PC",
+    "load_profile" : {
+      "x" : 22.12,
+      "y" : 59.06
+    },
+    "power_limit" : 1,
+    "capacity" : 618898
+  },
+  {
+    "name" : "TV",
+    "load_profile" : {
+      "x" : 9.14,
+      "y" : 83.23
+    },
+    "power_limit" : 7,
+    "capacity" : 177672
+  },
+  {
+    "name" : "PC",
+    "load_profile" : {
+      "x" : 88.28,
+      "y" : 65.9
+    },
+    "power_limit" : 7,
+    "capacity" : 337782
+  },
+  {
+    "name" : "Car",
+    "load_profile" : {
+      "x" : 71.56,
+      "y" : 38.67
+    },
+    "power_limit" : 9,
+    "capacity" : 426876
+  },
+  {
+    "name" : "PC",
+    "load_profile" : {
+      "x" : 25.51,
+      "y" : 1.44
+    },
+    "power_limit" : 3,
+    "capacity" : 179776
+  },
+  {
+    "name" : "Phone",
+    "load_profile" : {
+      "x" : 40.57,
+      "y" : 80.97
+    },
+    "power_limit" : 7,
+    "capacity" : 125820
+  },
+  {
+    "name" : "Car",
+    "load_profile" : {
+      "x" : 39.54,
+      "y" : 94.75
+    },
+    "power_limit" : 4,
+    "capacity" : 947298
+  },
+  {
+    "name" : "Lamp",
+    "load_profile" : {
+      "x" : 33.35,
+      "y" : 93.84
+    },
+    "power_limit" : 10,
+    "capacity" : 32042
+  },
+  {
+    "name" : "Laptop",
+    "load_profile" : {
+      "x" : 36.37,
+      "y" : 57.9
+    },
+    "power_limit" : 7,
+    "capacity" : 503373
+  },
+  {
+    "name" : "TV",
+    "load_profile" : {
+      "x" : 12.15,
+      "y" : 46.53
+    },
+    "power_limit" : 8,
+    "capacity" : 552038
+  },
+  {
+    "name" : "Speakers",
+    "load_profile" : {
+      "x" : 75.92,
+      "y" : 68.22
+    },
+    "power_limit" : 3,
+    "capacity" : 827354
+  },
+  {
+    "name" : "Car",
+    "load_profile" : {
+      "x" : 95.98,
+      "y" : 46.83
+    },
+    "power_limit" : 10,
+    "capacity" : 485843
+  },
+  {
+    "name" : "Lamp",
+    "load_profile" : {
+      "x" : 52.19,
+      "y" : 10.57
+    },
+    "power_limit" : 8,
+    "capacity" : 545499
+  },
+  {
+    "name" : "TV",
+    "load_profile" : {
+      "x" : 74.11,
+      "y" : 77.67
+    },
+    "power_limit" : 8,
+    "capacity" : 328307
+  },
+  {
+    "name" : "Lamp",
+    "load_profile" : {
+      "x" : 45.82,
+      "y" : 91.63
+    },
+    "power_limit" : 8,
+    "capacity" : 625659
+  },
+  {
+    "name" : "Headphones",
+    "load_profile" : {
+      "x" : 60.95,
+      "y" : 74.28
+    },
+    "power_limit" : 10,
+    "capacity" : 942953
+  },
+  {
+    "name" : "Headphones",
+    "load_profile" : {
+      "x" : 14.68,
+      "y" : 41.22
+    },
+    "power_limit" : 7,
+    "capacity" : 65493
+  },
+  {
+    "name" : "Speakers",
+    "load_profile" : {
+      "x" : 90.02,
+      "y" : 73.29
+    },
+    "power_limit" : 6,
+    "capacity" : 333970
+  },
+  {
+    "name" : "Phone",
+    "load_profile" : {
+      "x" : 52.78,
+      "y" : 90.97
+    },
+    "power_limit" : 9,
+    "capacity" : 162613
+  },
+  {
+    "name" : "Laptop",
+    "load_profile" : {
+      "x" : 63.42,
+      "y" : 94.11
+    },
+    "power_limit" : 7,
+    "capacity" : 703453
+  },
+  {
+    "name" : "TV",
+    "load_profile" : {
+      "x" : 36.13,
+      "y" : 86.64
+    },
+    "power_limit" : 4,
+    "capacity" : 745419
+  },
+  {
+    "name" : "Headphones",
+    "load_profile" : {
+      "x" : 17.65,
+      "y" : 71.09
+    },
+    "power_limit" : 2,
+    "capacity" : 370289
+  },
+  {
+    "name" : "Headphones",
+    "load_profile" : {
+      "x" : 7.72,
+      "y" : 99.82
+    },
+    "power_limit" : 2,
+    "capacity" : 814307
+  },
+  {
+    "name" : "PC",
+    "load_profile" : {
+      "x" : 60.25,
+      "y" : 46.89
+    },
+    "power_limit" : 6,
+    "capacity" : 549421
+  }
+]
