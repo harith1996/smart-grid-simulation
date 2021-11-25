@@ -24,11 +24,3 @@ function getValueAroundPivot(pivot) {
 }
 console.log(devices);
 console.log(JSON.stringify(devices));
-
-function (element) {
-	return {
-		"name" : element.innerHTML,
-		"ogoal" : "cost",
-		"ndevices" : Math.ceil(Math.random() * 7)
-	  }
-}
