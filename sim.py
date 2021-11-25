@@ -32,21 +32,29 @@ if __name__ == '__main__':
     symbidx = 0
     print(f"Loading data... {symbols[symbidx]}", end='\r')
 
-    # For now we get the first 5 users
-    User.LUT = User.LUT[:5]
+    User.LUT = User.LUT[:2]
 
     for i, u in enumerate(User.LUT):
 
         # Create the user
         users.append(run_agent(base=UserAgent))
+        
+        # Create home manager
+        home = run_agent(base=HomeAgent)
+        home_ack_addr = home.bind('REP', alias='home_ack', handler='acknowledge_device')
+        home_pub_addr = home.bind('PUB', alias='home_pub')
 
         # Create the user's list of devices
         devices = []
         for x in range(u['devices']):
             didx = random.randint(0, len(Device.LUT)-1)
-            devices.append(run_agent(base=DeviceAgent))
+            dev = run_agent(base=DeviceAgent)
+            dev.connect(home_ack_addr, alias='home_ack')
+            devices.append(dev)
             devices[x].set_attr(
-                _did=didx,_name=Device.LUT[didx]['name'],
+                _did=didx,
+                _name=Device.LUT[didx]['name'],
+                _owner=u['name'],
                 _load_profile=Device.LUT[didx]['load_profile'],
                 _power_limit=Device.LUT[didx]['power_limit'],
                 _capacity=Device.LUT[didx]['capacity'],
@@ -73,7 +81,7 @@ if __name__ == '__main__':
             _ogoal=u['ogoal'],
             _devices=devices,
             _schedule=schedule,
-            _home_manager=run_agent(base=HomeAgent)
+            _home_manager=home
         )
 
         symbidx = symbidx + 1 if symbidx < len(symbols) - 1 else 0
@@ -88,11 +96,17 @@ if __name__ == '__main__':
     """
     step = 0.1
     for d in range(0, 7):
-        print(f"Day nº{d} started!")
+        print("- " * 30)
+        print(f"\033[4mDAY Nº{d} STARTED!\033[0m")
         for t in np.arange(0.0, 24.0, step):
-            print(f"Time ⇒ {t}", end='\r')
+            t = round(t, 1)
+            print(f"\n🕐 \033[1mTIME ⇒ {t}\033[0m\n")
             for u in users:
                 u.run_devices(d, t)
-                time.sleep(5)
+                # We should manage home managers from the grid
+                # but I will do this for testing
+                u.trigger_home_manager()
+            # time.sleep(.1)
+            input()
 
     ns.shutdown()
