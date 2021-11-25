@@ -1,252 +1,552 @@
 [
-  {
-    "name" : "Miray Powell",
-    "ogoal" : "cost",
-    "ndevices" : 4
-  },
-  {
-    "name" : "Janek Olson",
-    "ogoal" : "cost",
-    "ndevices" : 5
-  },
-  {
-    "name" : "Lester Garza",
-    "ogoal" : "cost",
-    "ndevices" : 7
-  },
-  {
-    "name" : "Jarno Burke",
-    "ogoal" : "cost",
-    "ndevices" : 3
-  },
-  {
-    "name" : "Keith Kassulke",
-    "ogoal" : "cost",
-    "ndevices" : 5
-  },
-  {
-    "name" : "Alessia Riley",
-    "ogoal" : "cost",
-    "ndevices" : 1
-  },
-  {
-    "name" : "Peer Predovic",
-    "ogoal" : "cost",
-    "ndevices" : 2
-  },
-  {
-    "name" : "Baran Peters",
-    "ogoal" : "cost",
-    "ndevices" : 1
-  },
-  {
-    "name" : "Naomi Herman",
-    "ogoal" : "cost",
-    "ndevices" : 5
-  },
-  {
-    "name" : "Elmer Denesik",
-    "ogoal" : "cost",
-    "ndevices" : 5
-  },
-  {
-    "name" : "Lucas Adkins",
-    "ogoal" : "cost",
-    "ndevices" : 2
-  },
-  {
-    "name" : "Leroy Hoppe",
-    "ogoal" : "cost",
-    "ndevices" : 2
-  },
-  {
-    "name" : "Chad Corwin",
-    "ogoal" : "cost",
-    "ndevices" : 4
-  },
-  {
-    "name" : "Nico Kuphal",
-    "ogoal" : "cost",
-    "ndevices" : 6
-  },
-  {
-    "name" : "Nicole Fowler",
-    "ogoal" : "cost",
-    "ndevices" : 5
-  },
-  {
-    "name" : "Kurt Stewart",
-    "ogoal" : "cost",
-    "ndevices" : 5
-  },
-  {
-    "name" : "Jeanette Watsica",
-    "ogoal" : "cost",
-    "ndevices" : 7
-  },
-  {
-    "name" : "Augusta McKinney",
-    "ogoal" : "cost",
-    "ndevices" : 3
-  },
-  {
-    "name" : "Willi Lind",
-    "ogoal" : "cost",
-    "ndevices" : 1
-  },
-  {
-    "name" : "Jorge Moen",
-    "ogoal" : "cost",
-    "ndevices" : 3
-  },
-  {
-    "name" : "Annie Wolfe",
-    "ogoal" : "cost",
-    "ndevices" : 3
-  },
-  {
-    "name" : "Lorenzo Stoltenberg",
-    "ogoal" : "cost",
-    "ndevices" : 7
-  },
-  {
-    "name" : "Fiete Howe",
-    "ogoal" : "cost",
-    "ndevices" : 4
-  },
-  {
-    "name" : "Kyle Harper",
-    "ogoal" : "cost",
-    "ndevices" : 2
-  },
-  {
-    "name" : "Kathrin Emard",
-    "ogoal" : "cost",
-    "ndevices" : 7
-  },
-  {
-    "name" : "Leroy Stephens",
-    "ogoal" : "cost",
-    "ndevices" : 1
-  },
-  {
-    "name" : "Darian Norton",
-    "ogoal" : "cost",
-    "ndevices" : 7
-  },
-  {
-    "name" : "Ramon Roberts",
-    "ogoal" : "cost",
-    "ndevices" : 5
-  },
-  {
-    "name" : "Kira Martinez",
-    "ogoal" : "cost",
-    "ndevices" : 4
-  },
-  {
-    "name" : "Emre Mendoza",
-    "ogoal" : "cost",
-    "ndevices" : 6
-  },
-  {
-    "name" : "Douglas Auer",
-    "ogoal" : "cost",
-    "ndevices" : 1
-  },
-  {
-    "name" : "Madlen Burgess",
-    "ogoal" : "cost",
-    "ndevices" : 6
-  },
-  {
-    "name" : "Frederike Jacobi",
-    "ogoal" : "cost",
-    "ndevices" : 2
-  },
-  {
-    "name" : "Alexis Singleton",
-    "ogoal" : "cost",
-    "ndevices" : 5
-  },
-  {
-    "name" : "Emmely Nikolaus",
-    "ogoal" : "cost",
-    "ndevices" : 7
-  },
-  {
-    "name" : "Stephan Burke",
-    "ogoal" : "cost",
-    "ndevices" : 2
-  },
-  {
-    "name" : "Elisabeth Cremin",
-    "ogoal" : "cost",
-    "ndevices" : 6
-  },
-  {
-    "name" : "Markus Littel",
-    "ogoal" : "cost",
-    "ndevices" : 3
-  },
-  {
-    "name" : "Yannick Franecki",
-    "ogoal" : "cost",
-    "ndevices" : 2
-  },
-  {
-    "name" : "Immanuel Jennings",
-    "ogoal" : "cost",
-    "ndevices" : 3
-  },
-  {
-    "name" : "Mohammad Atkins",
-    "ogoal" : "cost",
-    "ndevices" : 5
-  },
-  {
-    "name" : "Malena Jenkins",
-    "ogoal" : "cost",
-    "ndevices" : 4
-  },
-  {
-    "name" : "Earl Greenholt",
-    "ogoal" : "cost",
-    "ndevices" : 3
-  },
-  {
-    "name" : "Romeo Wood",
-    "ogoal" : "cost",
-    "ndevices" : 3
-  },
-  {
-    "name" : "Ben Patterson",
-    "ogoal" : "cost",
-    "ndevices" : 6
-  },
-  {
-    "name" : "Marguerite Kelly",
-    "ogoal" : "cost",
-    "ndevices" : 2
-  },
-  {
-    "name" : "Martha Hayes",
-    "ogoal" : "cost",
-    "ndevices" : 5
-  },
-  {
-    "name" : "Russell Kutch",
-    "ogoal" : "cost",
-    "ndevices" : 4
-  },
-  {
-    "name" : "Emily Phillips",
-    "ogoal" : "cost",
-    "ndevices" : 5
-  },
-  {
-    "name" : "Emmely Hunter",
-    "ogoal" : "cost",
-    "ndevices" : 4
-  }
+    {
+        "name": "Miray Powell",
+        "ogoal": "cost",
+        "devices": 4,
+        "schedule": [
+            "6-6/19.0-21.3",
+            "1-2/19.1-20.6",
+            "2-5/1.8-8.4",
+            "5-5/9.9-12.1"
+        ]
+    },
+    {
+        "name": "Janek Olson",
+        "ogoal": "cost",
+        "devices": 5,
+        "schedule": [
+            "0-4/21.2-21.8",
+            "3-3/0.3-6.0",
+            "1-5/22.6-22.7",
+            "1-1/9.2-12.2",
+            "0-4/20.1-23.0"
+        ]
+    },
+    {
+        "name": "Lester Garza",
+        "ogoal": "cost",
+        "devices": 7,
+        "schedule": [
+            "5-5/3.3-5.2",
+            "0-1/8.2-17.5",
+            "3-3/19.3-20.9",
+            "4-5/22.6-22.9",
+            "5-5/11.3-14.0",
+            "4-4/21.9-21.9",
+            "6-6/1.8-19.4"
+        ]
+    },
+    {
+        "name": "Jarno Burke",
+        "ogoal": "cost",
+        "devices": 3,
+        "schedule": [
+            "6-6/9.0-15.3",
+            "2-3/2.6-16.2",
+            "1-4/22.8-22.9"
+        ]
+    },
+    {
+        "name": "Keith Kassulke",
+        "ogoal": "cost",
+        "devices": 5,
+        "schedule": [
+            "4-5/0.6-19.8",
+            "0-1/20.3-20.9",
+            "4-4/8.5-19.2",
+            "4-4/15.7-19.5",
+            "1-3/9.3-16.6"
+        ]
+    },
+    {
+        "name": "Alessia Riley",
+        "ogoal": "cost",
+        "devices": 1,
+        "schedule": [
+            "2-6/13.9-15.5"
+        ]
+    },
+    {
+        "name": "Peer Predovic",
+        "ogoal": "cost",
+        "devices": 2,
+        "schedule": [
+            "0-2/20.9-22.1",
+            "6-6/14.3-16.9"
+        ]
+    },
+    {
+        "name": "Baran Peters",
+        "ogoal": "cost",
+        "devices": 1,
+        "schedule": [
+            "2-4/13.4-17.7"
+        ]
+    },
+    {
+        "name": "Naomi Herman",
+        "ogoal": "cost",
+        "devices": 5,
+        "schedule": [
+            "5-6/2.2-13.1",
+            "6-6/10.7-15.6",
+            "0-4/16.1-19.0",
+            "6-6/21.7-22.6",
+            "0-2/12.5-16.4"
+        ]
+    },
+    {
+        "name": "Elmer Denesik",
+        "ogoal": "cost",
+        "devices": 5,
+        "schedule": [
+            "4-4/6.1-14.3",
+            "2-5/15.7-21.8",
+            "5-6/13.8-20.5",
+            "4-4/18.1-19.4",
+            "1-5/3.6-12.5"
+        ]
+    },
+    {
+        "name": "Lucas Adkins",
+        "ogoal": "cost",
+        "devices": 2,
+        "schedule": [
+            "1-4/7.3-18.0",
+            "0-5/14.2-21.6"
+        ]
+    },
+    {
+        "name": "Leroy Hoppe",
+        "ogoal": "cost",
+        "devices": 2,
+        "schedule": [
+            "4-6/20.7-22.0",
+            "0-3/16.4-16.6"
+        ]
+    },
+    {
+        "name": "Chad Corwin",
+        "ogoal": "cost",
+        "devices": 4,
+        "schedule": [
+            "3-4/10.5-16.1",
+            "2-3/0.1-5.7",
+            "5-6/22.8-22.9",
+            "5-6/22.7-22.8"
+        ]
+    },
+    {
+        "name": "Nico Kuphal",
+        "ogoal": "cost",
+        "devices": 6,
+        "schedule": [
+            "5-6/7.3-14.7",
+            "4-6/7.0-12.4",
+            "0-3/21.9-22.0",
+            "4-4/19.4-21.3",
+            "1-4/19.0-22.3",
+            "4-6/6.7-21.7"
+        ]
+    },
+    {
+        "name": "Nicole Fowler",
+        "ogoal": "cost",
+        "devices": 5,
+        "schedule": [
+            "5-6/9.0-20.2",
+            "1-1/12.3-22.4",
+            "1-3/21.3-22.4",
+            "2-4/16.7-22.9",
+            "4-5/0.1-4.7"
+        ]
+    },
+    {
+        "name": "Kurt Stewart",
+        "ogoal": "cost",
+        "devices": 5,
+        "schedule": [
+            "2-4/21.9-22.3",
+            "2-6/9.3-19.9",
+            "0-4/9.6-18.1",
+            "3-3/14.3-20.9",
+            "3-3/12.9-13.7"
+        ]
+    },
+    {
+        "name": "Jeanette Watsica",
+        "ogoal": "cost",
+        "devices": 7,
+        "schedule": [
+            "2-2/6.1-10.1",
+            "3-4/13.0-22.9",
+            "2-2/16.2-18.1",
+            "1-1/4.6-11.2",
+            "6-6/1.5-22.1",
+            "1-2/2.3-19.8",
+            "5-5/4.7-18.2"
+        ]
+    },
+    {
+        "name": "Augusta McKinney",
+        "ogoal": "cost",
+        "devices": 3,
+        "schedule": [
+            "5-5/9.5-21.5",
+            "0-0/7.5-13.0",
+            "1-4/5.6-11.5"
+        ]
+    },
+    {
+        "name": "Willi Lind",
+        "ogoal": "cost",
+        "devices": 1,
+        "schedule": [
+            "5-6/11.5-15.2"
+        ]
+    },
+    {
+        "name": "Jorge Moen",
+        "ogoal": "cost",
+        "devices": 3,
+        "schedule": [
+            "2-6/10.9-20.2",
+            "2-2/22.0-22.0",
+            "3-4/4.5-17.2"
+        ]
+    },
+    {
+        "name": "Annie Wolfe",
+        "ogoal": "cost",
+        "devices": 3,
+        "schedule": [
+            "3-5/1.0-5.9",
+            "5-5/8.9-19.6",
+            "5-5/21.6-22.2"
+        ]
+    },
+    {
+        "name": "Lorenzo Stoltenberg",
+        "ogoal": "cost",
+        "devices": 7,
+        "schedule": [
+            "6-6/4.5-16.2",
+            "1-3/3.8-12.9",
+            "3-4/15.9-20.8",
+            "0-3/15.4-19.4",
+            "2-5/2.9-22.1",
+            "4-6/2.3-17.7",
+            "6-6/5.9-22.9"
+        ]
+    },
+    {
+        "name": "Fiete Howe",
+        "ogoal": "cost",
+        "devices": 4,
+        "schedule": [
+            "5-5/15.0-17.2",
+            "2-4/22.7-22.8",
+            "4-6/12.7-13.3",
+            "5-5/18.5-21.9"
+        ]
+    },
+    {
+        "name": "Kyle Harper",
+        "ogoal": "cost",
+        "devices": 2,
+        "schedule": [
+            "0-4/12.4-16.3",
+            "0-4/18.9-20.3"
+        ]
+    },
+    {
+        "name": "Kathrin Emard",
+        "ogoal": "cost",
+        "devices": 7,
+        "schedule": [
+            "5-5/17.4-18.5",
+            "2-6/20.9-22.8",
+            "4-6/16.2-19.7",
+            "0-0/22.4-22.6",
+            "6-6/14.8-20.5",
+            "2-2/3.8-15.6",
+            "1-4/10.5-22.5"
+        ]
+    },
+    {
+        "name": "Leroy Stephens",
+        "ogoal": "cost",
+        "devices": 1,
+        "schedule": [
+            "2-6/12.4-18.5"
+        ]
+    },
+    {
+        "name": "Darian Norton",
+        "ogoal": "cost",
+        "devices": 7,
+        "schedule": [
+            "1-5/12.6-19.2",
+            "1-1/5.5-14.9",
+            "2-5/11.3-16.8",
+            "4-4/4.1-9.7",
+            "0-0/10.0-17.2",
+            "5-5/2.5-3.8",
+            "2-5/20.2-21.6"
+        ]
+    },
+    {
+        "name": "Ramon Roberts",
+        "ogoal": "cost",
+        "devices": 5,
+        "schedule": [
+            "6-6/4.3-13.4",
+            "1-4/11.2-22.4",
+            "5-5/4.3-11.5",
+            "5-5/21.9-22.6",
+            "2-5/6.1-18.4"
+        ]
+    },
+    {
+        "name": "Kira Martinez",
+        "ogoal": "cost",
+        "devices": 4,
+        "schedule": [
+            "5-6/20.9-21.8",
+            "6-6/3.9-17.3",
+            "0-5/20.1-22.1",
+            "3-6/21.5-21.8"
+        ]
+    },
+    {
+        "name": "Emre Mendoza",
+        "ogoal": "cost",
+        "devices": 6,
+        "schedule": [
+            "6-6/14.9-22.8",
+            "6-6/0.9-12.0",
+            "5-6/21.1-22.4",
+            "1-2/9.7-9.8",
+            "4-6/2.6-22.7",
+            "4-5/1.9-17.9"
+        ]
+    },
+    {
+        "name": "Douglas Auer",
+        "ogoal": "cost",
+        "devices": 1,
+        "schedule": [
+            "6-6/2.9-11.3"
+        ]
+    },
+    {
+        "name": "Madlen Burgess",
+        "ogoal": "cost",
+        "devices": 6,
+        "schedule": [
+            "1-5/12.2-21.3",
+            "2-6/5.0-21.8",
+            "0-6/8.4-16.9",
+            "5-6/6.6-22.2",
+            "1-6/11.9-22.7",
+            "2-6/19.5-20.8"
+        ]
+    },
+    {
+        "name": "Frederike Jacobi",
+        "ogoal": "cost",
+        "devices": 2,
+        "schedule": [
+            "4-4/19.0-22.6",
+            "0-1/17.2-21.4"
+        ]
+    },
+    {
+        "name": "Alexis Singleton",
+        "ogoal": "cost",
+        "devices": 5,
+        "schedule": [
+            "3-5/4.1-16.1",
+            "3-6/0.8-18.3",
+            "1-1/7.2-13.8",
+            "5-5/18.9-20.5",
+            "0-5/2.0-22.3"
+        ]
+    },
+    {
+        "name": "Emmely Nikolaus",
+        "ogoal": "cost",
+        "devices": 7,
+        "schedule": [
+            "5-5/16.4-16.8",
+            "2-3/1.5-7.0",
+            "6-6/21.0-22.9",
+            "2-3/17.8-19.1",
+            "2-6/5.2-9.4",
+            "1-6/6.6-14.0",
+            "4-6/19.1-19.2"
+        ]
+    },
+    {
+        "name": "Stephan Burke",
+        "ogoal": "cost",
+        "devices": 2,
+        "schedule": [
+            "6-6/12.1-22.8",
+            "2-5/2.1-8.1"
+        ]
+    },
+    {
+        "name": "Elisabeth Cremin",
+        "ogoal": "cost",
+        "devices": 6,
+        "schedule": [
+            "2-6/20.1-20.3",
+            "4-4/3.8-14.0",
+            "5-6/8.5-16.9",
+            "1-1/5.9-8.3",
+            "5-6/22.7-22.8",
+            "2-6/14.8-15.7"
+        ]
+    },
+    {
+        "name": "Markus Littel",
+        "ogoal": "cost",
+        "devices": 3,
+        "schedule": [
+            "3-6/4.7-9.1",
+            "0-5/22.7-22.8",
+            "2-5/16.0-20.1"
+        ]
+    },
+    {
+        "name": "Yannick Franecki",
+        "ogoal": "cost",
+        "devices": 2,
+        "schedule": [
+            "4-5/1.1-9.3",
+            "5-6/2.2-22.3"
+        ]
+    },
+    {
+        "name": "Immanuel Jennings",
+        "ogoal": "cost",
+        "devices": 3,
+        "schedule": [
+            "4-6/18.9-23.0",
+            "1-2/6.0-8.2",
+            "6-6/2.5-10.6"
+        ]
+    },
+    {
+        "name": "Mohammad Atkins",
+        "ogoal": "cost",
+        "devices": 5,
+        "schedule": [
+            "1-3/0.3-4.3",
+            "6-6/5.0-18.2",
+            "6-6/13.6-19.0",
+            "4-5/12.6-15.4",
+            "2-5/10.5-19.8"
+        ]
+    },
+    {
+        "name": "Malena Jenkins",
+        "ogoal": "cost",
+        "devices": 4,
+        "schedule": [
+            "3-6/1.8-11.0",
+            "1-3/0.7-15.1",
+            "4-6/9.3-21.3",
+            "6-6/19.8-22.9"
+        ]
+    },
+    {
+        "name": "Earl Greenholt",
+        "ogoal": "cost",
+        "devices": 3,
+        "schedule": [
+            "6-6/4.3-7.8",
+            "0-2/2.8-18.8",
+            "1-2/15.6-21.0"
+        ]
+    },
+    {
+        "name": "Romeo Wood",
+        "ogoal": "cost",
+        "devices": 3,
+        "schedule": [
+            "2-3/6.7-13.5",
+            "6-6/21.0-22.8",
+            "0-6/12.5-13.5"
+        ]
+    },
+    {
+        "name": "Ben Patterson",
+        "ogoal": "cost",
+        "devices": 6,
+        "schedule": [
+            "4-5/13.1-14.7",
+            "5-6/1.9-15.4",
+            "2-6/9.8-14.5",
+            "2-3/6.6-13.4",
+            "1-6/16.0-20.3",
+            "1-1/22.0-22.9"
+        ]
+    },
+    {
+        "name": "Marguerite Kelly",
+        "ogoal": "cost",
+        "devices": 2,
+        "schedule": [
+            "2-3/21.2-22.6",
+            "3-3/20.6-21.1"
+        ]
+    },
+    {
+        "name": "Martha Hayes",
+        "ogoal": "cost",
+        "devices": 5,
+        "schedule": [
+            "3-5/15.1-16.4",
+            "4-5/14.7-20.7",
+            "6-6/13.8-18.1",
+            "4-6/6.4-12.9",
+            "1-2/16.6-18.9"
+        ]
+    },
+    {
+        "name": "Russell Kutch",
+        "ogoal": "cost",
+        "devices": 4,
+        "schedule": [
+            "2-3/14.1-20.3",
+            "3-6/18.9-22.2",
+            "5-6/7.4-19.2",
+            "1-5/16.4-18.2"
+        ]
+    },
+    {
+        "name": "Emily Phillips",
+        "ogoal": "cost",
+        "devices": 5,
+        "schedule": [
+            "5-5/4.5-11.4",
+            "5-6/4.3-8.8",
+            "1-2/18.6-22.2",
+            "0-4/17.8-22.2",
+            "1-6/6.7-9.5"
+        ]
+    },
+    {
+        "name": "Emmely Hunter",
+        "ogoal": "cost",
+        "devices": 4,
+        "schedule": [
+            "2-3/18.5-19.4",
+            "4-5/8.1-16.0",
+            "4-4/13.5-19.4",
+            "0-0/17.4-19.2"
+        ]
+    }
 ]
