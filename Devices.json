@@ -1,302 +1,802 @@
 [
 	{
-		"id": "Laptop0",
-		"type": "Laptop",
-		"powerRating": "103",
-		"capacity": "72"
+		"name": "Phone",
+		"power_limit": 1,
+		"capacity": 98925,
+		"generator": false,
+		"load_profile": 0.0926,
+		"curr_charge": 0.2696
 	},
 	{
-		"id": "Bluetooth Speaker1",
-		"type": "Bluetooth Speaker",
-		"powerRating": "19",
-		"capacity": "15"
+		"name": "Lamp",
+		"power_limit": 6,
+		"capacity": 681424,
+		"generator": false,
+		"load_profile": 0.0844,
+		"curr_charge": 0.9213
 	},
 	{
-		"id": "Bluetooth Speaker2",
-		"type": "Bluetooth Speaker",
-		"powerRating": "20",
-		"capacity": "14"
+		"name": "Laptop",
+		"power_limit": 5,
+		"capacity": 27600,
+		"generator": false,
+		"load_profile": 0.0202,
+		"curr_charge": 0.9332
 	},
 	{
-		"id": "Electric Bus3",
-		"type": "Electric Bus",
-		"powerRating": "9733",
-		"capacity": "78106"
+		"name": "Speakers",
+		"power_limit": 8,
+		"capacity": 368481,
+		"generator": false,
+		"load_profile": 0.0054,
+		"curr_charge": 0.3889
 	},
 	{
-		"id": "Electric Bus4",
-		"type": "Electric Bus",
-		"powerRating": "10408",
-		"capacity": "82210"
+		"name": "Car",
+		"power_limit": 4,
+		"capacity": 17804,
+		"generator": false,
+		"load_profile": 0.0633,
+		"curr_charge": 0.0081
 	},
 	{
-		"id": "Electric Bus5",
-		"type": "Electric Bus",
-		"powerRating": "9996",
-		"capacity": "82455"
+		"name": "PC",
+		"power_limit": 3,
+		"capacity": 565162,
+		"generator": false,
+		"load_profile": 0.0662,
+		"curr_charge": 0.8693
 	},
 	{
-		"id": "Laptop6",
-		"type": "Laptop",
-		"powerRating": "102",
-		"capacity": "70"
+		"name": "Speakers",
+		"power_limit": 8,
+		"capacity": 290676,
+		"generator": false,
+		"load_profile": 0.0289,
+		"curr_charge": 0.3315
 	},
 	{
-		"id": "Electric Bus7",
-		"type": "Electric Bus",
-		"powerRating": "10129",
-		"capacity": "83503"
+		"name": "Car",
+		"power_limit": 8,
+		"capacity": 693636,
+		"generator": false,
+		"load_profile": 0.0546,
+		"curr_charge": 0.8614
 	},
 	{
-		"id": "Smartphone8",
-		"type": "Smartphone",
-		"powerRating": "18",
-		"capacity": "15"
+		"name": "Speakers",
+		"power_limit": 3,
+		"capacity": 410219,
+		"generator": false,
+		"load_profile": 0.0809,
+		"curr_charge": 0.929
 	},
 	{
-		"id": "Home inverter9",
-		"type": "Home inverter",
-		"powerRating": "1522",
-		"capacity": "15726"
+		"name": "Lamp",
+		"power_limit": 2,
+		"capacity": 399418,
+		"generator": false,
+		"load_profile": 0.0574,
+		"curr_charge": 0.7342
 	},
 	{
-		"id": "EV (Public supercharger)10",
-		"type": "EV (Public supercharger)",
-		"powerRating": "8985",
-		"capacity": "78530"
+		"name": "PC",
+		"power_limit": 10,
+		"capacity": 957352,
+		"generator": false,
+		"load_profile": 0.0764,
+		"curr_charge": 0.0687
 	},
 	{
-		"id": "EV (Public supercharger)11",
-		"type": "EV (Public supercharger)",
-		"powerRating": "9371",
-		"capacity": "76426"
+		"name": "Laptop",
+		"power_limit": 3,
+		"capacity": 801812,
+		"generator": false,
+		"load_profile": 0.025,
+		"curr_charge": 0.7047
 	},
 	{
-		"id": "Bluetooth Speaker12",
-		"type": "Bluetooth Speaker",
-		"powerRating": "19",
-		"capacity": "15"
+		"name": "Lamp",
+		"power_limit": 8,
+		"capacity": 628524,
+		"generator": false,
+		"load_profile": 0.0179,
+		"curr_charge": 0.3441
 	},
 	{
-		"id": "Home inverter13",
-		"type": "Home inverter",
-		"powerRating": "1570",
-		"capacity": "14957"
+		"name": "TV",
+		"power_limit": 1,
+		"capacity": 475972,
+		"generator": false,
+		"load_profile": 0.0986,
+		"curr_charge": 0.7409
 	},
 	{
-		"id": "Bluetooth Speaker14",
-		"type": "Bluetooth Speaker",
-		"powerRating": "20",
-		"capacity": "14"
+		"name": "TV",
+		"power_limit": 3,
+		"capacity": 149774,
+		"generator": false,
+		"load_profile": 0.0772,
+		"curr_charge": 0.5386
 	},
 	{
-		"id": "Bluetooth Speaker15",
-		"type": "Bluetooth Speaker",
-		"powerRating": "20",
-		"capacity": "15"
+		"name": "Laptop",
+		"power_limit": 10,
+		"capacity": 375421,
+		"generator": false,
+		"load_profile": 0.0282,
+		"curr_charge": 0.6532
 	},
 	{
-		"id": "Home inverter16",
-		"type": "Home inverter",
-		"powerRating": "1671",
-		"capacity": "14352"
+		"name": "PC",
+		"power_limit": 3,
+		"capacity": 713535,
+		"generator": false,
+		"load_profile": 0.099,
+		"curr_charge": 0.1327
 	},
 	{
-		"id": "Smartphone17",
-		"type": "Smartphone",
-		"powerRating": "17",
-		"capacity": "15"
+		"name": "Speakers",
+		"power_limit": 10,
+		"capacity": 490536,
+		"generator": false,
+		"load_profile": 0.0415,
+		"curr_charge": 0.7576
 	},
 	{
-		"id": "EV (Public supercharger)18",
-		"type": "EV (Public supercharger)",
-		"powerRating": "8657",
-		"capacity": "80504"
+		"name": "TV",
+		"power_limit": 2,
+		"capacity": 907756,
+		"generator": false,
+		"load_profile": 0.0869,
+		"curr_charge": 0.5418
 	},
 	{
-		"id": "Bluetooth Speaker19",
-		"type": "Bluetooth Speaker",
-		"powerRating": "20",
-		"capacity": "16"
+		"name": "Headphones",
+		"power_limit": 7,
+		"capacity": 301642,
+		"generator": false,
+		"load_profile": 0.0423,
+		"curr_charge": 0.1135
 	},
 	{
-		"id": "Smartphone20",
-		"type": "Smartphone",
-		"powerRating": "17",
-		"capacity": "15"
+		"name": "Phone",
+		"power_limit": 1,
+		"capacity": 844449,
+		"generator": false,
+		"load_profile": 0.0585,
+		"curr_charge": 0.8093
 	},
 	{
-		"id": "Home inverter21",
-		"type": "Home inverter",
-		"powerRating": "1603",
-		"capacity": "15515"
+		"name": "PC",
+		"power_limit": 2,
+		"capacity": 439335,
+		"generator": false,
+		"load_profile": 0.0247,
+		"curr_charge": 0.1239
 	},
 	{
-		"id": "Laptop22",
-		"type": "Laptop",
-		"powerRating": "103",
-		"capacity": "68"
+		"name": "Car",
+		"power_limit": 1,
+		"capacity": 651758,
+		"generator": false,
+		"load_profile": 0.0824,
+		"curr_charge": 0.0352
 	},
 	{
-		"id": "Home inverter23",
-		"type": "Home inverter",
-		"powerRating": "1569",
-		"capacity": "14993"
+		"name": "Phone",
+		"power_limit": 9,
+		"capacity": 594690,
+		"generator": false,
+		"load_profile": 0.0091,
+		"curr_charge": 0.3185
 	},
 	{
-		"id": "Home inverter24",
-		"type": "Home inverter",
-		"powerRating": "1652",
-		"capacity": "14767"
+		"name": "Car",
+		"power_limit": 3,
+		"capacity": 432185,
+		"generator": false,
+		"load_profile": 0.0789,
+		"curr_charge": 0.6502
 	},
 	{
-		"id": "Smartphone25",
-		"type": "Smartphone",
-		"powerRating": "17",
-		"capacity": "15"
+		"name": "Laptop",
+		"power_limit": 3,
+		"capacity": 829559,
+		"generator": false,
+		"load_profile": 0.0728,
+		"curr_charge": 0.0056
 	},
 	{
-		"id": "Electric Bus26",
-		"type": "Electric Bus",
-		"powerRating": "10447",
-		"capacity": "76620"
+		"name": "Phone",
+		"power_limit": 8,
+		"capacity": 947751,
+		"generator": false,
+		"load_profile": 0.0268,
+		"curr_charge": 0.4167
 	},
 	{
-		"id": "Smartphone27",
-		"type": "Smartphone",
-		"powerRating": "16",
-		"capacity": "15"
+		"name": "PC",
+		"power_limit": 3,
+		"capacity": 362468,
+		"generator": false,
+		"load_profile": 0.0588,
+		"curr_charge": 0.1986
 	},
 	{
-		"id": "Laptop28",
-		"type": "Laptop",
-		"powerRating": "101",
-		"capacity": "73"
+		"name": "Lamp",
+		"power_limit": 3,
+		"capacity": 775107,
+		"generator": false,
+		"load_profile": 0.065,
+		"curr_charge": 0.5604
 	},
 	{
-		"id": "Electric Bus29",
-		"type": "Electric Bus",
-		"powerRating": "10390",
-		"capacity": "77082"
+		"name": "TV",
+		"power_limit": 2,
+		"capacity": 721771,
+		"generator": false,
+		"load_profile": 0.0071,
+		"curr_charge": 0.6965
 	},
 	{
-		"id": "EV (Home charger) 30",
-		"type": "EV (Home charger) ",
-		"powerRating": "7083",
-		"capacity": "77394"
+		"name": "Speakers",
+		"power_limit": 10,
+		"capacity": 293474,
+		"generator": false,
+		"load_profile": 0.0516,
+		"curr_charge": 0.6864
 	},
 	{
-		"id": "EV (Home charger) 31",
-		"type": "EV (Home charger) ",
-		"powerRating": "7328",
-		"capacity": "79318"
+		"name": "Car",
+		"power_limit": 4,
+		"capacity": 397794,
+		"generator": false,
+		"load_profile": 0.0917,
+		"curr_charge": 0.5523
 	},
 	{
-		"id": "Laptop32",
-		"type": "Laptop",
-		"powerRating": "104",
-		"capacity": "70"
+		"name": "PC",
+		"power_limit": 6,
+		"capacity": 507670,
+		"generator": false,
+		"load_profile": 0.0988,
+		"curr_charge": 0.9973
 	},
 	{
-		"id": "EV (Public supercharger)33",
-		"type": "EV (Public supercharger)",
-		"powerRating": "8985",
-		"capacity": "76666"
+		"name": "TV",
+		"power_limit": 3,
+		"capacity": 87272,
+		"generator": false,
+		"load_profile": 0.0549,
+		"curr_charge": 0.3828
 	},
 	{
-		"id": "Electric Bus34",
-		"type": "Electric Bus",
-		"powerRating": "10129",
-		"capacity": "80586"
+		"name": "TV",
+		"power_limit": 10,
+		"capacity": 310930,
+		"generator": false,
+		"load_profile": 0.0001,
+		"curr_charge": 0.1635
 	},
 	{
-		"id": "Home inverter35",
-		"type": "Home inverter",
-		"powerRating": "1636",
-		"capacity": "14481"
+		"name": "Lamp",
+		"power_limit": 9,
+		"capacity": 895234,
+		"generator": false,
+		"load_profile": 0.0834,
+		"curr_charge": 0.6731
 	},
 	{
-		"id": "EV (Public supercharger)36",
-		"type": "EV (Public supercharger)",
-		"powerRating": "9070",
-		"capacity": "77810"
+		"name": "Lamp",
+		"power_limit": 1,
+		"capacity": 230867,
+		"generator": false,
+		"load_profile": 0.0849,
+		"curr_charge": 0.9076
 	},
 	{
-		"id": "Smartphone37",
-		"type": "Smartphone",
-		"powerRating": "18",
-		"capacity": "15"
+		"name": "PC",
+		"power_limit": 5,
+		"capacity": 839211,
+		"generator": true,
+		"load_profile": 0.0699,
+		"curr_charge": 0.6756
 	},
 	{
-		"id": "Laptop38",
-		"type": "Laptop",
-		"powerRating": "102",
-		"capacity": "73"
+		"name": "Phone",
+		"power_limit": 10,
+		"capacity": 950497,
+		"generator": true,
+		"load_profile": 0.0736,
+		"curr_charge": 0.1823
 	},
 	{
-		"id": "Laptop39",
-		"type": "Laptop",
-		"powerRating": "99",
-		"capacity": "68"
+		"name": "Speakers",
+		"power_limit": 10,
+		"capacity": 526220,
+		"generator": false,
+		"load_profile": 0.0308,
+		"curr_charge": 0.3554
 	},
 	{
-		"id": "Electric Bus40",
-		"type": "Electric Bus",
-		"powerRating": "10410",
-		"capacity": "79016"
+		"name": "Lamp",
+		"power_limit": 7,
+		"capacity": 700255,
+		"generator": false,
+		"load_profile": 0.0682,
+		"curr_charge": 0.2083
 	},
 	{
-		"id": "Smartphone41",
-		"type": "Smartphone",
-		"powerRating": "17",
-		"capacity": "15"
+		"name": "Headphones",
+		"power_limit": 8,
+		"capacity": 512243,
+		"generator": false,
+		"load_profile": 0.0058,
+		"curr_charge": 0.9046
 	},
 	{
-		"id": "Electric Bus42",
-		"type": "Electric Bus",
-		"powerRating": "10497",
-		"capacity": "77102"
+		"name": "Phone",
+		"power_limit": 4,
+		"capacity": 278696,
+		"generator": false,
+		"load_profile": 0.0843,
+		"curr_charge": 0.0858
 	},
 	{
-		"id": "Bluetooth Speaker43",
-		"type": "Bluetooth Speaker",
-		"powerRating": "20",
-		"capacity": "15"
+		"name": "Car",
+		"power_limit": 2,
+		"capacity": 154315,
+		"generator": false,
+		"load_profile": 0.0099,
+		"curr_charge": 0.6448
 	},
 	{
-		"id": "EV (Home charger) 44",
-		"type": "EV (Home charger) ",
-		"powerRating": "7128",
-		"capacity": "80390"
+		"name": "Headphones",
+		"power_limit": 6,
+		"capacity": 655713,
+		"generator": false,
+		"load_profile": 0.0233,
+		"curr_charge": 0.4743
 	},
 	{
-		"id": "Smartphone45",
-		"type": "Smartphone",
-		"powerRating": "17",
-		"capacity": "16"
+		"name": "PC",
+		"power_limit": 9,
+		"capacity": 430568,
+		"generator": false,
+		"load_profile": 0.04,
+		"curr_charge": 0.2425
 	},
 	{
-		"id": "EV (Public supercharger)46",
-		"type": "EV (Public supercharger)",
-		"powerRating": "9295",
-		"capacity": "82606"
+		"name": "Phone",
+		"power_limit": 5,
+		"capacity": 941758,
+		"generator": false,
+		"load_profile": 0.0667,
+		"curr_charge": 0.3291
 	},
 	{
-		"id": "Smartphone47",
-		"type": "Smartphone",
-		"powerRating": "17",
-		"capacity": "15"
+		"name": "Laptop",
+		"power_limit": 8,
+		"capacity": 694058,
+		"generator": false,
+		"load_profile": 0.0473,
+		"curr_charge": 0.9693
 	},
 	{
-		"id": "EV (Home charger) 48",
-		"type": "EV (Home charger) ",
-		"powerRating": "7200",
-		"capacity": "78524"
+		"name": "Phone",
+		"power_limit": 10,
+		"capacity": 959725,
+		"generator": false,
+		"load_profile": 0.0964,
+		"curr_charge": 0.5418
 	},
 	{
-		"id": "Laptop49",
-		"type": "Laptop",
-		"powerRating": "96",
-		"capacity": "71"
+		"name": "Phone",
+		"power_limit": 2,
+		"capacity": 41646,
+		"generator": false,
+		"load_profile": 0.0624,
+		"curr_charge": 0.2081
+	},
+	{
+		"name": "Laptop",
+		"power_limit": 10,
+		"capacity": 573721,
+		"generator": true,
+		"load_profile": 0.0155,
+		"curr_charge": 0.6625
+	},
+	{
+		"name": "Speakers",
+		"power_limit": 4,
+		"capacity": 660582,
+		"generator": false,
+		"load_profile": 0.0125,
+		"curr_charge": 0.1893
+	},
+	{
+		"name": "Speakers",
+		"power_limit": 2,
+		"capacity": 174747,
+		"generator": false,
+		"load_profile": 0.0655,
+		"curr_charge": 0.7302
+	},
+	{
+		"name": "Lamp",
+		"power_limit": 4,
+		"capacity": 780544,
+		"generator": false,
+		"load_profile": 0.0714,
+		"curr_charge": 0.1505
+	},
+	{
+		"name": "Phone",
+		"power_limit": 6,
+		"capacity": 50707,
+		"generator": false,
+		"load_profile": 0.0699,
+		"curr_charge": 0.5196
+	},
+	{
+		"name": "Speakers",
+		"power_limit": 2,
+		"capacity": 798061,
+		"generator": false,
+		"load_profile": 0.0666,
+		"curr_charge": 0.5523
+	},
+	{
+		"name": "Laptop",
+		"power_limit": 2,
+		"capacity": 457812,
+		"generator": false,
+		"load_profile": 0.0947,
+		"curr_charge": 0.4544
+	},
+	{
+		"name": "PC",
+		"power_limit": 10,
+		"capacity": 437522,
+		"generator": false,
+		"load_profile": 0.0996,
+		"curr_charge": 0.6247
+	},
+	{
+		"name": "Lamp",
+		"power_limit": 10,
+		"capacity": 387824,
+		"generator": false,
+		"load_profile": 0.0684,
+		"curr_charge": 0.8574
+	},
+	{
+		"name": "Speakers",
+		"power_limit": 7,
+		"capacity": 63781,
+		"generator": false,
+		"load_profile": 0.0117,
+		"curr_charge": 0.0174
+	},
+	{
+		"name": "PC",
+		"power_limit": 8,
+		"capacity": 132259,
+		"generator": false,
+		"load_profile": 0.0738,
+		"curr_charge": 0.9711
+	},
+	{
+		"name": "Laptop",
+		"power_limit": 10,
+		"capacity": 413434,
+		"generator": false,
+		"load_profile": 0.0586,
+		"curr_charge": 0.2507
+	},
+	{
+		"name": "TV",
+		"power_limit": 10,
+		"capacity": 698925,
+		"generator": false,
+		"load_profile": 0.0013,
+		"curr_charge": 0.0693
+	},
+	{
+		"name": "TV",
+		"power_limit": 8,
+		"capacity": 441540,
+		"generator": false,
+		"load_profile": 0.035,
+		"curr_charge": 0.4316
+	},
+	{
+		"name": "Speakers",
+		"power_limit": 9,
+		"capacity": 170077,
+		"generator": true,
+		"load_profile": 0.0972,
+		"curr_charge": 0.1284
+	},
+	{
+		"name": "Car",
+		"power_limit": 1,
+		"capacity": 53040,
+		"generator": false,
+		"load_profile": 0.0502,
+		"curr_charge": 0.5136
+	},
+	{
+		"name": "Lamp",
+		"power_limit": 10,
+		"capacity": 469429,
+		"generator": false,
+		"load_profile": 0.0794,
+		"curr_charge": 0.4875
+	},
+	{
+		"name": "PC",
+		"power_limit": 6,
+		"capacity": 838725,
+		"generator": false,
+		"load_profile": 0.0871,
+		"curr_charge": 0.7161
+	},
+	{
+		"name": "Phone",
+		"power_limit": 5,
+		"capacity": 512445,
+		"generator": false,
+		"load_profile": 0.0651,
+		"curr_charge": 0.7465
+	},
+	{
+		"name": "Car",
+		"power_limit": 4,
+		"capacity": 862109,
+		"generator": false,
+		"load_profile": 0.0173,
+		"curr_charge": 0.2665
+	},
+	{
+		"name": "Car",
+		"power_limit": 7,
+		"capacity": 783405,
+		"generator": false,
+		"load_profile": 0.0196,
+		"curr_charge": 0.7141
+	},
+	{
+		"name": "TV",
+		"power_limit": 8,
+		"capacity": 904391,
+		"generator": false,
+		"load_profile": 0.0001,
+		"curr_charge": 0.0622
+	},
+	{
+		"name": "Headphones",
+		"power_limit": 2,
+		"capacity": 12882,
+		"generator": false,
+		"load_profile": 0.0995,
+		"curr_charge": 0.473
+	},
+	{
+		"name": "Laptop",
+		"power_limit": 4,
+		"capacity": 592027,
+		"generator": false,
+		"load_profile": 0.0453,
+		"curr_charge": 0.2822
+	},
+	{
+		"name": "Car",
+		"power_limit": 2,
+		"capacity": 363426,
+		"generator": false,
+		"load_profile": 0.0545,
+		"curr_charge": 0.3967
+	},
+	{
+		"name": "Laptop",
+		"power_limit": 4,
+		"capacity": 79579,
+		"generator": false,
+		"load_profile": 0.0944,
+		"curr_charge": 0.6993
+	},
+	{
+		"name": "Speakers",
+		"power_limit": 8,
+		"capacity": 541983,
+		"generator": false,
+		"load_profile": 0.0141,
+		"curr_charge": 0.8435
+	},
+	{
+		"name": "Speakers",
+		"power_limit": 4,
+		"capacity": 404455,
+		"generator": false,
+		"load_profile": 0.0991,
+		"curr_charge": 0.6757
+	},
+	{
+		"name": "TV",
+		"power_limit": 6,
+		"capacity": 817593,
+		"generator": false,
+		"load_profile": 0.0351,
+		"curr_charge": 0.3792
+	},
+	{
+		"name": "Headphones",
+		"power_limit": 4,
+		"capacity": 251071,
+		"generator": false,
+		"load_profile": 0.0936,
+		"curr_charge": 0.8456
+	},
+	{
+		"name": "PC",
+		"power_limit": 6,
+		"capacity": 213959,
+		"generator": false,
+		"load_profile": 0.0267,
+		"curr_charge": 0.2264
+	},
+	{
+		"name": "TV",
+		"power_limit": 2,
+		"capacity": 626410,
+		"generator": false,
+		"load_profile": 0.0459,
+		"curr_charge": 0.9371
+	},
+	{
+		"name": "PC",
+		"power_limit": 7,
+		"capacity": 647739,
+		"generator": true,
+		"load_profile": 0.0527,
+		"curr_charge": 0.1963
+	},
+	{
+		"name": "Speakers",
+		"power_limit": 6,
+		"capacity": 858268,
+		"generator": false,
+		"load_profile": 0.0065,
+		"curr_charge": 0.7797
+	},
+	{
+		"name": "Lamp",
+		"power_limit": 4,
+		"capacity": 464917,
+		"generator": false,
+		"load_profile": 0.0648,
+		"curr_charge": 0.4778
+	},
+	{
+		"name": "Headphones",
+		"power_limit": 2,
+		"capacity": 417320,
+		"generator": false,
+		"load_profile": 0.0937,
+		"curr_charge": 0.2802
+	},
+	{
+		"name": "Car",
+		"power_limit": 9,
+		"capacity": 161588,
+		"generator": false,
+		"load_profile": 0.0274,
+		"curr_charge": 0.7437
+	},
+	{
+		"name": "Headphones",
+		"power_limit": 10,
+		"capacity": 602129,
+		"generator": false,
+		"load_profile": 0.011,
+		"curr_charge": 0.4287
+	},
+	{
+		"name": "Lamp",
+		"power_limit": 3,
+		"capacity": 923663,
+		"generator": false,
+		"load_profile": 0.0476,
+		"curr_charge": 0.4516
+	},
+	{
+		"name": "PC",
+		"power_limit": 8,
+		"capacity": 183448,
+		"generator": false,
+		"load_profile": 0.0499,
+		"curr_charge": 0.5918
+	},
+	{
+		"name": "Headphones",
+		"power_limit": 5,
+		"capacity": 617469,
+		"generator": false,
+		"load_profile": 0.091,
+		"curr_charge": 0.2331
+	},
+	{
+		"name": "PC",
+		"power_limit": 3,
+		"capacity": 327611,
+		"generator": true,
+		"load_profile": 0.0878,
+		"curr_charge": 0.1855
+	},
+	{
+		"name": "Headphones",
+		"power_limit": 4,
+		"capacity": 108507,
+		"generator": true,
+		"load_profile": 0.076,
+		"curr_charge": 0.1384
+	},
+	{
+		"name": "Headphones",
+		"power_limit": 2,
+		"capacity": 146578,
+		"generator": false,
+		"load_profile": 0.0764,
+		"curr_charge": 0.6109
+	},
+	{
+		"name": "Phone",
+		"power_limit": 7,
+		"capacity": 610175,
+		"generator": false,
+		"load_profile": 0.0803,
+		"curr_charge": 0.7264
+	},
+	{
+		"name": "Laptop",
+		"power_limit": 10,
+		"capacity": 605475,
+		"generator": true,
+		"load_profile": 0.0012,
+		"curr_charge": 0.074
+	},
+	{
+		"name": "Lamp",
+		"power_limit": 6,
+		"capacity": 820923,
+		"generator": false,
+		"load_profile": 0.0772,
+		"curr_charge": 0.9309
+	},
+	{
+		"name": "Laptop",
+		"power_limit": 1,
+		"capacity": 631136,
+		"generator": true,
+		"load_profile": 0.0071,
+		"curr_charge": 0.6601
+	},
+	{
+		"name": "Speakers",
+		"power_limit": 2,
+		"capacity": 987722,
+		"generator": false,
+		"load_profile": 0.0161,
+		"curr_charge": 0.0883
+	},
+	{
+		"name": "PC",
+		"power_limit": 8,
+		"capacity": 535400,
+		"generator": false,
+		"load_profile": 0.0301,
+		"curr_charge": 0.0986
 	}
 ]
