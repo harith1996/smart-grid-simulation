@@ -6,7 +6,10 @@ import numpy as np
 from data import Device, User
 from osbrain import run_agent
 from osbrain import run_nameserver
-from agents import GridAgent, DeviceAgent, HomeAgent, UserAgent
+from agents.device_agent import DeviceAgent;
+from agents.user_agent import UserAgent;
+from agents.home_agent import HomeAgent;
+from agents.grid_agent import GridAgent;
 
 if __name__ == '__main__':
 
