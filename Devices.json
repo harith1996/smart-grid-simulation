@@ -5,7 +5,7 @@
 		"type": "EV (Public supercharger)",
 		"power_limit": "9371",
 		"capacity": "79809",
-		"load_profile": 0.08592578524082134,
+		"charge_profile": 0.08592578524082134,
 		"generator": false,
 		"curr_charge": 0.013784339185977323
 	},
@@ -15,7 +15,7 @@
 		"type": "Electric Bus",
 		"power_limit": "9602",
 		"capacity": "77410",
-		"load_profile": 0.08320846418659336,
+		"charge_profile": 0.08320846418659336,
 		"generator": true,
 		"curr_charge": 0.15216924732951947
 	},
@@ -25,7 +25,7 @@
 		"type": "EV (Public supercharger)",
 		"power_limit": "9014",
 		"capacity": "77656",
-		"load_profile": 0.020398444067797894,
+		"charge_profile": 0.020398444067797894,
 		"generator": false,
 		"curr_charge": 0.1895605254852873
 	},
@@ -35,7 +35,7 @@
 		"type": "EV (Home charger) ",
 		"power_limit": "7180",
 		"capacity": "77194",
-		"load_profile": 0.08604370963703023,
+		"charge_profile": 0.08604370963703023,
 		"generator": false,
 		"curr_charge": 0.13248060175889348
 	},
@@ -45,7 +45,7 @@
 		"type": "Laptop",
 		"power_limit": "100",
 		"capacity": "68",
-		"load_profile": 0.06467657541934745,
+		"charge_profile": 0.06467657541934745,
 		"generator": false,
 		"curr_charge": 0.0519589131434261
 	},
@@ -55,7 +55,7 @@
 		"type": "Home inverter",
 		"power_limit": "1642",
 		"capacity": "14480",
-		"load_profile": 0.005133329735330406,
+		"charge_profile": 0.005133329735330406,
 		"generator": true,
 		"curr_charge": 0.0667977242567947
 	},
@@ -65,7 +65,7 @@
 		"type": "Bluetooth Speaker",
 		"power_limit": "20",
 		"capacity": "14",
-		"load_profile": 0.04175218176874884,
+		"charge_profile": 0.04175218176874884,
 		"generator": false,
 		"curr_charge": 0.038943298330758325
 	},
@@ -75,7 +75,7 @@
 		"type": "Laptop",
 		"power_limit": "104",
 		"capacity": "69",
-		"load_profile": 0.08330399265373578,
+		"charge_profile": 0.08330399265373578,
 		"generator": false,
 		"curr_charge": 0.025826740379037705
 	},
@@ -85,7 +85,7 @@
 		"type": "EV (Public supercharger)",
 		"power_limit": "8662",
 		"capacity": "82061",
-		"load_profile": 0.03840129060224909,
+		"charge_profile": 0.03840129060224909,
 		"generator": false,
 		"curr_charge": 0.19479940514658217
 	},
@@ -95,7 +95,7 @@
 		"type": "Smartphone",
 		"power_limit": "17",
 		"capacity": "15",
-		"load_profile": 0.06460536509890973,
+		"charge_profile": 0.06460536509890973,
 		"generator": false,
 		"curr_charge": 0.024195659908957057
 	},
@@ -105,7 +105,7 @@
 		"type": "EV (Public supercharger)",
 		"power_limit": "9171",
 		"capacity": "80093",
-		"load_profile": 0.0022260691958680525,
+		"charge_profile": 0.0022260691958680525,
 		"generator": false,
 		"curr_charge": 0.09735840244207239
 	},
@@ -115,7 +115,7 @@
 		"type": "EV (Public supercharger)",
 		"power_limit": "9335",
 		"capacity": "78779",
-		"load_profile": 0.019975849468673992,
+		"charge_profile": 0.019975849468673992,
 		"generator": false,
 		"curr_charge": 0.11210814409623848
 	},
@@ -125,7 +125,7 @@
 		"type": "Bluetooth Speaker",
 		"power_limit": "20",
 		"capacity": "16",
-		"load_profile": 0.01792325304805984,
+		"charge_profile": 0.01792325304805984,
 		"generator": false,
 		"curr_charge": 0.1878394796374146
 	},
@@ -135,7 +135,7 @@
 		"type": "Bluetooth Speaker",
 		"power_limit": "21",
 		"capacity": "15",
-		"load_profile": 0.0008515543757000144,
+		"charge_profile": 0.0008515543757000144,
 		"generator": false,
 		"curr_charge": 0.006970718059887637
 	},
@@ -145,7 +145,7 @@
 		"type": "Bluetooth Speaker",
 		"power_limit": "20",
 		"capacity": "15",
-		"load_profile": 0.05807625519426161,
+		"charge_profile": 0.05807625519426161,
 		"generator": false,
 		"curr_charge": 0.039925937253119936
 	},
@@ -155,7 +155,7 @@
 		"type": "EV (Home charger) ",
 		"power_limit": "7121",
 		"capacity": "76645",
-		"load_profile": 0.04104365229859189,
+		"charge_profile": 0.04104365229859189,
 		"generator": false,
 		"curr_charge": 0.0015621854510812772
 	},
@@ -165,7 +165,7 @@
 		"type": "Home inverter",
 		"power_limit": "1530",
 		"capacity": "15275",
-		"load_profile": 0.07901579682319855,
+		"charge_profile": 0.07901579682319855,
 		"generator": false,
 		"curr_charge": 0.05081417827399548
 	},
@@ -175,7 +175,7 @@
 		"type": "Electric Bus",
 		"power_limit": "10115",
 		"capacity": "79056",
-		"load_profile": 0.046594876566076596,
+		"charge_profile": 0.046594876566076596,
 		"generator": true,
 		"curr_charge": 0.12151941606734151
 	},
@@ -185,7 +185,7 @@
 		"type": "EV (Public supercharger)",
 		"power_limit": "8677",
 		"capacity": "78899",
-		"load_profile": 0.0007056173411589484,
+		"charge_profile": 0.0007056173411589484,
 		"generator": false,
 		"curr_charge": 0.13081937574027575
 	},
@@ -195,7 +195,7 @@
 		"type": "EV (Public supercharger)",
 		"power_limit": "9321",
 		"capacity": "77702",
-		"load_profile": 0.06536440003778764,
+		"charge_profile": 0.06536440003778764,
 		"generator": false,
 		"curr_charge": 0.1685902845938716
 	},
@@ -205,7 +205,7 @@
 		"type": "Bluetooth Speaker",
 		"power_limit": "19",
 		"capacity": "15",
-		"load_profile": 0.07164687972402317,
+		"charge_profile": 0.07164687972402317,
 		"generator": false,
 		"curr_charge": 0.21019590271873506
 	},
@@ -215,7 +215,7 @@
 		"type": "Smartphone",
 		"power_limit": "17",
 		"capacity": "15",
-		"load_profile": 0.044961548047294554,
+		"charge_profile": 0.044961548047294554,
 		"generator": false,
 		"curr_charge": 0.1723277845670007
 	},
@@ -225,7 +225,7 @@
 		"type": "Smartphone",
 		"power_limit": "17",
 		"capacity": "15",
-		"load_profile": 0.08352931890545062,
+		"charge_profile": 0.08352931890545062,
 		"generator": false,
 		"curr_charge": 0.02593802571730658
 	},
@@ -235,7 +235,7 @@
 		"type": "Bluetooth Speaker",
 		"power_limit": "21",
 		"capacity": "15",
-		"load_profile": 0.06806849195035383,
+		"charge_profile": 0.06806849195035383,
 		"generator": false,
 		"curr_charge": 0.06774235632135767
 	},
@@ -245,7 +245,7 @@
 		"type": "Home inverter",
 		"power_limit": "1677",
 		"capacity": "14496",
-		"load_profile": 0.006585070664387783,
+		"charge_profile": 0.006585070664387783,
 		"generator": true,
 		"curr_charge": 0.04701107430118373
 	},
@@ -255,7 +255,7 @@
 		"type": "EV (Public supercharger)",
 		"power_limit": "9404",
 		"capacity": "79616",
-		"load_profile": 0.01154312626064713,
+		"charge_profile": 0.01154312626064713,
 		"generator": false,
 		"curr_charge": 0.2068354708576301
 	},
@@ -265,7 +265,7 @@
 		"type": "Home inverter",
 		"power_limit": "1544",
 		"capacity": "14619",
-		"load_profile": 0.04639729774250043,
+		"charge_profile": 0.04639729774250043,
 		"generator": true,
 		"curr_charge": 0.04647424007139417
 	},
@@ -275,7 +275,7 @@
 		"type": "Electric Bus",
 		"power_limit": "9634",
 		"capacity": "80511",
-		"load_profile": 0.07007676369754444,
+		"charge_profile": 0.07007676369754444,
 		"generator": false,
 		"curr_charge": 0.11551776489091503
 	},
@@ -285,7 +285,7 @@
 		"type": "Bluetooth Speaker",
 		"power_limit": "19",
 		"capacity": "16",
-		"load_profile": 0.08191450940726715,
+		"charge_profile": 0.08191450940726715,
 		"generator": false,
 		"curr_charge": 0.14375647015619664
 	},
@@ -295,7 +295,7 @@
 		"type": "Electric Bus",
 		"power_limit": "9961",
 		"capacity": "81848",
-		"load_profile": 0.08167536406866072,
+		"charge_profile": 0.08167536406866072,
 		"generator": false,
 		"curr_charge": 0.12524492190172504
 	},
@@ -305,7 +305,7 @@
 		"type": "Bluetooth Speaker",
 		"power_limit": "20",
 		"capacity": "15",
-		"load_profile": 0.008500549125140644,
+		"charge_profile": 0.008500549125140644,
 		"generator": false,
 		"curr_charge": 0.07745881151808198
 	},
@@ -315,7 +315,7 @@
 		"type": "Bluetooth Speaker",
 		"power_limit": "20",
 		"capacity": "15",
-		"load_profile": 0.09723447364913695,
+		"charge_profile": 0.09723447364913695,
 		"generator": false,
 		"curr_charge": 0.16547843371586585
 	},
@@ -325,7 +325,7 @@
 		"type": "Laptop",
 		"power_limit": "99",
 		"capacity": "73",
-		"load_profile": 0.0453891989857967,
+		"charge_profile": 0.0453891989857967,
 		"generator": false,
 		"curr_charge": 0.19516996633800054
 	},
@@ -335,7 +335,7 @@
 		"type": "Bluetooth Speaker",
 		"power_limit": "20",
 		"capacity": "16",
-		"load_profile": 0.04218629768534037,
+		"charge_profile": 0.04218629768534037,
 		"generator": false,
 		"curr_charge": 0.24007226424091177
 	},
@@ -345,7 +345,7 @@
 		"type": "Electric Bus",
 		"power_limit": "9946",
 		"capacity": "76873",
-		"load_profile": 0.08804208676881738,
+		"charge_profile": 0.08804208676881738,
 		"generator": true,
 		"curr_charge": 0.19474246470422357
 	},
@@ -355,7 +355,7 @@
 		"type": "Laptop",
 		"power_limit": "96",
 		"capacity": "73",
-		"load_profile": 0.049054939984053816,
+		"charge_profile": 0.049054939984053816,
 		"generator": false,
 		"curr_charge": 0.2253109931733679
 	},
@@ -365,7 +365,7 @@
 		"type": "Laptop",
 		"power_limit": "99",
 		"capacity": "73",
-		"load_profile": 0.051316250594239436,
+		"charge_profile": 0.051316250594239436,
 		"generator": false,
 		"curr_charge": 0.18002914776786166
 	},
@@ -375,7 +375,7 @@
 		"type": "Electric Bus",
 		"power_limit": "9766",
 		"capacity": "82871",
-		"load_profile": 0.09241097516840856,
+		"charge_profile": 0.09241097516840856,
 		"generator": false,
 		"curr_charge": 0.2421758306153859
 	},
@@ -385,7 +385,7 @@
 		"type": "Home inverter",
 		"power_limit": "1525",
 		"capacity": "15454",
-		"load_profile": 0.04286270921989013,
+		"charge_profile": 0.04286270921989013,
 		"generator": false,
 		"curr_charge": 0.21932086106169424
 	},
@@ -395,7 +395,7 @@
 		"type": "Electric Bus",
 		"power_limit": "9777",
 		"capacity": "80501",
-		"load_profile": 0.04046567312436966,
+		"charge_profile": 0.04046567312436966,
 		"generator": true,
 		"curr_charge": 0.052979994739486946
 	},
@@ -405,7 +405,7 @@
 		"type": "Electric Bus",
 		"power_limit": "9512",
 		"capacity": "78236",
-		"load_profile": 0.04028061794748288,
+		"charge_profile": 0.04028061794748288,
 		"generator": false,
 		"curr_charge": 0.056238983932631215
 	},
@@ -415,7 +415,7 @@
 		"type": "Smartphone",
 		"power_limit": "17",
 		"capacity": "16",
-		"load_profile": 0.0580827832319967,
+		"charge_profile": 0.0580827832319967,
 		"generator": false,
 		"curr_charge": 0.2189861110315297
 	},
@@ -425,7 +425,7 @@
 		"type": "Bluetooth Speaker",
 		"power_limit": "20",
 		"capacity": "15",
-		"load_profile": 0.08520949412010721,
+		"charge_profile": 0.08520949412010721,
 		"generator": false,
 		"curr_charge": 0.17941271434054712
 	},
@@ -435,7 +435,7 @@
 		"type": "Bluetooth Speaker",
 		"power_limit": "20",
 		"capacity": "16",
-		"load_profile": 0.09265699778435477,
+		"charge_profile": 0.09265699778435477,
 		"generator": false,
 		"curr_charge": 0.07810751964641766
 	},
@@ -445,7 +445,7 @@
 		"type": "Bluetooth Speaker",
 		"power_limit": "19",
 		"capacity": "15",
-		"load_profile": 0.058936666765072525,
+		"charge_profile": 0.058936666765072525,
 		"generator": false,
 		"curr_charge": 0.1576848129481384
 	},
@@ -455,7 +455,7 @@
 		"type": "Laptop",
 		"power_limit": "104",
 		"capacity": "73",
-		"load_profile": 0.05718459572281172,
+		"charge_profile": 0.05718459572281172,
 		"generator": false,
 		"curr_charge": 0.08794665891401171
 	},
@@ -465,7 +465,7 @@
 		"type": "Bluetooth Speaker",
 		"power_limit": "19",
 		"capacity": "15",
-		"load_profile": 0.027772101128144988,
+		"charge_profile": 0.027772101128144988,
 		"generator": false,
 		"curr_charge": 0.03822072434566842
 	},
@@ -475,7 +475,7 @@
 		"type": "Bluetooth Speaker",
 		"power_limit": "21",
 		"capacity": "15",
-		"load_profile": 0.019854396648010322,
+		"charge_profile": 0.019854396648010322,
 		"generator": false,
 		"curr_charge": 0.24319075377453198
 	},
@@ -485,7 +485,7 @@
 		"type": "Electric Bus",
 		"power_limit": "9658",
 		"capacity": "83941",
-		"load_profile": 0.0798612249173396,
+		"charge_profile": 0.0798612249173396,
 		"generator": false,
 		"curr_charge": 0.1088468929191676
 	},
@@ -495,7 +495,7 @@
 		"type": "EV (Public supercharger)",
 		"power_limit": "9307",
 		"capacity": "81427",
-		"load_profile": 0.035810519817265574,
+		"charge_profile": 0.035810519817265574,
 		"generator": false,
 		"curr_charge": 0.2331414847545757
 	}

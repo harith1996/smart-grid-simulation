@@ -1,3 +1,4 @@
+from numpy import empty
 from luts import Device
 
 class DeviceAgent:
@@ -16,6 +17,8 @@ class DeviceAgent:
         self._plugged = False
         self._conn_to_dev_channel = False
         self._conn_to_gen_channel = False
+        self._is_charging = False
+        self._power_source = 0
         DeviceAgent.UID += 1
 
     def plug(self, home, t2c):
@@ -52,19 +55,22 @@ class DeviceAgent:
             home.disconnect_generator(self)
             self._conn_to_gen_channel = False
 
-    def charge(self, home, t = 0.1):
+    def charge(self, home, power_source, t = 0.1 ):
 
         self._t2c = max(round(self._t2c - t, 4), 0.0)
         
-        power_draw = self.get_load_profile() * t
-        new_charge = self._curr_charge + power_draw
-
+        charge_increment = self.get_charge_profile() * t
+        new_charge = self._curr_charge + charge_increment
+        power_draw = self.get_power_limit()
+        
         if new_charge < 1.0:
             self._curr_charge = round(new_charge, 4)
+            self._is_charging = True
+            self._power_source = power_source
             print(f"[⚡️] {self._owner.get_name()}'s {self.to_string()} is charging")
         else:
             self._curr_charge = 1.0
-            power_draw = new_charge - self._curr_charge
+            self._is_charging = False
             print(f"[🏁] {self._owner.get_name()}'s {self.to_string()} finished charging")
             # We close connection with the home manager
             # if device is completely charged
@@ -76,11 +82,12 @@ class DeviceAgent:
 
     # By default we decrease one unit
     def discharge(self, t = 0.1):
-
+        
+        self._is_charging = False
         if self._curr_charge == 0.0:
             return
 
-        new_charge = self._curr_charge - self.get_load_profile() * t
+        new_charge = self._curr_charge - self.get_charge_profile() * t
 
         if new_charge > 0.0:
             self._curr_charge = round(new_charge, 4)
@@ -110,10 +117,13 @@ class DeviceAgent:
     def get_type(self):
         return Device.LUT[self._did]['type']
 
-    def get_load_profile(self):
-        return round(Device.LUT[self._did]['load_profile'], 4)
+    def get_power_limit(self):
+        return Device.LUT[self._did]['power_limit']
+
+    def get_charge_profile(self):
+        return round(Device.LUT[self._did]['charge_profile'], 4)
 
     def to_string(self):
         return f"{{uid: {self._uid}; did: {self._did}; is_gen: {self.is_generator()}; " \
-                f"load_prof: {self.get_load_profile()}; curr_charge: {self._curr_charge}; " \
+                f"charge_prof: {self.get_charge_profile()} % per second; curr_charge: {self._curr_charge}; %" \
                 f"t2c: {self._t2c}}}"

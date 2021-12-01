@@ -17,7 +17,7 @@ let devices = [...Array(50).keys()].map((index) => {
 		type: deviceType['type'],
         power_limit: getValueAroundPivot(powerPivot),
         capacity: getValueAroundPivot(capacityPivot),
-		load_profile: ((Math.random()) * 0.1),
+		charge_profile: ((Math.random()) * 0.1),
 		generator: (deviceType['canGenerate'] && (Math.random() - 0.5) > 0) ? true : false,
 		curr_charge: (Math.random())/4
 	};
