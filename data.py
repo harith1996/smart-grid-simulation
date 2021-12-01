@@ -38,6 +38,8 @@ def load_data(userjson, devjson):
         home = HomeAgent()
         user = UserAgent(u['name'], home, u['ogoal'])
         
+        home.set_owner(user)
+        
         # Create the user's list of devices
         devices = []
         for x in range(u['devices']):

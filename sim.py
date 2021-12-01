@@ -33,4 +33,4 @@ if __name__ == '__main__':
             print(f"\n🕐 \033[1mTIME ⇒ {t}\033[0m\n")
             for u in users:
                 u.use_devices(dw, t)
-            grid.power_homes()
+            grid.power_homes(dw, t)

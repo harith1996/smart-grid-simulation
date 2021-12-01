@@ -56,19 +56,23 @@ class DeviceAgent:
 
         self._t2c = max(round(self._t2c - t, 4), 0.0)
         
-        new_charge = self._curr_charge + self.get_load_profile() * t
+        power_draw = self.get_load_profile() * t
+        new_charge = self._curr_charge + power_draw
 
         if new_charge < 1.0:
             self._curr_charge = round(new_charge, 4)
             print(f"[⚡️] {self._owner.get_name()}'s {self.to_string()} is charging")
         else:
             self._curr_charge = 1.0
+            power_draw = new_charge - self._curr_charge
             print(f"[🏁] {self._owner.get_name()}'s {self.to_string()} finished charging")
             # We close connection with the home manager
             # if device is completely charged
             # Generators will still be connected to the
             # manager still.
             self._conn_to_dev_channel = home.disconnect_device(self)
+        
+        return power_draw
 
     # By default we decrease one unit
     def discharge(self, t = 0.1):

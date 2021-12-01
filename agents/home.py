@@ -3,13 +3,27 @@ class HomeAgent:
     """Docstring for Home. """
     
     def __init__(self):
+        self._owner = None
         self._devices = dict()
         self._generators = dict()
+        self._power_draw = 0.0
 
     def power(self):
         devs = list(self._devices.values())
         for d in devs:
-            d.charge(self)
+            self._power_draw += d.charge(self)
+    
+    def get_power_draw(self):
+        return self._power_draw 
+
+    def reset_power_draw(self):
+        self._power_draw = 0.0
+    
+    def get_owner(self):
+        return self._owner
+    
+    def set_owner(self, owner):
+        self._owner = owner
 
     def acknowledge_device(self, device):
         is_in_devices = device._uid in self._devices
