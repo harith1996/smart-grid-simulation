@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
 import numpy as np
+import time
 from data import load_data
 
 STEP = 0.1
@@ -34,3 +35,6 @@ if __name__ == '__main__':
             for u in users:
                 u.use_devices(dw, t)
             grid.power_homes(dw, t)
+            grid.update_billing(grid.get_current_price(dw, t))
+            # time.sleep(0.2)
+    grid.show_bills()
