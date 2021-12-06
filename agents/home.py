@@ -71,11 +71,11 @@ class HomeAgent:
         nodes, links = [], []
         homeidx = contidx
         # Add home manager (and link it later in GridAgent)
-        nodes.append({'group': homeidx, 'index': homeidx})
+        nodes.append({'index': homeidx})
         contidx += 1
         # Add devices and link them to home manager
         for d in self._owner.get_devices():
-            nodes.append({'group': homeidx, 'index': contidx})
+            nodes.append({'charge': d.get_charge(), 'index': contidx})
             # Change value to something meaningful
             links.append({'source': contidx, 'target': homeidx, 'value': 5})
             # Increase counter (needed for VegaJS)

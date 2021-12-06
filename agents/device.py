@@ -111,6 +111,9 @@ class DeviceAgent:
     def is_generator(self):
         return Device.LUT[self._did]['generator']
     
+    def get_charge(self):
+        return self._curr_charge
+    
     def get_name(self):
         return Device.LUT[self._did]['name']
 

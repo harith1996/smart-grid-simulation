@@ -78,7 +78,7 @@ class GridAgent:
         nodes, links = [], []
         # Add grid
         grididx = contidx
-        nodes.append({'group': grididx, 'index': grididx})
+        nodes.append({'index': grididx})
         contidx += 1
         # Add home managers and their devices.
         # Also link home managers to grid.
