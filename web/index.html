@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body style="font-family: 'Roboto', sans-serif; padding-top: 1rem;">
@@ -20,7 +21,7 @@
         <a href="mailto:sam.martin@post.au.dk">@ Harith Rathish</a>
         <a href="mailto:sam.martin@post.au.dk">@ Sam Martin Vargas Giagnocavo</a>
     </div>
-    <div id="vis" style="text-align: center; position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></div>
+    <div id="vis" style="text-align: center; position: fixed; top: 0; left: 0; width: 100%; height: 100%;"></div>
     <script>
         let vizView
 
@@ -42,11 +43,31 @@
             var windowWidth = window.innerWidth
             var windowHeight = window.innerHeight
             vizView.width(windowWidth)
-            vizView.height(windowHeight - 50)
+            vizView.height(windowHeight)
         }
         
         window.onresize = updateVizDimensions
     </script>
+    <div style="position: fixed; bottom: 30px; right: 30px; display: flex; flex-direction: column;">
+        <div id="toolbar-buttons" style="display: flex;">
+            <div style="margin-left: 10px; cursor: pointer;">
+                <i class="far fa-play-circle"></i>
+                <span>Start</span>
+            </div>
+            <div style="margin-left: 10px; cursor: pointer;">
+                <i class="fas fa-forward"></i>
+                <span>Skip</span>
+            </div>
+            <div style="margin-left: 10px; cursor: pointer;">
+                <i class="fas fa-file-import"></i>
+                <span>Import</span>
+            </div>
+        </div>
+        <div id="toolbar-info" style="margin: auto; margin-top: 10px; font-size: smaller;">
+            <i class="fas fa-info-circle"></i>
+            <span>Loaded with default dataset</span>
+        </div>
+    </div>
 </body>
 
 </html>

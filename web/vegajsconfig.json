@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega/v5.json",
-  "description": "A node-link diagram with force-directed layout, depicting character co-occurrence in the novel Les Misérables.",
+  "description": "A node-link diagram with force-directed layout, depicting device load in an intelligent grid.",
   "width": 0,
   "height": 0,
   "padding": 0,
@@ -54,10 +54,12 @@
   ],
   "scales": [
     {
-      "name": "color",
-      "type": "ordinal",
-      "domain": {"data": "node-data", "field": "group"},
-      "range": {"scheme": "category20c"}
+      "name": "chargecolor",
+      "type": "sequential",
+      "domain": {"data": "node-data", "field": "charge"},
+      "domainMin": 0.0,
+      "domainMax": 1.0,
+      "range": {"scheme": "redyellowgreen"}
     }
   ],
   "marks": [
@@ -76,8 +78,11 @@
       ],
       "encode": {
         "enter": {
-          "fill": {"scale": "color", "field": "group"},
-          "stroke": {"value": "white"}
+          "tooltip": {
+            "signal": "{'Charge': format(datum.charge, '0.001%')}"    
+          },
+          "fill": {"scale": "chargecolor", "field": "charge"},
+          "stroke": {"value": "datum.charge ? white : black"}
         },
         "update": {
           "size": {"value": 128},
