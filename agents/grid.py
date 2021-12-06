@@ -4,7 +4,7 @@ from typing import List
 from agents.home import HomeAgent
 
 class GridAgent:
-
+    
     """Docstring for Grid. """
     
     #Average price of power in euro cents per watt second
@@ -73,6 +73,23 @@ class GridAgent:
     
     def increment_load(self, load):
         self._current_load+=load
+    
+    def to_graph(self, contidx):
+        nodes, links = [], []
+        # Add grid
+        grididx = contidx
+        nodes.append({'group': grididx, 'index': grididx})
+        contidx += 1
+        # Add home managers and their devices.
+        # Also link home managers to grid.
+        for h in self._homes:
+            links.append({'source': contidx, 'target': grididx, 'value': 5})
+            # Change value to something meaningful
+            hnodes, hlinks, contidx = h.to_graph(contidx)
+            nodes.extend(hnodes)
+            links.extend(hlinks)
+
+        return nodes, links, contidx
 
     def to_string(self):
         pass

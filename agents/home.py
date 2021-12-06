@@ -67,6 +67,22 @@ class HomeAgent:
     def get_current_bill(self):
         return self._bill
 
+    def to_graph(self, contidx):
+        nodes, links = [], []
+        homeidx = contidx
+        # Add home manager (and link it later in GridAgent)
+        nodes.append({'group': homeidx, 'index': homeidx})
+        contidx += 1
+        # Add devices and link them to home manager
+        for d in self._owner.get_devices():
+            nodes.append({'group': homeidx, 'index': contidx})
+            # Change value to something meaningful
+            links.append({'source': contidx, 'target': homeidx, 'value': 5})
+            # Increase counter (needed for VegaJS)
+            contidx += 1
+
+        return nodes, links, contidx
+
     def to_string(self):
         devstr = ','.join(map(str, self._devices.keys()))
         genstr = ','.join(map(str, self._generators.keys()))

@@ -38,6 +38,9 @@ class UserAgent:
     
     def get_name(self):
         return self._name
+    
+    def get_devices(self):
+        return self._devices
 
     def to_string(self):
         output = f"{self._name}/{self._ogoal}\n"
