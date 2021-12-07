@@ -31,7 +31,7 @@ def data():
     nodes, links, contidx = grid.to_graph(0)
     return jsonify({
         'nodes': nodes,
-        'links': links
+        'edges': links
     })
 
 if __name__ == '__main__':

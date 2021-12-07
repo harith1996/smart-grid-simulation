@@ -1,5 +1,6 @@
 from typing import List
 from agents.device import DeviceAgent
+from utils import color_mapper
 
 
 class HomeAgent:
@@ -66,18 +67,19 @@ class HomeAgent:
     
     def get_current_bill(self):
         return self._bill
-
+        
     def to_graph(self, contidx):
         nodes, links = [], []
         homeidx = contidx
         # Add home manager (and link it later in GridAgent)
-        nodes.append({'index': homeidx})
+        nodes.append({'id': homeidx, 'label': self._owner.get_name(), 'image': 'house-user-solid.png', 'shape': 'image'})
         contidx += 1
         # Add devices and link them to home manager
         for d in self._owner.get_devices():
-            nodes.append({'charge': d.get_charge(), 'index': contidx})
+            charge = d.get_charge()
+            nodes.append({'charge': charge, 'id': contidx, 'title': f"Charge: {round(charge * 100, 2)}%", 'color': color_mapper(charge)})
             # Change value to something meaningful
-            links.append({'source': contidx, 'target': homeidx, 'value': 5})
+            links.append({'from': contidx, 'to': homeidx})
             # Increase counter (needed for VegaJS)
             contidx += 1
 

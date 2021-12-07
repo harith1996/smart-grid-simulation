@@ -78,12 +78,12 @@ class GridAgent:
         nodes, links = [], []
         # Add grid
         grididx = contidx
-        nodes.append({'index': grididx})
+        nodes.append({'id': grididx, 'image': 'charging-station-solid.png', 'shape': 'image', 'value': 30})
         contidx += 1
         # Add home managers and their devices.
         # Also link home managers to grid.
         for h in self._homes:
-            links.append({'source': contidx, 'target': grididx, 'value': 5})
+            links.append({'from': contidx, 'to': grididx})
             # Change value to something meaningful
             hnodes, hlinks, contidx = h.to_graph(contidx)
             nodes.extend(hnodes)

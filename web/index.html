@@ -2,9 +2,7 @@
 
 <head>
     <title>Grid Load Sim - IoT</title>
-    <script src="https://cdn.jsdelivr.net/npm/vega@5.21.0"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.2.0"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.20.0"></script>
+    <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
@@ -17,36 +15,55 @@
         <h1 style="letter-spacing: 7px;">LOAD BALANCING ON THE GRID</h1>
         <h4 style="letter-spacing: 5px; font-weight: 100;">Foxtrot</h4>
     </div>
-    <div id="authors" class="animate__animated animate__fadeInRight" style="z-index: 10; font-size: smaller; position: fixed; top: 30; right: 30; display: flex; text-align: end; justify-content: flex-end; flex-direction: column;">
+    <div id="authors" class="animate__animated animate__fadeInRight"
+        style="z-index: 10; font-size: smaller; position: fixed; top: 30; right: 30; display: flex; text-align: end; justify-content: flex-end; flex-direction: column;">
         <a href="mailto:sam.martin@post.au.dk">@ Harith Rathish</a>
         <a href="mailto:sam.martin@post.au.dk">@ Sam Martin Vargas Giagnocavo</a>
     </div>
     <div id="vis" style="text-align: center; position: fixed; top: 0; left: 0; width: 100%; height: 100%;"></div>
     <script>
-        let vizView
+        let network
+        let nodes, edges
 
-        fetch('vegajsconfig.json')
-            .then(res => res.json())
-            .then(spec => render(spec))
-            .catch(err => console.error(err));
+        window.addEventListener("load", () => {
+            fetch('data')
+                .then(res => res.json())
+                .then(data => {
+                    var container = document.getElementById("vis")
+                    var options = {
+                        nodes: {
+                            shape: "dot",
+                            size: 8,
+                        },
+                        edges: {
+                            color: '#D3D3D3',
+                            width: 2
+                        },
+                        physics: {
+                            forceAtlas2Based: {
+                                gravitationalConstant: -26,
+                                centralGravity: 0.005,
+                                springLength: 230,
+                                springConstant: 0.18,
+                            },
+                            maxVelocity: 146,
+                            solver: "forceAtlas2Based",
+                            timestep: 0.35,
+                            stabilization: { iterations: 150 },
+                        },
+                    };
+                    nodes = new vis.DataSet(data.nodes)
+                    edges = new vis.DataSet(data.edges)
 
-        function render(spec) {
-            vegaEmbed("#vis", spec, { mode: "vega", actions: false})
-                .then(v => {
-                    vizView = v.view
-                    updateVizDimensions()
+                    network = new vis.Network(container, {nodes: nodes, edges: edges}, options);
+                    setInterval(() => {
+                        nodes.update([{id: 0, label: "Hi :D"}]);
+                    }, 3000)
                 })
-                .catch(console.warn);
-        }
-        
-        function updateVizDimensions() {
-            var windowWidth = window.innerWidth
-            var windowHeight = window.innerHeight
-            vizView.width(windowWidth)
-            vizView.height(windowHeight)
-        }
-        
-        window.onresize = updateVizDimensions
+                .catch(err => console.error(err));
+        });
+
+
     </script>
     <div style="position: fixed; bottom: 30px; right: 30px; display: flex; flex-direction: column;">
         <div id="toolbar-buttons" style="display: flex;">
