@@ -1,11 +1,60 @@
 import random
+import json
 from luts import User, Device
 from agents.device import DeviceAgent
 from agents.user import UserAgent
 from agents.home import HomeAgent
 from agents.grid import GridAgent
 
-def load_data(userjson, devjson):
+def load_data_from_object(userjson, devjson):
+    """Dumps data from JSONs to look up tables and returns grid.
+
+
+    Args:
+        userjson (str): Filename of the user's json.
+        devjson (str): Filename of the devices' json.
+
+    Returns:
+        [tuple]: Returns the grid and users.
+    """
+
+    grid = None
+    users = []
+
+    grid = GridAgent()
+
+    for i, u in enumerate(userjson):
+
+        # Create the home and user
+        home = HomeAgent()
+        user = UserAgent(u['name'], home, u['ogoal'])
+        
+        home.set_owner(user)
+        
+        # Create the user's list of devices
+        devices = []
+        for x in range(u['devices']):
+            didx = random.randint(0, len(devjson)-1)
+            dev = DeviceAgent(didx, user, devjson[didx]['curr_charge'])
+
+            s = u['schedule'][x]
+            days, times = s.split("/")
+            day_start, day_end = days.split("-")
+            hour_start, hour_end = times.split("-")
+
+            day_start = int(day_start)
+            day_end = int(day_end)
+            hour_start = float(hour_start)
+            hour_end = float(hour_end)
+            
+            user.add_device(dev, ((day_start, day_end),(hour_start, hour_end)))
+
+        users.append(user)
+        grid.add_home(home)
+    
+    return grid, users
+
+def load_data_from_file(userjson, devjson):
     """Dumps data from JSONs to look up tables and returns grid.
 
 
@@ -30,7 +79,7 @@ def load_data(userjson, devjson):
     print(f"Loading data... {symbols[symbidx]}", end='\r')
     
     # change !!!!!
-    User.LUT = User.LUT[:3]
+    # User.LUT = User.LUT[:10]
     
     for i, u in enumerate(User.LUT):
 

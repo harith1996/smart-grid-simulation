@@ -75,7 +75,7 @@ class GridAgent:
         self._current_load+=load
     
     def to_graph(self, contidx):
-        nodes, links = [], []
+        nodes, links, unlinks = [], [], []
         # Add grid
         grididx = contidx
         nodes.append({'id': grididx, 'image': 'charging-station-solid.png', 'shape': 'image', 'value': 30})
@@ -83,13 +83,14 @@ class GridAgent:
         # Add home managers and their devices.
         # Also link home managers to grid.
         for h in self._homes:
-            links.append({'from': contidx, 'to': grididx})
+            links.append({'id': contidx, 'from': contidx, 'to': grididx})
             # Change value to something meaningful
-            hnodes, hlinks, contidx = h.to_graph(contidx)
+            hnodes, hlinks, hunlinks, contidx = h.to_graph(contidx)
             nodes.extend(hnodes)
             links.extend(hlinks)
+            unlinks.extend(hunlinks)
 
-        return nodes, links, contidx
+        return nodes, links, unlinks, contidx
 
     def to_string(self):
         pass

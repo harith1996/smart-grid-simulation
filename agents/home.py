@@ -69,7 +69,7 @@ class HomeAgent:
         return self._bill
         
     def to_graph(self, contidx):
-        nodes, links = [], []
+        nodes, links, unlinks = [], [], []
         homeidx = contidx
         # Add home manager (and link it later in GridAgent)
         nodes.append({'id': homeidx, 'label': self._owner.get_name(), 'image': 'house-user-solid.png', 'shape': 'image'})
@@ -79,11 +79,14 @@ class HomeAgent:
             charge = d.get_charge()
             nodes.append({'charge': charge, 'id': contidx, 'title': f"Charge: {round(charge * 100, 2)}%", 'color': color_mapper(charge)})
             # Change value to something meaningful
-            links.append({'from': contidx, 'to': homeidx})
-            # Increase counter (needed for VegaJS)
+            if d.is_connected():
+                links.append({'id': contidx, 'from': contidx, 'to': homeidx})
+            else:
+                unlinks.append(contidx)
+            # Increase counter (needed for Vis JS)
             contidx += 1
 
-        return nodes, links, contidx
+        return nodes, links, unlinks, contidx
 
     def to_string(self):
         devstr = ','.join(map(str, self._devices.keys()))

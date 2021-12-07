@@ -1,0 +1,24 @@
+body {
+    font-family: 'Roboto', sans-serif; padding-top: 1rem;
+}
+
+#title {
+    text-align: center;
+}
+
+#title h1 {
+    letter-spacing: 7px;
+}
+
+#title h4 {
+    letter-spacing: 5px;
+    font-weight: 100;
+}
+
+#authors {
+   z-index: 10; font-size: smaller; position: fixed; top: 30; right: 30; display: flex; text-align: end; justify-content: flex-end; flex-direction: column;
+}
+
+#vis {
+    text-align: center; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+}

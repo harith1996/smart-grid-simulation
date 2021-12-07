@@ -100,7 +100,8 @@ class DeviceAgent:
         return self._plugged
 
     def is_connected(self):
-        return self._conn_to_dev_channel, self._conn_to_gen_channel
+        # return self._conn_to_dev_channel, self._conn_to_gen_channel
+        return self._conn_to_dev_channel or self._conn_to_gen_channel
 
     def is_charged(self):
         return self._curr_charge == 1.0
