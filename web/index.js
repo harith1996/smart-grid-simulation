@@ -7,6 +7,7 @@ var socket = io();
 let updateInterval
 
 let container = document.getElementById("vis")
+var toolbarTime = document.getElementById("toolbar-time")
 const visOptions = {
     nodes: {
         shape: "dot",
@@ -31,14 +32,22 @@ const visOptions = {
 };
 
 function uuidv4() {
-    return ([1e7]+-1e3+-4e3+-8e3+-1e11).replace(/[018]/g, c =>
-      (c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> c / 4).toString(16)
+    return ([1e7] + -1e3 + -4e3 + -8e3 + -1e11).replace(/[018]/g, c =>
+        (c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> c / 4).toString(16)
     );
 }
 
 function initSim() {
+    var opts = document.getElementById("options")
+    opts.classList.add("animate__animated", "animate__fadeOut", "animate__faster")
+    opts.addEventListener('animationend', () => {
+        var toolbar = document.getElementById("toolbar")
+        toolbar.style.display = "flex"
+        toolbarTime.innerText = new Date().toLocaleTimeString()
+        toolbar.classList.add("animate__animated", "animate__backInRight")
+    });
     userid = uuidv4()
-    socket.emit('init', { userid:  userid});
+    socket.emit('init', { userid: userid });
 }
 
 socket.on('init-res', function (data) {
@@ -48,33 +57,33 @@ socket.on('init-res', function (data) {
 })
 
 function updateSim() {
-    updateInterval = setInterval(() => {
-        console.log("triggered update")
-        socket.emit('update', { userid:  userid});
-    }, 1000)
+    if (updateInterval == undefined) {
+        updateInterval = setInterval(() => {
+            toolbarTime.innerText = new Date().toLocaleTimeString()
+            socket.emit('update', { userid: userid });
+        }, 1000)
+    }
 }
 
 socket.on('update-res', function (data) {
     nodes.update(data.nodes)
     edges.update(data.edges)
-    console.log(data.unlinks)
     edges.remove(data.unlinks)
-    // edges.update(data.edges)
-    // edges.clear()
-    // edges.add(data.edges)
 })
 
 function skipSim() {
     clearInterval(updateInterval)
-    socket.emit('skip', { userid:  userid});
+    updateInterval = undefined
+    socket.emit('skip', { userid: userid });
 }
 
 socket.on('skip-res', function (data) {
     nodes.update(data.nodes)
     edges.update(data.edges)
-    console.log(data.unlinks)
     edges.remove(data.unlinks)
-    // edges.update(data.edges)
-    // edges.clear()
-    // edges.add(data.edges)
 })
+
+function pauseSim() {
+    clearInterval(updateInterval)
+    updateInterval = undefined
+}

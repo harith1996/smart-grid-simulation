@@ -1,4 +1,5 @@
 <html>
+
 <head>
     <title>Grid Load Sim - IoT</title>
     <script type="text/javascript" src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
     <div id="title" class="animate__animated animate__fadeInDown">
         <h1>LOAD BALANCING ON THE GRID</h1>
@@ -18,25 +20,46 @@
         <a href="mailto:sam.martin@post.au.dk">@ Harith Rathish</a>
         <a href="mailto:sam.martin@post.au.dk">@ Sam Martin Vargas Giagnocavo</a>
     </div>
-    <div id="vis"></div>
-    <div style="position: fixed; bottom: 30px; right: 30px; display: flex; flex-direction: column;">
-        <div id="toolbar-buttons" style="display: flex;">
-            <div style="margin-left: 10px; cursor: pointer;" onclick="initSim()">
+    <div id="options" class="animate__animated animate__fadeIn">
+        <div style="display: flex; justify-content: center;">
+            <div style="cursor: pointer;" onclick="initSim()">
                 <i class="far fa-play-circle"></i>
-                <span>Start</span>
+                <span>Initalize</span>
             </div>
-            <div style="margin-left: 10px; cursor: pointer;" onclick="updateSim()">
-                <i class="fas fa-forward"></i>
-                <span>Skip</span>
-            </div>
-            <div style="margin-left: 10px; cursor: pointer;">
+            <div style="width: 50px"></div>
+            <div style="cursor: pointer;">
                 <i class="fas fa-file-import"></i>
                 <span>Import</span>
+            </div>
+        </div>
+        <div style="margin-top: 1rem; font-size: small;">
+            <i class="fas fa-info-circle"></i>
+            <span>Loaded with default dataset</span>
+        </div>
+    </div>
+    <div id="vis"></div>
+    <div id="toolbar" style="position: fixed; bottom: 30px; right: 30px; display: none; flex-direction: column;">
+        <div id="toolbar-buttons" style="display: flex;">
+            <div style="margin-left: 10px; cursor: pointer;" onclick="updateSim()">
+                <i class="fas fa-play"></i>
+                <span>Run</span>
+            </div>
+            <div style="margin-left: 10px; cursor: pointer;" onclick="pauseSim()">
+                <i class="fas fa-pause"></i>
+                <span>Pause</span>
+            </div>
+            <div style="margin-left: 10px; cursor: pointer;" onclick="skipSim()">
+                <i class="fas fa-forward"></i>
+                <span>Skip</span>
             </div>
         </div>
         <div id="toolbar-info" style="margin: auto; margin-top: 10px; font-size: smaller;">
             <i class="fas fa-info-circle"></i>
             <span>Loaded with default dataset</span>
+        </div>
+        <div style="margin: auto; margin-top: 10px; font-size: smaller;">
+            <i class="far fa-clock"></i>
+            <span>Last updated </span><span id="toolbar-time"></span>
         </div>
     </div>
 </body>
@@ -44,4 +67,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.0/socket.io.js"></script>
     <script src="index.js"></script>
 </footer>
+
 </html>
