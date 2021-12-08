@@ -44,10 +44,11 @@ function initSim() {
     var opts = document.getElementById("options")
     opts.classList.add("animate__animated", "animate__fadeOut", "animate__faster")
     opts.addEventListener('animationend', () => {
-        var toolbar = document.getElementById("toolbar")
-        toolbar.style.display = "flex"
-        toolbarTime.innerText = new Date().toLocaleTimeString()
-        toolbar.classList.add("animate__animated", "animate__backInRight")
+        var hiddenElements = document.querySelectorAll(".hidden-until-init")
+        hiddenElements.forEach(e => {
+            e.classList.remove("hidden-until-init")
+            e.classList.add("animate__animated")
+        })
     });
     userid = uuidv4()
     socket.emit('init', { userid: userid });
@@ -56,6 +57,7 @@ function initSim() {
 socket.on('init-res', function (data) {
     nodes = new vis.DataSet(data.nodes)
     edges = new vis.DataSet(data.edges)
+    toolbarTime.innerText = new Date().toLocaleTimeString()
     network = new vis.Network(container, { nodes: nodes, edges: edges }, visOptions);
     socket.emit('get-grid-info', { userid:  userid});
 })

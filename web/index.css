@@ -16,8 +16,8 @@ body {
 }
 
 #options {
-    position: absolute;
     display: flex;
+    position: absolute;
     flex-direction: column;
     top: 50%;
     left: 50%;
@@ -31,6 +31,10 @@ body {
     text-align: center;
 }
 
+#toolbar {
+    position: fixed; bottom: 30px; right: 30px; display: flex; flex-direction: column;
+}
+
 #authors {
    z-index: 10; font-size: smaller; position: fixed; top: 30; right: 30; display: flex; text-align: end; justify-content: flex-end; flex-direction: column;
 }
@@ -40,18 +44,42 @@ body {
 }
 
 .dashboard {
-    width: 290px;
-    border: 1px solid lightgray;
+    display: flex;
+    position: absolute;
+    font-size: smaller;
+    bottom: 15px;
+    left: 15px;
     border-radius: 10px;
-    background: rgba(0,0,0,0.2);
-    padding: 20px;
+    background: rgba(240, 237, 237, 0.199);
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(7px);
+}
+
+.dashboard div {
+    margin-bottom: 5px;
 }
 
 .mini-dashboard{
-    flex-direction: column;
+    flex-direction: row;
+}
+
+.dashboard-section-spacer {
+    width: 20px;
 }
 
 .dashboard-stat{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+}
+
+.dashboard-stat-label {
+    font-size: smaller;    
+    font-weight: 100;
+}
+
+.hidden-until-init {
+    display: none !important;
 }
