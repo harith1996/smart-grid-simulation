@@ -131,3 +131,12 @@ class DeviceAgent:
         return f"{{uid: {self._uid}; did: {self._did}; is_gen: {self.is_generator()}; " \
                 f"charge_prof: {self.get_charge_profile()} % per second; curr_charge: {self._curr_charge}; %" \
                 f"t2c: {self._t2c}}}"
+
+    def toJSON(self):
+        return {
+            '_uid': self._uid,
+            '_name': self.get_name(),
+            '_did': self._did,
+            '_owner': self._owner.get_name(),
+            '_type': self.get_type()
+        }

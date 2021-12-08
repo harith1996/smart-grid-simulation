@@ -47,3 +47,11 @@ class UserAgent:
         for i, d in enumerate(self._devices):
             output += f"\t↣ {d.to_string()} active at {self._schedule[i]}\n"
         return output
+    
+    def toJSON(self):
+        return {
+            '_name': self._name,
+            '_ogoal': self._ogoal,
+            '_devices': list(map(lambda device: device.toJSON(), self._devices)),
+            '_schedule': self._schedule
+        }

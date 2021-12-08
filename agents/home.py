@@ -1,3 +1,4 @@
+import random
 from typing import List
 from agents.device import DeviceAgent
 from utils import color_mapper
@@ -12,6 +13,7 @@ class HomeAgent:
         self._devices = dict()
         self._generators = dict()
         self._bill = 0
+        self._price_limit = 19e-6 + (random.random() * 5e-6)
 
     def power(self, power_source):
         devs = list(self._devices.values())
@@ -92,3 +94,9 @@ class HomeAgent:
         devstr = ','.join(map(str, self._devices.keys()))
         genstr = ','.join(map(str, self._generators.keys()))
         return f"devices: {{{devstr}}}; genstr: {{{genstr}}}"
+    
+    def toJSON(self):
+        return {
+            '_owner': self._owner.toJSON(),
+            '_price_limit': self._price_limit
+        }

@@ -54,6 +54,7 @@ socket.on('init-res', function (data) {
     nodes = new vis.DataSet(data.nodes)
     edges = new vis.DataSet(data.edges)
     network = new vis.Network(container, { nodes: nodes, edges: edges }, visOptions);
+    socket.emit('get-grid-info', { userid:  userid});
 })
 
 function updateSim() {
@@ -64,6 +65,10 @@ function updateSim() {
         }, 1000)
     }
 }
+
+socket.on('get-grid-info-res', function (data) {
+     console.log(data)
+})
 
 socket.on('update-res', function (data) {
     nodes.update(data.nodes)

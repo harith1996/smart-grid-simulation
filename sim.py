@@ -95,6 +95,24 @@ def skip_sim(info):
     simuserdata.pop(userid)
     emit('skip-res', {'nodes': nodes, 'edges': edges, 'unlinks': unlinks})
 
+def grid_info(info):
+    userid = info.get('userid') 
+    grid = simuserdata[userid][0]
+    print(userid)
+    """Returns static info about the grid: Homes, Users, Devices, Grid Capacity, Prive average, Price Variance
+
+    Returns:
+        [type]: [description]
+    """
+    return grid.toJSON()
+
+
+@socketio.on('get-grid-info')
+def get_grid_info(info):
+    emit('get-grid-info-res', grid_info(info))
+
+
+
 if __name__ == '__main__':
 
     """
