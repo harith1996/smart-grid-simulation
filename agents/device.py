@@ -54,7 +54,7 @@ class DeviceAgent:
             # unplug and disconnect.
             home.disconnect_generator(self)
             self._conn_to_gen_channel = False
-
+            
     def charge(self, home, power_source, t = 0.1 ):
 
         self._t2c = max(round(self._t2c - t, 4), 0.0)
@@ -67,10 +67,12 @@ class DeviceAgent:
             self._curr_charge = round(new_charge, 4)
             self._is_charging = True
             self._power_source = power_source
+            self._power_source.connect_power(self.get_power_limit())
             print(f"[⚡️] {self._owner.get_name()}'s {self.to_string()} is charging")
         else:
             self._curr_charge = 1.0
             self._is_charging = False
+            self.disconnect_from_power_source()
             print(f"[🏁] {self._owner.get_name()}'s {self.to_string()} finished charging")
             # We close connection with the home manager
             # if device is completely charged
@@ -122,7 +124,7 @@ class DeviceAgent:
         return Device.LUT[self._did]['type']
 
     def get_power_limit(self):
-        return Device.LUT[self._did]['power_limit']
+        return round(float(Device.LUT[self._did]['power_limit']), 1)
 
     def get_charge_profile(self):
         return round(Device.LUT[self._did]['charge_profile'], 4)

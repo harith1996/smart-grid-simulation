@@ -1,6 +1,7 @@
 import random
 from typing import List
 from agents.device import DeviceAgent
+from agents.generator import GeneratorAgent
 from utils import color_mapper
 
 
@@ -15,10 +16,23 @@ class HomeAgent:
         self._bill = 0
         self._price_limit = 19e-6 + (random.random() * 5e-6)
 
-    def power(self, power_source):
+    def power(self, power_source, day, t):
         devs = list(self._devices.values())
+        gens = list(self._generators.values())
+        owner = self.get_owner().get_name()
         for d in devs:
-            self._power_draw += float(d.charge(self, power_source))
+            if(d.is_plugged()):
+                curr_price = power_source.get_current_price(day, t)
+                if(curr_price < self._price_limit):
+                    self._power_draw += float(d.charge(self, power_source))
+                else: 
+                    print(f"[⚠️] Current price {float(curr_price)} is too high for household owned by {owner}!!!")
+                    if(len(gens) > 0):
+                        # charge from generator instead
+                        print(f"[⚡] {owner} is now charging {d.get_name()} from {gens[0].get_name()} !")
+                        self._power_draw += float(d.charge(self, gens[0]))
+                        
+                        # time.sleep(0.5)
 
     def reset_power_draw(self):
         self._power_draw = 0.0
@@ -29,7 +43,7 @@ class HomeAgent:
     def set_owner(self, owner):
         self._owner = owner
 
-    def acknowledge_device(self, device):
+    def acknowledge_device(self, device:DeviceAgent):
         is_in_devices = device._uid in self._devices
         is_in_generators = device._uid in self._generators
         
@@ -40,7 +54,7 @@ class HomeAgent:
             self._devices[device._uid] = device
 
         if should_add_generator:
-            self._generators[device._uid] = device
+            self._generators[device._uid] = GeneratorAgent(device._did, device._owner, 0)
 
         return (should_add_device, should_add_generator)
     
