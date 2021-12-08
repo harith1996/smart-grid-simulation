@@ -29,6 +29,9 @@ const visOptions = {
         timestep: 0.35,
         stabilization: { iterations: 150 },
     },
+    interaction: {
+        tooltipDelay: 50
+    }
 };
 
 function uuidv4() {
