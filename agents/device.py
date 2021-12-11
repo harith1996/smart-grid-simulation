@@ -152,7 +152,7 @@ class DeviceAgent:
             '_entity_name': 'device',
             '_uid': self._uid,
             '_name': self.get_name(),
-            '_curr_charge': str(self.get_charge() * 100) + '%',
+            '_curr_charge': str(round(self.get_charge() * 100, 2)) + '%',
             '_is_charging': self.is_charging(),
             '_did': self._did,
             '_owner': self._owner.get_name(),
