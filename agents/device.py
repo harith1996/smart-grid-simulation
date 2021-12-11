@@ -42,6 +42,10 @@ class DeviceAgent:
     def unplug(self, home):
         self._plugged = False
         
+        if(self._is_charging):
+            self._is_charging = False
+            self.disconnect_from_power_source()
+
         if self._conn_to_dev_channel:
             home.disconnect_device(self)
             self._conn_to_dev_channel = False
@@ -129,6 +133,12 @@ class DeviceAgent:
     def get_charge_profile(self):
         return round(Device.LUT[self._did]['charge_profile'], 4)
 
+    def disconnect_from_power_source(self):
+        self._power_source.disconnect_power(self.get_power_limit())
+
+    def is_charging(self):
+        return self._is_charging
+        
     def to_string(self):
         return f"{{uid: {self._uid}; did: {self._did}; is_gen: {self.is_generator()}; " \
                 f"charge_prof: {self.get_charge_profile()} % per second; curr_charge: {self._curr_charge}; %" \

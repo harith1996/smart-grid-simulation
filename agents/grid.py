@@ -23,14 +23,15 @@ class GridAgent:
     POWER_ADJ_PEAK_HOURS = 2.2e-7
 
     #Grid Capacity (kiloWatts)
-    LOAD_LIMIT = 9500
+    LOAD_LIMIT = 690
+
     def __init__(self):
         self._homes: List[HomeAgent] = []
         self._price_avg = GridAgent.POWER_PRICE_AVG
         self._price_var = GridAgent.POWER_PRICE_VAR
         self._current_load = 0
         self._peak_load = 0
-        self._load_limit = GridAgent.LOAD_LIMIT
+        self._load_limit = GridAgent.LOAD_LIMIT * 1000
 
     def add_home(self, home):
         self._homes.append(home)
@@ -147,10 +148,22 @@ class GridAgent:
     def to_string(self):
         pass
 
+    def convert_price(self, price):
+        return price * 3600 * 1000 
+
     def toJSON(self):
+        homes = list(map(lambda home: home.toJSON(), self._homes))
         return {
-            '_price_avg': self._price_avg,
-            '_price_var': self._price_var,
-            '_load_limit': self._load_limit,
-            '_homes': list(map(lambda home: home.toJSON(), self._homes))
+            '_price_avg': self.convert_price(self._price_avg),
+            '_price_var': self.convert_price(self._price_var),
+            '_load_limit': self._load_limit / 1000,
+            '_homes': homes,
+            '_homes_connected': len(homes)
+        }
+
+    def get_status(self, current_price):
+        return {
+            '_peak_load': self._peak_load / 1000,
+            '_current_load': self._current_load / 1000,
+            '_current_price': round(self.convert_price(current_price), 2)
         }

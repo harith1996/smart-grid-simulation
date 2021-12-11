@@ -24,7 +24,8 @@ class HomeAgent:
             if(d.is_plugged()):
                 curr_price = power_source.get_current_price(day, t)
                 if(curr_price < self._price_limit):
-                    self._power_draw += float(d.charge(self, power_source))
+                    if(not d.is_charging()):
+                        self._power_draw += float(d.charge(self, power_source))
                 else: 
                     print(f"[⚠️] Current price {float(curr_price)} is too high for household owned by {owner}!!!")
                     if(len(gens) > 0):

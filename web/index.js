@@ -1,3 +1,4 @@
+const SIM_UPDATE_INTERVAL = 500
 let userid
 let network
 let nodes, edges
@@ -67,13 +68,22 @@ function updateSim() {
         updateInterval = setInterval(() => {
             toolbarTime.innerText = new Date().toLocaleTimeString()
             socket.emit('update', { userid: userid });
-        }, 1000)
+        }, SIM_UPDATE_INTERVAL)
     }
 }
 
-socket.on('get-grid-info-res', function (data) {
-     console.log(data)
-})
+function updateDashboard(type, data) {
+    const statElements = document.querySelectorAll(`#grid-${type} .dashboard-stat-value span`);
+    statElements.forEach(element => {
+        const id = element.id;
+        element.innerHTML = data[id] || '';
+    })
+     console.log(data);
+}
+ 
+socket.on('get-grid-info-res', updateDashboard.bind(this, 'info'));
+
+socket.on('get-grid-status-res', updateDashboard.bind(this, 'status'));
 
 socket.on('update-res', function (data) {
     nodes.update(data.nodes)

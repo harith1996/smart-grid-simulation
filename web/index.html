@@ -65,28 +65,30 @@
     <div class='dashboard mini-dashboard hidden-until-init animate__backInLeft'>
         <div class="dashboard-section" id="grid-status">
             <h3>Grid status</h3>
+
+            <div class="dashboard-stat-label">Peak load</div>
             <div class="dashboard-stat">
-                <div class="dashboard-stat-label">Peak load</div>
                 <div class="dashboard-stat-value">
-                    <span>8402.2</span>
-                    <span>kiloWatts</span>
+                    <span id='_peak_load'>0</span>
                 </div>
+                <span>kW</span>
             </div>
 
+            <div class="dashboard-stat-label">Current load</div>
             <div class="dashboard-stat">
-                <div class="dashboard-stat-label">Current load</div>
-                <div class="dashboard-stat-value">
-                    <span>3302.4</span>
-                    <span>kiloWatts</span>
+                <div class="dashboard-stat-value" >
+                    <span id='_current_load'>0</span>
                 </div>
+                <span>kW</span>
+
             </div>
 
+            <div class="dashboard-stat-label">Current price</div>
             <div class="dashboard-stat">
-                <div class="dashboard-stat-label">Current price</div>
-                <div class="dashboard-stat-value">
-                    <span>45.3</span>
-                    <span>cents/kwh</span>
+                <div class="dashboard-stat-value" >
+                    <span id='_current_price'>0</span>
                 </div>
+                <span>cents/kwh</span>
             </div>
 
         </div>
@@ -94,27 +96,27 @@
         <div class="dashboard-section" id="grid-info">
             <h3>Grid Info</h3>
 
+            <div class="dashboard-stat-label">Homes</div>
             <div class="dashboard-stat">
-                <div class="dashboard-stat-label">Homes</div>
-                <div class="dashboard-stat-value">
-                    <span>4</span>
+                <div class="dashboard-stat-value" >
+                    <span id='_homes_connected'>0</span>
                 </div>
             </div>
 
+            <div class="dashboard-stat-label">Load Limit</div>
             <div class="dashboard-stat">
-                <div class="dashboard-stat-label">Capacity</div>
-                <div class="dashboard-stat-value">
-                    <span>9500</span>
-                    <span>kiloWatts</span>
+                <div class="dashboard-stat-value" >
+                    <span id='_load_limit'>0</span>
                 </div>
+                <span>kW</span>
             </div>
 
+            <div class="dashboard-stat-label">Average price</div>
             <div class="dashboard-stat">
-                <div class="dashboard-stat-label">Average price</div>
-                <div class="dashboard-stat-value">
-                    <span>30</span>
-                    <span>cents/kWh</span>
+                <div class="dashboard-stat-value" >
+                    <span id='_price_avg'>0</span>
                 </div>
+                <span>cents/kWh</span>
             </div>
 
         </div>

@@ -53,8 +53,8 @@ def update_sim(info):
     for u in simuserdata[userid][1]:
         u.use_devices(cdw, ct)
     simuserdata[userid][0].power_homes(cdw, ct)
-    curr_pricing = simuserdata[userid][0].get_current_price(cdw, ct)
-    simuserdata[userid][0].update_billing(curr_pricing)
+    current_price = simuserdata[userid][0].get_current_price(cdw, ct)
+    simuserdata[userid][0].update_billing(current_price)
     nodes, edges, unlinks, _ = simuserdata[userid][0].to_graph(0)
     
     ct += STEP 
@@ -72,6 +72,7 @@ def update_sim(info):
     simuserdata[userid][3] = cdw
     simuserdata[userid][4] = cdy
 
+    emit('get-grid-status-res', grid_status(info, current_price))
     emit('update-res', {'nodes': nodes, 'edges': edges, 'unlinks': unlinks})
 
 @socketio.on('skip')
@@ -111,7 +112,17 @@ def grid_info(info):
 def get_grid_info(info):
     emit('get-grid-info-res', grid_info(info))
 
+def grid_status(info, current_price):
+    """Returns current status of the grid: Current load, peak load, current price
 
+    Returns:
+        [type]: [description]
+    """
+    userid = info.get('userid') 
+    grid = simuserdata[userid][0]
+    print(userid)
+    
+    return grid.get_status(current_price)
 
 if __name__ == '__main__':
 

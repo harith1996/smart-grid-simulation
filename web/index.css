@@ -72,7 +72,8 @@ body {
 
 .dashboard-stat{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    font-weight: bold;
 }
 
 .dashboard-stat-label {
