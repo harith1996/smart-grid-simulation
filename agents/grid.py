@@ -154,8 +154,8 @@ class GridAgent:
     def toJSON(self):
         homes = list(map(lambda home: home.toJSON(), self._homes))
         return {
-            '_price_avg': self.convert_price(self._price_avg),
-            '_price_var': self.convert_price(self._price_var),
+            '_price_avg': self.convert_price(GridAgent.POWER_PRICE_AVG),
+            '_price_var': self.convert_price(GridAgent.POWER_PRICE_VAR),
             '_load_limit': self._load_limit / 1000,
             '_homes': homes,
             '_homes_connected': len(homes)

@@ -14,7 +14,7 @@ class HomeAgent:
         self._devices = dict()
         self._generators = dict()
         self._bill = 0
-        self._price_limit = 19e-6 + (random.random() * 5e-6)
+        self._price_limit = 15e-6 + (random.random() * 5e-6)
 
     def power(self, power_source, day, t):
         devs = list(self._devices.values())
@@ -32,7 +32,6 @@ class HomeAgent:
                         # charge from generator instead
                         print(f"[⚡] {owner} is now charging {d.get_name()} from {gens[0].get_name()} !")
                         self._power_draw += float(d.charge(self, gens[0]))
-                        
                         # time.sleep(0.5)
 
     def reset_power_draw(self):
