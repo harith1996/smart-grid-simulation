@@ -113,9 +113,9 @@ function preprocess(data){
     })
 }
 
-const tooltip = document.createElement('div');
 
 function formatTitle(titleString) {
+    const tooltip = document.createElement('div');
     tooltip.innerHTML = '';
     tooltip.innerHTML = "<div class='node-tooltip'><table><tr><th>Property</th><th>Value</th></tr></table></div>";
     const tooltipTable = tooltip.querySelector('table');
