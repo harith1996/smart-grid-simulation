@@ -35,13 +35,14 @@ def init_sim(info):
     for u in users:
         u.use_devices(0, 0.0)
     grid.power_homes(0, 0.0)
-    curr_pricing = grid.get_current_price(0, 0.0)
-    grid.update_billing(curr_pricing)
+    current_price = grid.get_current_price(0, 0.0)
+    grid.update_billing(current_price)
     nodes, edges, _, _ = grid.to_graph(0)
 
     # Grid, Users, Time of the day, Day of the Week, Day of the Year
     simuserdata[userid] = [grid, users, 0.1, 0, 0]
     emit('init-res', {'nodes': nodes, 'edges': edges})
+    emit('get-grid-status-res', grid_status(info, current_price))
 
 @socketio.on('update')
 def update_sim(info):

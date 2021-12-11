@@ -2,6 +2,7 @@ import random
 from typing import List
 
 from agents.home import HomeAgent
+from utils import convert_price
 
 class GridAgent:
     
@@ -23,7 +24,7 @@ class GridAgent:
     POWER_ADJ_PEAK_HOURS = 2.2e-7
 
     #Grid Capacity (kiloWatts)
-    LOAD_LIMIT = 690
+    LOAD_LIMIT = 650
 
     def __init__(self):
         self._homes: List[HomeAgent] = []
@@ -148,14 +149,12 @@ class GridAgent:
     def to_string(self):
         pass
 
-    def convert_price(self, price):
-        return price * 3600 * 1000 
-
     def toJSON(self):
         homes = list(map(lambda home: home.toJSON(), self._homes))
         return {
-            '_price_avg': self.convert_price(GridAgent.POWER_PRICE_AVG),
-            '_price_var': self.convert_price(GridAgent.POWER_PRICE_VAR),
+            '_entity_name': 'grid',
+            '_price_avg': convert_price(GridAgent.POWER_PRICE_AVG),
+            '_price_var': convert_price(GridAgent.POWER_PRICE_VAR),
             '_load_limit': self._load_limit / 1000,
             '_homes': homes,
             '_homes_connected': len(homes)
@@ -165,5 +164,5 @@ class GridAgent:
         return {
             '_peak_load': self._peak_load / 1000,
             '_current_load': self._current_load / 1000,
-            '_current_price': round(self.convert_price(current_price), 2)
+            '_current_price': round(convert_price(current_price), 2)
         }

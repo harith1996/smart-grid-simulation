@@ -1,8 +1,11 @@
+from functools import reduce
+import json
 import random
 from typing import List
 from agents.device import DeviceAgent
 from agents.generator import GeneratorAgent
 from utils import color_mapper
+from utils import convert_price
 
 
 class HomeAgent:
@@ -20,19 +23,30 @@ class HomeAgent:
         devs = list(self._devices.values())
         gens = list(self._generators.values())
         owner = self.get_owner().get_name()
+        curr_price = power_source.get_current_price(day, t)
         for d in devs:
             if(d.is_plugged()):
-                curr_price = power_source.get_current_price(day, t)
                 if(curr_price < self._price_limit):
                     if(not d.is_charging()):
                         self._power_draw += float(d.charge(self, power_source))
                 else: 
+                    self.price_damage_control()
                     print(f"[⚠️] Current price {float(curr_price)} is too high for household owned by {owner}!!!")
                     if(len(gens) > 0):
                         # charge from generator instead
                         print(f"[⚡] {owner} is now charging {d.get_name()} from {gens[0].get_name()} !")
                         self._power_draw += float(d.charge(self, gens[0]))
                         # time.sleep(0.5)
+
+    def price_damage_control(self):
+        self.stop_charge_power_hungy_device()
+
+    def stop_charge_power_hungy_device(self):
+        devs = list(self._devices.values())
+        charging_devs=  list(filter(lambda dev: dev.is_charging(), devs))
+        if(len(charging_devs)):
+            power_hungry_dev = reduce(lambda max_dev, dev: max_dev if max_dev.get_power_limit() > dev.get_power_limit() else dev, charging_devs)
+            power_hungry_dev.stop_charge()
 
     def reset_power_draw(self):
         self._power_draw = 0.0
@@ -88,15 +102,20 @@ class HomeAgent:
         nodes, links, unlinks = [], [], []
         homeidx = contidx
         # Add home manager (and link it later in GridAgent)
-        nodes.append({'id': homeidx, 'label': self._owner.get_name(), 'image': 'house-user-solid.png', 'shape': 'image'})
+        nodes.append({'id': homeidx, 'label': self._owner.get_name(), 'title': f"{json.dumps(self.toJSON(), indent = 2)}", 'image': 'house-user-solid.png', 'shape': 'image'})
         contidx += 1
         # Add devices and link them to home manager
         for d in self._owner.get_devices():
             charge = d.get_charge()
-            nodes.append({'charge': charge, 'id': contidx, 'title': f"Charge: {round(charge * 100, 2)}%", 'color': color_mapper(charge)})
+            nodes.append({'charge': charge, 'id': contidx, 'title': f"{json.dumps(d.toJSON(), indent = 2)}", 'color': color_mapper(charge)})
             # Change value to something meaningful
             if d.is_connected():
-                links.append({'id': contidx, 'from': contidx, 'to': homeidx})
+                e = {'id': contidx, 'from': contidx, 'to': homeidx}
+                if d.is_charging():
+                    e['color'] = 'rgb(166, 232, 44)'
+                else:
+                    e['color'] = 'rgb(100, 100, 100)'
+                links.append(e)
             else:
                 unlinks.append(contidx)
             # Increase counter (needed for Vis JS)
@@ -111,6 +130,7 @@ class HomeAgent:
     
     def toJSON(self):
         return {
+            '_entity_name': 'home',
             '_owner': self._owner.toJSON(),
-            '_price_limit': self._price_limit
+            '_price_limit': str(convert_price(self._price_limit)) + ' euro cents/kWh'
         }

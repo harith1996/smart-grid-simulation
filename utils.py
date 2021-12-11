@@ -31,3 +31,7 @@ def color_mapper(charge):
     else:
         rgbcolor = 'rgb(166, 232, 44)'
     return rgbcolor
+
+
+def convert_price( price):
+    return round(price * 3600 * 1000, 2)

@@ -74,10 +74,8 @@ class DeviceAgent:
             self._power_source.connect_power(self.get_power_limit())
             print(f"[⚡️] {self._owner.get_name()}'s {self.to_string()} is charging")
         else:
-            self._curr_charge = 1.0
-            self._is_charging = False
-            self.disconnect_from_power_source()
-            print(f"[🏁] {self._owner.get_name()}'s {self.to_string()} finished charging")
+            self.stop_charge()
+            print(f"[🏁] {self._owner.get_name()}'s {self.to_string()} has been disconnected from home")
             # We close connection with the home manager
             # if device is completely charged
             # Generators will still be connected to the
@@ -101,6 +99,11 @@ class DeviceAgent:
         else:
             self._curr_charge = 0.0
             print(f"[❌] {self._owner.get_name()} depleated {self.to_string()}")
+
+    def stop_charge(self):
+        self._is_charging = False
+        self.disconnect_from_power_source()
+        print(f"[🏁] {self._owner.get_name()}'s {self.to_string()} stopped charging")
 
     def is_plugged(self):
         return self._plugged
@@ -138,7 +141,7 @@ class DeviceAgent:
 
     def is_charging(self):
         return self._is_charging
-        
+
     def to_string(self):
         return f"{{uid: {self._uid}; did: {self._did}; is_gen: {self.is_generator()}; " \
                 f"charge_prof: {self.get_charge_profile()} % per second; curr_charge: {self._curr_charge}; %" \
@@ -146,8 +149,11 @@ class DeviceAgent:
 
     def toJSON(self):
         return {
+            '_entity_name': 'device',
             '_uid': self._uid,
             '_name': self.get_name(),
+            '_curr_charge': str(self.get_charge() * 100) + '%',
+            '_is_charging': self.is_charging(),
             '_did': self._did,
             '_owner': self._owner.get_name(),
             '_type': self.get_type()

@@ -84,3 +84,10 @@ body {
 .hidden-until-init {
     display: none !important;
 }
+
+#node-tooltip {
+    border: 1px solid black;
+    border-radius: 5px;
+    max-width: 200px;
+    display: none;
+}
