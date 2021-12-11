@@ -27,16 +27,15 @@ class HomeAgent:
         for d in devs:
             if(d.is_plugged()):
                 if(curr_price < self._price_limit):
-                    if(not d.is_charging()):
-                        self._power_draw += float(d.charge(self, power_source))
+                    d.charge(self, power_source)
                 else: 
                     self.price_damage_control()
                     print(f"[⚠️] Current price {float(curr_price)} is too high for household owned by {owner}!!!")
-                    if(len(gens) > 0):
-                        # charge from generator instead
-                        print(f"[⚡] {owner} is now charging {d.get_name()} from {gens[0].get_name()} !")
-                        self._power_draw += float(d.charge(self, gens[0]))
-                        # time.sleep(0.5)
+                    # if(len(gens) > 0):
+                    #     # charge from generator instead
+                    #     print(f"[⚡] {owner} is now charging {d.get_name()} from {gens[0].get_name()} !")
+                    #     self._power_draw += float(d.charge(self, gens[0]))
+                    #     # time.sleep(0.5)
 
     def price_damage_control(self):
         self.stop_charge_power_hungy_device()
@@ -107,7 +106,7 @@ class HomeAgent:
         # Add devices and link them to home manager
         for d in self._owner.get_devices():
             charge = d.get_charge()
-            nodes.append({'charge': charge, 'id': contidx, 'title': f"{json.dumps(d.toJSON(), indent = 2)}", 'color': color_mapper(charge)})
+            nodes.append({'charge': charge, 'id': contidx, 'title': f" {json.dumps(d.toJSON(), indent = 2)}", 'color': color_mapper(charge)})
             # Change value to something meaningful
             if d.is_connected():
                 e = {'id': contidx, 'from': contidx, 'to': homeidx}
@@ -132,5 +131,6 @@ class HomeAgent:
         return {
             '_entity_name': 'home',
             '_owner': self._owner.toJSON(),
-            '_price_limit': str(convert_price(self._price_limit)) + ' euro cents/kWh'
+            '_price_limit': str(convert_price(self._price_limit)) + ' euro cents/kWh',
+            '_bill': str(convert_price(self.get_current_bill()))
         }
