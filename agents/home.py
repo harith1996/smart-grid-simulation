@@ -25,8 +25,13 @@ class HomeAgent:
             # It was like this before
             # if d.is_plugged():
                 self.process_depending_on_goal(d, power_source, day, time)
+            if d.is_charging():
+                if(type(d._power_source) == GeneratorAgent):
+                    gen  = d._power_source
+                    gen.discharge()
     
     def process_depending_on_goal(self, dev, ps, d, t):
+        gens = list(self._generators.values())
         if self._owner._ogoal == 'cost':
             curr_price = ps.get_current_price(d, t)
             owner = self.get_owner().get_name()
@@ -34,6 +39,10 @@ class HomeAgent:
             if curr_price >= price_limit:
                 self.price_damage_control()
                 print(f"[⚠️] Current price {float(curr_price)} is too high for household owned by {owner}!!!")
+                if(len(gens) > 0 and gens[0]!=dev):
+                        # charge from generator instead
+                        print(f"[⚡] {owner} is now charging {dev.get_name()} from {gens[0].get_name()} !")
+                        float(dev.charge(self, gens[0]))
                 return
         # Here we set conditions for other goals
         # elif self_owner._ogoal == 'other':
@@ -126,7 +135,10 @@ class HomeAgent:
             if d.is_connected():
                 e = {'id': contidx, 'from': contidx, 'to': homeidx}
                 if d.is_charging():
-                    e['color'] = 'rgb(166, 232, 44)'
+                    if(type(d._power_source) == GeneratorAgent):
+                        e['color'] = 'rgb(44, 166, 232)'
+                    else:
+                        e['color'] = 'rgb(166, 232, 44)'
                 else:
                     e['color'] = 'rgb(100, 100, 100)'
                 links.append(e)

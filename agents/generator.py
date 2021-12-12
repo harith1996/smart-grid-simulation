@@ -39,7 +39,22 @@ class GeneratorAgent(DeviceAgent):
             power_limit (int): Max power drawn by the device
 
         Returns:
-            Boolean: True if device can safely disconnect
+            Boolean: True if device can safely disconnects
         """
         self._current_load -= power_limit
         return True
+    
+    def discharge(self, power_draw=0, t = 0.1):
+        
+        self._is_charging = False
+        if self._curr_charge == 0.0:
+            return
+
+        new_charge = self._curr_charge - self.get_charge_profile() * t
+        new_charge -= power_draw * self.get_charge_profile() * t
+        if new_charge > 0.0:
+            self._curr_charge = round(new_charge, 4)
+            print(f"[🔋] {self._owner.get_name()} uses {self.to_string()}")
+        else:
+            self._curr_charge = 0.0
+            print(f"[❌] {self._owner.get_name()} depleated {self.to_string()}")
