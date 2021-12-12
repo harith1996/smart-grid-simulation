@@ -65,12 +65,16 @@
             <span class="file-selected">Loaded with default dataset</span>
         </div>
         <div style="margin: auto; margin-top: 10px; font-size: smaller;">
+            <i class="far fa-history"></i>
+            <span>&nbsp;Last updated </span><span id="toolbar-update"></span>
+        </div>
+        <div style="margin: auto; margin-top: 10px; font-size: smaller;">
             <i class="far fa-clock"></i>
-            <span>Last updated </span><span id="toolbar-time"></span>
+            <span>&nbsp;</span><span id="toolbar-time"></span>
         </div>
     </div>
     <div class='dashboard grid-dashboard hidden-until-init animate__backInLeft'>
-        <div class="dashboard-section" id="grid-status">
+        <div id="grid-status" class="dashboard-section">
             <h3>Grid status</h3>
 
             <div class="dashboard-stat-label">Peak load</div>
@@ -99,6 +103,7 @@
             </div>
 
         </div>
+        <div class="dashboard-section-spacer"></div>
         <div  id="grid-info" class="dashboard-section">
             <h3>Grid Info</h3>
 
@@ -128,35 +133,28 @@
         </div>
     </div>
 
-    <div class='dashboard bill-dashboard hidden-until-init animate__backInLeft'>
-        <div class="dashboard-section" id="grid-bill-statistics">
-            <h3>Bill statistcs</h3>
-
-            <div class="dashboard-stat-label">Average home bill</div>
-            <div class="dashboard-stat">
-                <div class="dashboard-stat-value">
-                    <span id='_bill_avg'>0</span>
-                </div>
-                <span>&nbsp;euros</span>
+    <div id="grid-bill-statistics" class='dashboard bill-dashboard hidden-until-init animate__backInLeft'>
+        <h3>Bill statistics</h3>
+        <div class="dashboard-stat-label">Average home bill</div>
+        <div class="dashboard-stat">
+            <div class="dashboard-stat-value">
+                <span id='_bill_avg'>0</span>
             </div>
-
-            <div class="dashboard-stat-label">Variance</div>
-            <div class="dashboard-stat">
-                <div class="dashboard-stat-value" >
-                    <span id='_bill_var'>0</span>
-                </div>
-                <span>&nbsp;euros squared</span>
-
+            <span>&nbsp;euros</span>
+        </div>
+        <div class="dashboard-stat-label">Variance</div>
+        <div class="dashboard-stat">
+            <div class="dashboard-stat-value" >
+                <span id='_bill_var'>0</span>
             </div>
-
-            <div class="dashboard-stat-label">Highest bill</div>
-            <div class="dashboard-stat">
-                <div class="dashboard-stat-value" >
-                    <span id='_top_bill'>0</span>
-                </div>
-                <span>&nbsp;euros</span>
+            <span>&nbsp;euros squared</span>
+        </div>
+        <div class="dashboard-stat-label">Highest bill</div>
+        <div class="dashboard-stat">
+            <div class="dashboard-stat-value" >
+                <span id='_top_bill'>0</span>
             </div>
-
+            <span>&nbsp;euros</span>
         </div>
     </div>
 </body>

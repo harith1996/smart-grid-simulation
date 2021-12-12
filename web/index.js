@@ -14,6 +14,7 @@ let fileInput = document.getElementById("file-input")
 let ogoalSelect = document.getElementById("ogoal-select")
 let fileSelected = document.querySelectorAll(".file-selected")
 var toolbarTime = document.getElementById("toolbar-time");
+var toolbarLastUpdate = document.getElementById("toolbar-update");
 const visOptions = {
 	nodes: {
 		shape: "dot",
@@ -84,7 +85,8 @@ socket.on("init-res", function (data) {
 	preprocess(data);
 	nodes = new vis.DataSet(data.nodes);
 	edges = new vis.DataSet(data.edges);
-	toolbarTime.innerText = new Date().toLocaleTimeString();
+	toolbarLastUpdate.innerText = new Date().toLocaleTimeString()
+	toolbarTime.innerText = "t: 0.1, dw: 0, dy: 0"
 	network = new vis.Network(
 		container,
 		{ nodes: nodes, edges: edges },
@@ -96,7 +98,7 @@ socket.on("init-res", function (data) {
 function updateSim() {
 	if (updateInterval == undefined) {
 		updateInterval = setInterval(() => {
-			toolbarTime.innerText = new Date().toLocaleTimeString();
+			toolbarLastUpdate.innerText = new Date().toLocaleTimeString();
 			socket.emit("update", { userid: userid });
 		}, SIM_UPDATE_INTERVAL);
 	}
@@ -110,7 +112,6 @@ function updateDashboard(type, data) {
 		const id = element.id;
 		element.innerHTML = data[id] || "";
 	});
-	console.log(data);
 }
 
 socket.on("get-grid-info-res", updateDashboard.bind(this, "info"));
@@ -120,6 +121,15 @@ socket.on("get-grid-status-res", updateDashboard.bind(this, "status"));
 socket.on("get-bill-statistics-res", updateDashboard.bind(this, "bill-statistics"));
 
 socket.on("update-res", function (data) {
+
+	// No more data to be showed
+	if (data.nodes.length == 0) {
+		clearInterval(updateInterval)
+		return
+	}
+
+	toolbarTime.innerText = `t: ${data.ct.toFixed(1)}, dw: ${data.cdw}, dy: ${data.cdy}`
+
 	preprocess(data);
 	nodes.update(data.nodes);
 	edges.update(data.edges);
