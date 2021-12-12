@@ -1,4 +1,3 @@
-import random
 import json
 from luts import User, Device
 from agents.device import DeviceAgent
@@ -32,7 +31,7 @@ def load_data_from_object(data):
 
         # Create the home and user
         home = HomeAgent()
-        user = UserAgent(u['name'], home, u['ogoal'])
+        user = UserAgent(u['name'], home, u['ogoal'], u['preferences'])
         
         home.set_owner(user)
         

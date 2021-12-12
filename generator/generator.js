@@ -67,12 +67,22 @@ let users = [...Array(options.users).keys()].map((index) => {
 		)
 	}
 	
-	return {
+	var user = {
 		name: uniqueNamesGenerator(nameGeneratorConfig),
 		ogoal: optGoals[randInt(0, optGoals.length)],
 		devices: [...devIndexes],
         schedules: devSchedules
 	};
+	
+	switch (user.ogoal) {
+		case "cost":
+			user['preferences']	= [randInt(15, 20).toFixed(1) / 10e5]
+			break
+		// Here we add options
+		// for each target 
+	}
+	
+	return user
 });
 
 fs.writeFileSync(options.file, JSON.stringify({seed: randInt(0, Number.MAX_SAFE_INTEGER), devices: devices, users: users}, null, '\t'));

@@ -1,6 +1,5 @@
 from functools import reduce
 import json
-import random
 from typing import List
 from agents.device import DeviceAgent
 from agents.generator import GeneratorAgent
@@ -17,25 +16,30 @@ class HomeAgent:
         self._devices = dict()
         self._generators = dict()
         self._bill = 0
-        self._price_limit = 15e-6 + (random.random() * 5e-6)
 
-    def power(self, power_source, day, t):
+    def power(self, power_source, day, time):
         devs = list(self._devices.values())
         gens = list(self._generators.values())
-        owner = self.get_owner().get_name()
-        curr_price = power_source.get_current_price(day, t)
         for d in devs:
-            if(d.is_plugged()):
-                if(curr_price < self._price_limit):
-                    d.charge(self, power_source)
-                else: 
-                    self.price_damage_control()
-                    print(f"[⚠️] Current price {float(curr_price)} is too high for household owned by {owner}!!!")
-                    # if(len(gens) > 0):
-                    #     # charge from generator instead
-                    #     print(f"[⚡] {owner} is now charging {d.get_name()} from {gens[0].get_name()} !")
-                    #     self._power_draw += float(d.charge(self, gens[0]))
-                    #     # time.sleep(0.5)
+            if d.is_plugged() and not d.is_charged():
+            # It was like this before
+            # if d.is_plugged():
+                self.process_depending_on_goal(d, power_source, day, time)
+    
+    def process_depending_on_goal(self, dev, ps, d, t):
+        if self._owner._ogoal == 'cost':
+            curr_price = ps.get_current_price(d, t)
+            owner = self.get_owner().get_name()
+            price_limit = self._owner.get_preferences()[0]
+            if curr_price >= price_limit:
+                self.price_damage_control()
+                print(f"[⚠️] Current price {float(curr_price)} is too high for household owned by {owner}!!!")
+                return
+        # Here we set conditions for other goals
+        # elif self_owner._ogoal == 'other':
+        
+        # If everything is OK, charge device as intended
+        dev.charge(self, ps)
 
     def price_damage_control(self):
         self.stop_charge_power_hungy_device()
@@ -43,7 +47,7 @@ class HomeAgent:
     def stop_charge_power_hungy_device(self):
         devs = list(self._devices.values())
         charging_devs=  list(filter(lambda dev: dev.is_charging(), devs))
-        if(len(charging_devs)):
+        if len(charging_devs):
             power_hungry_dev = reduce(lambda max_dev, dev: max_dev if max_dev.get_power_limit() > dev.get_power_limit() else dev, charging_devs)
             power_hungry_dev.stop_charge()
 
@@ -101,12 +105,23 @@ class HomeAgent:
         nodes, links, unlinks = [], [], []
         homeidx = contidx
         # Add home manager (and link it later in GridAgent)
-        nodes.append({'id': homeidx, 'label': self._owner.get_name(), 'title': f"{json.dumps(self.to_json(), indent = 2)}", 'image': 'house-user-solid.png', 'shape': 'image'})
+        nodes.append({
+            'id': homeidx,
+            'label': self._owner.get_name(),
+            'title': f"{json.dumps(self.to_json(), indent = 2)}",
+            'image': 'house-user-solid.png',
+            'shape': 'image'
+        })
         contidx += 1
         # Add devices and link them to home manager
         for d in self._owner.get_devices():
             charge = d.get_charge()
-            nodes.append({'charge': charge, 'id': contidx, 'title': f" {json.dumps(d.to_json(), indent = 2)}", 'color': color_mapper(charge)})
+            nodes.append({
+                'charge': charge,
+                'id': contidx,
+                'title': f" {json.dumps(d.to_json(), indent = 2)}",
+                'color': color_mapper(charge)
+            })
             # Change value to something meaningful
             if d.is_connected():
                 e = {'id': contidx, 'from': contidx, 'to': homeidx}
@@ -128,9 +143,12 @@ class HomeAgent:
         return f"devices: {{{devstr}}}; genstr: {{{genstr}}}"
     
     def to_json(self):
-        return {
-            '_entity_name': 'home',
-            '_owner': self._owner.to_json(),
-            '_price_limit': str(convert_price(self._price_limit)) + ' euro cents/kWh',
-            '_bill': str(round(self.get_current_bill()/100, 2))+ ' euros'
-        }
+        if self._owner._ogoal == 'cost':
+            price_limit = self._owner.get_preferences()[0]
+            obj = {
+                '_entity_name': 'home',
+                '_owner': self._owner.to_json(),
+                '_price_limit': str(convert_price(price_limit)) + ' euro cents/kWh',
+                '_bill': str(round(self.get_current_bill() / 100, 2)) + ' euros'
+            }
+        return obj
