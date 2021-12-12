@@ -2,3 +2,4 @@ __pycache__
 generator.sjson
 .DS_Store
 *.pyc
+node_modules
