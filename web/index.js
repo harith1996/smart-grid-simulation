@@ -11,7 +11,7 @@ let updateInterval;
 
 let container = document.getElementById("vis");
 let fileInput = document.getElementById("file-input")
-let fileSelected = document.getElementById("file-selected")
+let fileSelected = document.querySelectorAll(".file-selected")
 var toolbarTime = document.getElementById("toolbar-time");
 const visOptions = {
 	nodes: {
@@ -44,8 +44,10 @@ function changeDataToSend(e) {
 	if (!file) { return }
 	var reader = new FileReader();
 	reader.onload = function (e) {
-		fileSelected.innerText = `Loaded with "${file.name}"`
 		dataToSend = e.target.result
+		fileSelected.forEach(e => {
+			e.innerText = `Loaded with "${file.name}"`
+		})
 	};
 	reader.readAsText(file);
 }
