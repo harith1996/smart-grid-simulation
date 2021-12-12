@@ -1,0 +1,15 @@
+{
+  "name": "generator",
+  "version": "1.0.0",
+  "description": "Generate user and device data for the \"Load balancing in the grid\" project.",
+  "main": "generator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Harith Rathish and Sam Vargas",
+  "license": "ISC",
+  "dependencies": {
+    "cli": "^1.0.1",
+    "unique-names-generator": "^4.6.0"
+  }
+}
