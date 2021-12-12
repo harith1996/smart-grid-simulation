@@ -8,6 +8,7 @@ from flask.helpers import send_file
 # Other Python stuff
 import json
 import numpy as np
+from agents.grid import GridAgent
 from data import load_data_from_object, load_data_from_file
 
 STEP = 0.1
@@ -77,6 +78,7 @@ def update_sim(info):
     simuserdata[userid][3] = cdw
     simuserdata[userid][4] = cdy
 
+    emit('get-bill-statistics-res', get_bill_statistics(info))
     emit('get-grid-status-res', grid_status(info, current_price))
     emit('update-res', {'nodes': nodes, 'edges': edges, 'unlinks': unlinks})
 
@@ -112,14 +114,14 @@ def grid_status(info, current_price):
         [type]: [description]
     """
     userid = info.get('userid') 
-    grid = simuserdata[userid][0]
+    grid : GridAgent = simuserdata[userid][0]
     print(userid)
     
-    return grid.get_status(current_price)
+    return grid.get_status_JSON(current_price)
 
 def grid_info(info):
     userid = info.get('userid') 
-    grid = simuserdata[userid][0]
+    grid : GridAgent = simuserdata[userid][0]
     print(userid)
     """Returns static info about the grid: Homes, Users, Devices, Grid Capacity, Prive average, Price Variance
 
@@ -127,6 +129,18 @@ def grid_info(info):
         [type]: [description]
     """
     return grid.to_json()
+
+    
+def get_bill_statistics(info):
+    userid = info.get('userid') 
+    grid : GridAgent = simuserdata[userid][0]
+    print(userid)
+    """Returns statistics of home bills: Average home bill, variance and highest bill
+
+    Returns:
+        [type]: [description]
+    """
+    return grid.get_bill_statistics_JSON()
 
 if __name__ == '__main__':
 

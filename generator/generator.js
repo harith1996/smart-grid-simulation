@@ -5,7 +5,7 @@ const { uniqueNamesGenerator, names } = require('unique-names-generator')
 
 const options = cli.parse({
     devices: [ 'd', 'Number of devices to generate', 'int', 50],
-    users: [ 'u', 'Number of users to generate', 'int', 50],
+    users: [ 'u', 'Number of users to generate', 'int', 10],
     file: [ 'f', 'File to write the data to', 'string', 'data.json'],
 });
 

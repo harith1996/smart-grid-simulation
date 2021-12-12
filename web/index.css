@@ -47,8 +47,6 @@ body {
     display: flex;
     position: absolute;
     font-size: smaller;
-    bottom: 15px;
-    left: 15px;
     border-radius: 10px;
     background: rgba(240, 237, 237, 0.199);
     padding: 10px;
@@ -56,14 +54,21 @@ body {
     padding-right: 20px;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(7px);
+    flex-direction: row;
 }
 
 .dashboard div {
     margin-bottom: 5px;
 }
 
-.mini-dashboard{
-    flex-direction: row;
+.grid-dashboard{
+
+    bottom: 15px;
+    left: 15px;
+}
+
+.bill-dashboard{
+
 }
 
 .dashboard-section-spacer {

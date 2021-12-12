@@ -62,7 +62,7 @@
             <span>Last updated </span><span id="toolbar-time"></span>
         </div>
     </div>
-    <div class='dashboard mini-dashboard hidden-until-init animate__backInLeft'>
+    <div class='dashboard grid-dashboard hidden-until-init animate__backInLeft'>
         <div class="dashboard-section" id="grid-status">
             <h3>Grid status</h3>
 
@@ -71,7 +71,7 @@
                 <div class="dashboard-stat-value">
                     <span id='_peak_load'>0</span>
                 </div>
-                <span>kW</span>
+                <span>&nbsp;kW</span>
             </div>
 
             <div class="dashboard-stat-label">Current load</div>
@@ -79,7 +79,7 @@
                 <div class="dashboard-stat-value" >
                     <span id='_current_load'>0</span>
                 </div>
-                <span>kW</span>
+                <span>&nbsp;kW</span>
 
             </div>
 
@@ -88,7 +88,7 @@
                 <div class="dashboard-stat-value" >
                     <span id='_current_price'>0</span>
                 </div>
-                <span>cents/kwh</span>
+                <span>&nbsp;cents/kwh</span>
             </div>
 
         </div>
@@ -108,7 +108,7 @@
                 <div class="dashboard-stat-value" >
                     <span id='_load_limit'>0</span>
                 </div>
-                <span>kW</span>
+                <span>&nbsp;kW</span>
             </div>
 
             <div class="dashboard-stat-label">Average price</div>
@@ -116,7 +116,39 @@
                 <div class="dashboard-stat-value" >
                     <span id='_price_avg'>0</span>
                 </div>
-                <span>cents/kWh</span>
+                <span>&nbsp;cents/kWh</span>
+            </div>
+
+        </div>
+    </div>
+
+    <div class='dashboard bill-dashboard hidden-until-init animate__backInLeft'>
+        <div class="dashboard-section" id="grid-bill-statistics">
+            <h3>Bill statistcs</h3>
+
+            <div class="dashboard-stat-label">Average home bill</div>
+            <div class="dashboard-stat">
+                <div class="dashboard-stat-value">
+                    <span id='_bill_avg'>0</span>
+                </div>
+                <span>&nbsp;euros</span>
+            </div>
+
+            <div class="dashboard-stat-label">Variance</div>
+            <div class="dashboard-stat">
+                <div class="dashboard-stat-value" >
+                    <span id='_bill_var'>0</span>
+                </div>
+                <span>&nbsp;euros squared</span>
+
+            </div>
+
+            <div class="dashboard-stat-label">Highest bill</div>
+            <div class="dashboard-stat">
+                <div class="dashboard-stat-value" >
+                    <span id='_top_bill'>0</span>
+                </div>
+                <span>&nbsp;euros</span>
             </div>
 
         </div>

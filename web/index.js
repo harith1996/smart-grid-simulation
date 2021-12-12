@@ -16,7 +16,7 @@ var toolbarTime = document.getElementById("toolbar-time");
 const visOptions = {
 	nodes: {
 		shape: "dot",
-		size: 8,
+		size: 12,
 	},
 	edges: {
 		color: "#D3D3D3",
@@ -114,6 +114,8 @@ function updateDashboard(type, data) {
 socket.on("get-grid-info-res", updateDashboard.bind(this, "info"));
 
 socket.on("get-grid-status-res", updateDashboard.bind(this, "status"));
+
+socket.on("get-bill-statistics-res", updateDashboard.bind(this, "bill-statistics"));
 
 socket.on("update-res", function (data) {
 	preprocess(data);
