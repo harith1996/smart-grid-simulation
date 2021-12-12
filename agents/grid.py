@@ -166,8 +166,8 @@ class GridAgent:
         self._current_load -= power_limit
         return True
 
-    def to_string(self):
-        pass
+    def get_homes(self):
+        return self._homes
 
     def to_json(self):
         homes = list(map(lambda home: home.to_json(), self._homes))

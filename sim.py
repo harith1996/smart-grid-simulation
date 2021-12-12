@@ -8,6 +8,7 @@ from flask.helpers import send_file
 # Other Python stuff
 import json
 import numpy as np
+from luts import User
 from agents.grid import GridAgent
 from data import load_data_from_object, load_data_from_file
 
@@ -29,15 +30,23 @@ def index():
 def init_sim(info):
     userid = info.get('userid') 
     data = info.get('data')
+    ogoal = info.get('ogoal')
     
     # Does the user send custom data ?
     if data:
         grid, users = load_data_from_object(json.loads(data))
     else:
         grid, users = load_data_from_file("data.json")
-    
+
     for u in users:
         u.use_devices(0, 0.0)
+
+    # Does the user want to override the optimization goal ?
+    if ogoal:
+        goal = User.OGOAL[ogoal]
+        for h in grid.get_homes():
+            u = h.get_owner()
+            u.set_ogoal(goal)
 
     grid.power_homes(0, 0.0)
     current_price = grid.get_current_price(0, 0.0)

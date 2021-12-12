@@ -21,6 +21,7 @@ class Device(object):
 class User(object):
     
     LUT = []
+    OGOAL = ["default", "cost", "none"]
     
     @staticmethod
     def load_users(fname):

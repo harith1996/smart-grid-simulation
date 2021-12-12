@@ -43,6 +43,12 @@ class UserAgent:
     def get_devices(self):
         return self._devices
 
+    def get_ogoal(self):
+        return self._ogoal
+
+    def set_ogoal(self, ogoal):
+        self._ogoal = ogoal
+
     def get_preferences(self):
         return self._preferences
     

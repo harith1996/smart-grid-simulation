@@ -11,6 +11,7 @@ let updateInterval;
 
 let container = document.getElementById("vis");
 let fileInput = document.getElementById("file-input")
+let ogoalSelect = document.getElementById("ogoal-select")
 let fileSelected = document.querySelectorAll(".file-selected")
 var toolbarTime = document.getElementById("toolbar-time");
 const visOptions = {
@@ -76,8 +77,7 @@ function initSim() {
 		});
 	});
 	userid = uuidv4();
-	console.log(dataToSend)
-	socket.emit("init", { userid: userid, data: dataToSend });
+	socket.emit("init", { userid: userid, data: dataToSend, ogoal: parseInt(ogoalSelect.value) });
 }
 
 socket.on("init-res", function (data) {

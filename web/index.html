@@ -36,6 +36,13 @@
             <i class="fas fa-info-circle"></i>
             <span class="file-selected">Loaded with default dataset</span>
         </div>
+        <div style="margin-top: 1rem; font-size: small;">
+            <select id="ogoal-select" autocomplete="off">
+                <option value="0" selected>File's optimization</option>
+                <option value="1">Optimize for cost</option>
+                <option value="2">Don't optimize</option>
+            </select>
+        </div>
     </div>
     <div id="vis"></div>
     <div id="toolbar" class="hidden-until-init animate__backInRight">
@@ -92,8 +99,7 @@
             </div>
 
         </div>
-        <div class="dashboard-section-spacer"></div>
-        <div class="dashboard-section" id="grid-info">
+        <div  id="grid-info" class="dashboard-section">
             <h3>Grid Info</h3>
 
             <div class="dashboard-stat-label">Homes</div>
