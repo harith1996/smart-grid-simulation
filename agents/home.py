@@ -149,6 +149,6 @@ class HomeAgent:
                 '_entity_name': 'home',
                 '_owner': self._owner.to_json(),
                 '_price_limit': str(convert_price(price_limit)) + ' euro cents/kWh',
-                '_bill': str(round(self.get_current_bill() / 100), 2) + ' euros'
+                '_bill': str(round(self.get_current_bill() / 100, 2)) + ' euros'
             }
         return obj
