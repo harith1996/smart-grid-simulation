@@ -75,4 +75,4 @@ let users = [...Array(options.users).keys()].map((index) => {
 	};
 });
 
-fs.writeFileSync(options.file, JSON.stringify({devices: devices, users: users}, null, '\t'));
+fs.writeFileSync(options.file, JSON.stringify({seed: randInt(0, Number.MAX_SAFE_INTEGER), devices: devices, users: users}, null, '\t'));

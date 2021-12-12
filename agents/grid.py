@@ -26,18 +26,21 @@ class GridAgent:
     #Grid Capacity (kiloWatts)
     LOAD_LIMIT = 700
 
-    def __init__(self):
+    def __init__(self, seed):
         self._homes: List[HomeAgent] = []
         self._price_avg = GridAgent.POWER_PRICE_AVG
         self._price_var = GridAgent.POWER_PRICE_VAR
         self._current_load = 0
         self._peak_load = 0
         self._load_limit = GridAgent.LOAD_LIMIT * 1000
+        random.seed(seed)
+        self._rnd_state = random.getstate()
 
     def add_home(self, home):
         self._homes.append(home)
     
     def power_homes(self, d, t):
+        random.setstate(self._rnd_state)
         curr_price = self.get_current_price(d, t)
         for h in self._homes:
             # We bill at the beginning
@@ -47,6 +50,7 @@ class GridAgent:
                 print(f"[💰] Household owned by {owner.get_name()} received a bill of {h.get_power_draw(self) * curr_price}")
                 h.reset_power_draw()
             h.power(self, d , t)
+        self._rnd_state = random.getstate()
     
     def get_current_price(self, d, t):
         """Takes in day of week, and time of day to return current electricity price
@@ -58,6 +62,7 @@ class GridAgent:
         Returns:
             integer : Current price of electricity
         """
+        random.setstate(self._rnd_state)
         self._price_avg = GridAgent.POWER_PRICE_AVG
         # Weekend Adjustment
         if(d in [6, 7]):
@@ -71,6 +76,7 @@ class GridAgent:
         if(self._current_load > self._load_limit):
             self._price_avg += GridAgent.POWER_ADJ_LOAD_LIMIT
 
+        self._rnd_state = random.getstate()
         return self._price_avg + (random.random() - 0.5) * 2 * self._price_var
 
     def update_billing(self, curr_price: float):
@@ -100,7 +106,7 @@ class GridAgent:
         return out
 
     def increment_load(self, load):
-        self._current_load+=load
+        self._current_load += load
     
     def to_graph(self, contidx):
         nodes, links, unlinks = [], [], []

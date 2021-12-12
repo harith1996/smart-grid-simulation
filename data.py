@@ -21,7 +21,7 @@ def load_data_from_object(data):
     Device.LUT = data['devices']
     User.LUT = data['users']
 
-    grid = GridAgent()
+    grid = GridAgent(data['seed'])
     users = []
 
     symbols = "\|/-"
