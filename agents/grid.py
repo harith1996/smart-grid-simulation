@@ -37,7 +37,7 @@ class GridAgent:
         random.seed(seed)
         self._rnd_state = random.getstate()
         self._bill_avg = 0
-        self._bill_var = 0
+        self._bill_stdev = 0
         self._top_bill = 0
 
     def add_home(self, home):
@@ -95,7 +95,7 @@ class GridAgent:
     def compute_bill_statistics(self):
         bills = list(map(lambda home: home.get_current_bill(), self._homes))
         self._bill_avg = statistics.mean(bills)
-        self._bill_var = statistics.variance(bills)
+        self._bill_stdev = statistics.stdev(bills)
         self._top_bill = max(bills)
 
     def increment_bills(self, curr_price): 
@@ -190,6 +190,6 @@ class GridAgent:
     def get_bill_statistics_JSON(self):
         return {
             '_bill_avg': round(self._bill_avg/100 , 2),
-            '_bill_var': round(self._bill_var/100, 2),
+            '_bill_stdev': round(self._bill_stdev/100, 2),
             '_top_bill': round(self._top_bill/100, 2)
         }
