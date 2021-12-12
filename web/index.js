@@ -5,9 +5,13 @@ let nodes, edges;
 
 var socket = io();
 
+let dataToSend = undefined
+
 let updateInterval;
 
 let container = document.getElementById("vis");
+let fileInput = document.getElementById("file-input")
+let fileSelected = document.getElementById("file-selected")
 var toolbarTime = document.getElementById("toolbar-time");
 const visOptions = {
 	nodes: {
@@ -35,6 +39,17 @@ const visOptions = {
 	},
 };
 
+function changeDataToSend(e) {
+	var file = e.target.files[0];
+	if (!file) { return }
+	var reader = new FileReader();
+	reader.onload = function (e) {
+		fileSelected.innerText = `Loaded with "${file.name}"`
+		dataToSend = e.target.result
+	};
+	reader.readAsText(file);
+}
+
 function uuidv4() {
 	return ([1e7] + -1e3 + -4e3 + -8e3 + -1e11).replace(/[018]/g, (c) =>
 		(
@@ -59,7 +74,8 @@ function initSim() {
 		});
 	});
 	userid = uuidv4();
-	socket.emit("init", { userid: userid });
+	console.log(dataToSend)
+	socket.emit("init", { userid: userid, data: dataToSend });
 }
 
 socket.on("init-res", function (data) {
@@ -106,33 +122,33 @@ socket.on("update-res", function (data) {
 	edges.remove(data.unlinks);
 });
 
-function preprocess(data){
-    data.nodes.forEach(node => {
-        if(node.title)
-            node.title = formatTitle(node.title);
-    })
+function preprocess(data) {
+	data.nodes.forEach(node => {
+		if (node.title)
+			node.title = formatTitle(node.title);
+	})
 }
 
 
 function formatTitle(titleString) {
-    const tooltip = document.createElement('div');
-    tooltip.innerHTML = '';
-    tooltip.innerHTML = "<div class='node-tooltip'><table><tr><th>Property</th><th>Value</th></tr></table></div>";
-    const tooltipTable = tooltip.querySelector('table');
-    const titleData = JSON.parse(titleString);
-    Object.keys(titleData).forEach(property=>{
-        if(['string', 'number', 'boolean'].includes(typeof titleData[property])){
-            const tr = document.createElement('tr');
-            const propTd = document.createElement('td');
-            const valTd = document.createElement('td');
-            propTd.innerHTML = property;
-            valTd.innerHTML = titleData[property];
-            tr.appendChild(propTd);
-            tr.appendChild(valTd);
-            tooltipTable.appendChild(tr);
-        }
-    });
-    return tooltip;
+	const tooltip = document.createElement('div');
+	tooltip.innerHTML = '';
+	tooltip.innerHTML = "<div class='node-tooltip'><table><tr><th>Property</th><th>Value</th></tr></table></div>";
+	const tooltipTable = tooltip.querySelector('table');
+	const titleData = JSON.parse(titleString);
+	Object.keys(titleData).forEach(property => {
+		if (['string', 'number', 'boolean'].includes(typeof titleData[property])) {
+			const tr = document.createElement('tr');
+			const propTd = document.createElement('td');
+			const valTd = document.createElement('td');
+			propTd.innerHTML = property;
+			valTd.innerHTML = titleData[property];
+			tr.appendChild(propTd);
+			tr.appendChild(valTd);
+			tooltipTable.appendChild(tr);
+		}
+	});
+	return tooltip;
 }
 
 function skipSim() {
@@ -151,3 +167,5 @@ function pauseSim() {
 	clearInterval(updateInterval);
 	updateInterval = undefined;
 }
+
+fileInput.addEventListener('change', changeDataToSend, false);

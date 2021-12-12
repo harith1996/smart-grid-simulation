@@ -1,10 +1,13 @@
 #!/usr/bin/python3
 
+# Flask
 from flask import Flask, jsonify
 from flask_socketio import SocketIO, emit
 from flask.helpers import send_file
+
+# Other Python stuff
+import json
 import numpy as np
-import time
 from data import load_data_from_object, load_data_from_file
 
 STEP = 0.1
@@ -28,7 +31,7 @@ def init_sim(info):
     
     # Does the user send custom data ?
     if data:
-        grid, users = load_data_from_object(data)
+        grid, users = load_data_from_object(json.loads(data))
     else:
         grid, users = load_data_from_file("data.json")
     

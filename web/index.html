@@ -17,7 +17,7 @@
         <h4>Foxtrot</h4>
     </div>
     <div id="authors" class="animate__animated animate__fadeInRight">
-        <a href="mailto:sam.martin@post.au.dk">@ Harith Rathish</a>
+        <a href="mailto:harith.rathish@post.au.dk">@ Harith Rathish</a>
         <a href="mailto:sam.martin@post.au.dk">@ Sam Martin Vargas Giagnocavo</a>
     </div>
     <div id="options" class="animate__animated animate__fadeIn">
@@ -27,14 +27,14 @@
                 <span>Initalize</span>
             </div>
             <div style="width: 50px"></div>
-            <div style="cursor: pointer;">
+            <div style="cursor: pointer;" onclick="fileInput.click()">
                 <i class="fas fa-file-import"></i>
                 <span>Import</span>
             </div>
         </div>
         <div style="margin-top: 1rem; font-size: small;">
             <i class="fas fa-info-circle"></i>
-            <span>Loaded with default dataset</span>
+            <span id="file-selected">Loaded with default dataset</span>
         </div>
     </div>
     <div id="vis"></div>
@@ -123,6 +123,7 @@
     </div>
 </body>
 <footer>
+    <input id="file-input" type="file" accept=".json" style="display: block; visibility: hidden; height: 0px;">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.0/socket.io.js"></script>
     <script src="index.js"></script>
 </footer>
