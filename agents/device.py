@@ -76,7 +76,7 @@ class DeviceAgent:
             print(f"[⚡️] {self._owner.get_name()}'s {self.to_string()} is charging")
         else:
             self._curr_charge = 1.0
-            if(self.is_charging()):
+            if self.is_charging():
                 self.stop_charge()
             print(f"[🏁] {self._owner.get_name()}'s {self.to_string()} has been disconnected from home")
             # We close connection with the home manager
