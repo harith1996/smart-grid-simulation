@@ -28,12 +28,13 @@ def init_sim(info):
     
     # Does the user send custom data ?
     if data:
-        grid, users = load_data_from_object(data['users'], data['devices'])
+        grid, users = load_data_from_object(data)
     else:
-        grid, users = load_data_from_file("Users.json", "Devices.json")
+        grid, users = load_data_from_file("data.json")
     
     for u in users:
         u.use_devices(0, 0.0)
+
     grid.power_homes(0, 0.0)
     current_price = grid.get_current_price(0, 0.0)
     grid.update_billing(current_price)
@@ -97,18 +98,6 @@ def skip_sim(info):
     simuserdata.pop(userid)
     emit('skip-res', {'nodes': nodes, 'edges': edges, 'unlinks': unlinks})
 
-def grid_info(info):
-    userid = info.get('userid') 
-    grid = simuserdata[userid][0]
-    print(userid)
-    """Returns static info about the grid: Homes, Users, Devices, Grid Capacity, Prive average, Price Variance
-
-    Returns:
-        [type]: [description]
-    """
-    return grid.to_json()
-
-
 @socketio.on('get-grid-info')
 def get_grid_info(info):
     emit('get-grid-info-res', grid_info(info))
@@ -125,6 +114,17 @@ def grid_status(info, current_price):
     
     return grid.get_status(current_price)
 
+def grid_info(info):
+    userid = info.get('userid') 
+    grid = simuserdata[userid][0]
+    print(userid)
+    """Returns static info about the grid: Homes, Users, Devices, Grid Capacity, Prive average, Price Variance
+
+    Returns:
+        [type]: [description]
+    """
+    return grid.to_json()
+
 if __name__ == '__main__':
 
     """
@@ -133,21 +133,6 @@ if __name__ == '__main__':
     |   / |_| | .` |  \__ \| || |\/| |
     |_|_\\___/|_|\_|  |___/___|_|  |_|
 
-    """
-
-    """
-    for dw in range(0, 7):
-        print("- " * 30)
-        print(f"\n\033[4mDAY Nº{dw} STARTED!\033[0m")
-        for t in np.arange(0.0, 24.0, STEP):
-            t = round(t, 1)
-            print(f"\n🕐 \033[1mTIME ⇒ {t}\033[0m\n")
-            for u in users:
-                u.use_devices(dw, t)
-            grid.power_homes(dw, t)
-            grid.update_billing(grid.get_current_price(dw, t))
-            # time.sleep(0.2)
-    grid.show_bills()
     """
 
     socketio.run(app)
