@@ -69,14 +69,15 @@ class DeviceAgent:
         
         if new_charge < 1.0:
             self._curr_charge = round(new_charge, 4)
+            self._power_source = power_source
             if(not self.is_charging()):
-                self._power_source = power_source
                 self._power_source.connect_power(self.get_power_limit())
             self._is_charging = True
             print(f"[⚡️] {self._owner.get_name()}'s {self.to_string()} is charging")
         else:
             self._curr_charge = 1.0
-            self.stop_charge()
+            if(self.is_charging()):
+                self.stop_charge()
             print(f"[🏁] {self._owner.get_name()}'s {self.to_string()} has been disconnected from home")
             # We close connection with the home manager
             # if device is completely charged
@@ -156,7 +157,7 @@ class DeviceAgent:
             '_name': self.get_name(),
             '_curr_charge': str(round(self.get_charge() * 100, 2)) + '%',
             '_is_charging': self.is_charging(),
-            '_is_plugged': self.is_plugged(),
+            '_is_connected': self.is_connected(),
             '_did': self._did,
             '_owner': self._owner.get_name(),
             '_type': self.get_type()
