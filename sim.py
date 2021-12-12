@@ -84,12 +84,15 @@ def update_sim(info):
 
 @socketio.on('skip')
 def skip_sim(info):
+    
     userid = info.get('userid') 
-    grid = simuserdata[userid][0]
+    grid : GridAgent = simuserdata[userid][0]
     users = simuserdata[userid][1]
     ct = simuserdata[userid][2]
     cdw = simuserdata[userid][3]
     cdy = simuserdata[userid][4]
+    dw = cdw
+    t = ct
     for dw in range(cdw, 7):
         for t in np.arange(ct, 24.0, STEP):
             t = round(t, 1)
@@ -101,6 +104,8 @@ def skip_sim(info):
     nodes, edges, unlinks, _ = grid.to_graph(0)
 
     simuserdata.pop(userid)
+    emit('get-bill-statistics-res', grid.get_bill_statistics_JSON())
+    emit('get-grid-status-res', grid.get_status_JSON(grid.get_current_price(dw,t)))
     emit('skip-res', {'nodes': nodes, 'edges': edges, 'unlinks': unlinks})
 
 @socketio.on('get-grid-info')

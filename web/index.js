@@ -162,6 +162,7 @@ function skipSim() {
 }
 
 socket.on("skip-res", function (data) {
+	preprocess(data);
 	nodes.update(data.nodes);
 	edges.update(data.edges);
 	edges.remove(data.unlinks);

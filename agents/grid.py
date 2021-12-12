@@ -25,7 +25,7 @@ class GridAgent:
     POWER_ADJ_PEAK_HOURS = 2.2e-7
 
     #Grid Capacity (kiloWatts)
-    LOAD_LIMIT = 80
+    LOAD_LIMIT = 500
 
     def __init__(self, seed):
         self._homes: List[HomeAgent] = []
