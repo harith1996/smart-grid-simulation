@@ -74,6 +74,7 @@ function initSim() {
 	);
 	opts.addEventListener("animationend", () => {
 		var hiddenElements = document.querySelectorAll(".hidden-until-init");
+		opts.remove()
 		hiddenElements.forEach((e) => {
 			e.classList.remove("hidden-until-init");
 			e.classList.add("animate__animated");
