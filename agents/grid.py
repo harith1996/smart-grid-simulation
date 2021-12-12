@@ -1,4 +1,5 @@
 import random
+import statistics
 from typing import List
 
 from agents.home import HomeAgent
@@ -24,7 +25,7 @@ class GridAgent:
     POWER_ADJ_PEAK_HOURS = 2.2e-7
 
     #Grid Capacity (kiloWatts)
-    LOAD_LIMIT = 700
+    LOAD_LIMIT = 80
 
     def __init__(self, seed):
         self._homes: List[HomeAgent] = []
@@ -35,6 +36,9 @@ class GridAgent:
         self._load_limit = GridAgent.LOAD_LIMIT * 1000
         random.seed(seed)
         self._rnd_state = random.getstate()
+        self._bill_avg = 0
+        self._bill_var = 0
+        self._top_bill = 0
 
     def add_home(self, home):
         self._homes.append(home)
@@ -85,6 +89,16 @@ class GridAgent:
         Args:
             curr_price (float): current price of electricity
         """
+        self.increment_bills(curr_price)
+        self.compute_bill_statistics()
+
+    def compute_bill_statistics(self):
+        bills = list(map(lambda home: home.get_current_bill(), self._homes))
+        self._bill_avg = statistics.mean(bills)
+        self._bill_var = statistics.variance(bills)
+        self._top_bill = max(bills)
+
+    def increment_bills(self, curr_price): 
         for hm in self._homes:
             curr_pw = hm.get_power_draw(self)
             hm.increment_bill(curr_pw * curr_price)
@@ -166,9 +180,16 @@ class GridAgent:
             '_homes_connected': len(homes)
         }
 
-    def get_status(self, current_price):
+    def get_status_JSON(self, current_price):
         return {
             '_peak_load': self._peak_load / 1000,
             '_current_load': self._current_load / 1000,
             '_current_price': round(convert_price(current_price), 2)
+        }
+
+    def get_bill_statistics_JSON(self):
+        return {
+            '_bill_avg': round(self._bill_avg/100 , 2),
+            '_bill_var': round(self._bill_var/100, 2),
+            '_top_bill': round(self._top_bill/100, 2)
         }
