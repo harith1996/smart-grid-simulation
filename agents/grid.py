@@ -149,8 +149,8 @@ class GridAgent:
     def to_string(self):
         pass
 
-    def toJSON(self):
-        homes = list(map(lambda home: home.toJSON(), self._homes))
+    def to_json(self):
+        homes = list(map(lambda home: home.to_json(), self._homes))
         return {
             '_entity_name': 'grid',
             '_price_avg': convert_price(GridAgent.POWER_PRICE_AVG),

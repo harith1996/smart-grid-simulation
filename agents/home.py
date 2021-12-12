@@ -101,12 +101,12 @@ class HomeAgent:
         nodes, links, unlinks = [], [], []
         homeidx = contidx
         # Add home manager (and link it later in GridAgent)
-        nodes.append({'id': homeidx, 'label': self._owner.get_name(), 'title': f"{json.dumps(self.toJSON(), indent = 2)}", 'image': 'house-user-solid.png', 'shape': 'image'})
+        nodes.append({'id': homeidx, 'label': self._owner.get_name(), 'title': f"{json.dumps(self.to_json(), indent = 2)}", 'image': 'house-user-solid.png', 'shape': 'image'})
         contidx += 1
         # Add devices and link them to home manager
         for d in self._owner.get_devices():
             charge = d.get_charge()
-            nodes.append({'charge': charge, 'id': contidx, 'title': f" {json.dumps(d.toJSON(), indent = 2)}", 'color': color_mapper(charge)})
+            nodes.append({'charge': charge, 'id': contidx, 'title': f" {json.dumps(d.to_json(), indent = 2)}", 'color': color_mapper(charge)})
             # Change value to something meaningful
             if d.is_connected():
                 e = {'id': contidx, 'from': contidx, 'to': homeidx}
@@ -127,10 +127,10 @@ class HomeAgent:
         genstr = ','.join(map(str, self._generators.keys()))
         return f"devices: {{{devstr}}}; genstr: {{{genstr}}}"
     
-    def toJSON(self):
+    def to_json(self):
         return {
             '_entity_name': 'home',
-            '_owner': self._owner.toJSON(),
+            '_owner': self._owner.to_json(),
             '_price_limit': str(convert_price(self._price_limit)) + ' euro cents/kWh',
             '_bill': str(convert_price(self.get_current_bill()))
         }

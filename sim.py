@@ -106,7 +106,7 @@ def grid_info(info):
     Returns:
         [type]: [description]
     """
-    return grid.toJSON()
+    return grid.to_json()
 
 
 @socketio.on('get-grid-info')

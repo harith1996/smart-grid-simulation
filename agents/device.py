@@ -149,7 +149,7 @@ class DeviceAgent:
                 f"charge_prof: {self.get_charge_profile()} % per second; curr_charge: {self._curr_charge}; %" \
                 f"t2c: {self._t2c}}}"
 
-    def toJSON(self):
+    def to_json(self):
         return {
             '_entity_name': 'device',
             '_uid': self._uid,

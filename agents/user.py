@@ -48,10 +48,10 @@ class UserAgent:
             output += f"\t↣ {d.to_string()} active at {self._schedule[i]}\n"
         return output
     
-    def toJSON(self):
+    def to_json(self):
         return {
             '_name': self._name,
             '_ogoal': self._ogoal,
-            '_devices': list(map(lambda device: device.toJSON(), self._devices)),
+            '_devices': list(map(lambda device: device.to_json(), self._devices)),
             '_schedule': self._schedule
         }
