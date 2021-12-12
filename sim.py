@@ -55,8 +55,14 @@ def init_sim(info):
 
     # Grid, Users, Time of the day, Day of the Week, Day of the Year
     simuserdata[userid] = [grid, users, 0.1, 0, 0]
-    emit('init-res', {'nodes': nodes, 'edges': edges})
     emit('get-grid-status-res', grid_status(info, current_price))
+    emit('init-res', {
+        'nodes': nodes,
+        'edges': edges,
+        'ct': 0.1,
+        'cdw': 0,
+        'cdy': 0
+    })
 
 @socketio.on('update')
 def update_sim(info):
@@ -79,6 +85,10 @@ def update_sim(info):
         cdw += 1
         cdy += 1
     if cdw >= 7:
+        # In this case we stop the
+        # the simulation when we
+        # reach the end of the week.
+        nodes, edges = [], []
         cdw = 0
     if cdy >= 365:
         cdy = 0
@@ -89,7 +99,14 @@ def update_sim(info):
 
     emit('get-bill-statistics-res', get_bill_statistics(info))
     emit('get-grid-status-res', grid_status(info, current_price))
-    emit('update-res', {'nodes': nodes, 'edges': edges, 'unlinks': unlinks})
+    emit('update-res', {
+        'nodes': nodes,
+        'edges': edges,
+        'unlinks': unlinks,
+        'ct': round(ct,1),
+        'cdw': cdw,
+        'cdy': cdy
+    })
 
 @socketio.on('skip')
 def skip_sim(info):
@@ -129,7 +146,6 @@ def grid_status(info, current_price):
     """
     userid = info.get('userid') 
     grid : GridAgent = simuserdata[userid][0]
-    print(userid)
     
     return grid.get_status_JSON(current_price)
 

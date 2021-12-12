@@ -72,7 +72,6 @@ body {
     padding-right: 20px;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(7px);
-    flex-direction: row;
 }
 
 .dashboard div {
@@ -80,13 +79,17 @@ body {
 }
 
 .grid-dashboard{
-
+    flex-direction: row;
     bottom: 15px;
     left: 15px;
 }
 
-.bill-dashboard{
-
+#grid-bill-statistics {
+    display: flex;
+    flex-direction: column;
+    min-width: 140px;
+    top: 15px;
+    left: 15px
 }
 
 .dashboard-section-spacer {

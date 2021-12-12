@@ -22,8 +22,6 @@ class HomeAgent:
         gens = list(self._generators.values())
         for d in devs:
             if d.is_plugged() and not d.is_charged():
-            # It was like this before
-            # if d.is_plugged():
                 self.process_depending_on_goal(d, power_source, day, time)
     
     def process_depending_on_goal(self, dev, ps, d, t):
