@@ -2,11 +2,12 @@ class UserAgent:
 
     """Docstring for User. """
 
-    def __init__(self, name, home, ogoal, devices = None, schedule = None):
+    def __init__(self, name, home, ogoal, preferences, devices = None, schedule = None):
         # Initialize attributes
         self._name = name
         self._home = home
         self._ogoal = ogoal
+        self._preferences = preferences
         self._devices = devices or []
         self._schedule = schedule or []
     
@@ -41,6 +42,12 @@ class UserAgent:
     
     def get_devices(self):
         return self._devices
+
+    def get_preferences(self):
+        return self._preferences
+    
+    def set_preferences(self, prefs):
+        self._preferences = prefs
 
     def to_string(self):
         output = f"{self._name}/{self._ogoal}\n"

@@ -1,1208 +1,1418 @@
 {
-	"seed": 254573322665915,
+	"seed": 4698861775982873,
 	"devices": [
 		{
 			"id": 0,
-			"name": "EV (Public supercharger) 0",
-			"type": "EV (Public supercharger)",
-			"power_limit": 9020,
-			"charge_profile": 0.07633913159290438,
+			"name": "Laptop 0",
+			"type": "Laptop",
+			"power_limit": 101,
+			"charge_profile": 0.01220821286061673,
 			"generator": false,
-			"curr_charge": 0.7895883976105436
+			"curr_charge": 0.4990352388314634
 		},
 		{
 			"id": 1,
-			"name": "Electric Bus 1",
-			"type": "Electric Bus",
-			"power_limit": 9700,
-			"charge_profile": 0.09465097957301012,
-			"generator": true,
-			"curr_charge": 0.4302033331352202
+			"name": "Bluetooth Speaker 1",
+			"type": "Bluetooth Speaker",
+			"power_limit": 20,
+			"charge_profile": 0.05717889239579224,
+			"generator": false,
+			"curr_charge": 0.5924255145218811
 		},
 		{
 			"id": 2,
-			"name": "Bluetooth Speaker 2",
-			"type": "Bluetooth Speaker",
-			"power_limit": 20,
-			"charge_profile": 0.08438068976344536,
+			"name": "Laptop 2",
+			"type": "Laptop",
+			"power_limit": 100,
+			"charge_profile": 0.006021501050129996,
 			"generator": false,
-			"curr_charge": 0.6147414473960635
+			"curr_charge": 0.034198470036300055
 		},
 		{
 			"id": 3,
-			"name": "EV (Public supercharger) 3",
-			"type": "EV (Public supercharger)",
-			"power_limit": 8936,
-			"charge_profile": 0.06285171464306659,
+			"name": "Bluetooth Speaker 3",
+			"type": "Bluetooth Speaker",
+			"power_limit": 21,
+			"charge_profile": 0.023792674796592795,
 			"generator": false,
-			"curr_charge": 0.7416478919494984
+			"curr_charge": 0.2669108700584204
 		},
 		{
 			"id": 4,
-			"name": "Home inverter 4",
-			"type": "Home inverter",
-			"power_limit": 1586,
-			"charge_profile": 0.05634974314830879,
-			"generator": true,
-			"curr_charge": 0.36610855801325415
+			"name": "EV (Public supercharger) 4",
+			"type": "EV (Public supercharger)",
+			"power_limit": 8560,
+			"charge_profile": 0.08361667311714863,
+			"generator": false,
+			"curr_charge": 0.6780931323052894
 		},
 		{
 			"id": 5,
-			"name": "EV (Public supercharger) 5",
-			"type": "EV (Public supercharger)",
-			"power_limit": 8563,
-			"charge_profile": 0.03606912011348833,
+			"name": "EV (Home charger) 5",
+			"type": "EV (Home charger)",
+			"power_limit": 7129,
+			"charge_profile": 0.05389977691687711,
 			"generator": false,
-			"curr_charge": 0.9709288661758011
+			"curr_charge": 0.4018368270380326
 		},
 		{
 			"id": 6,
-			"name": "Laptop 6",
-			"type": "Laptop",
-			"power_limit": 102,
-			"charge_profile": 0.07002968418509799,
-			"generator": false,
-			"curr_charge": 0.02085889633746696
+			"name": "EV (Home charger) 6",
+			"type": "EV (Home charger)",
+			"power_limit": 6876,
+			"charge_profile": 0.08978371553072238,
+			"generator": true,
+			"curr_charge": 0.5024606873216333
 		},
 		{
 			"id": 7,
-			"name": "EV (Home charger) 7",
-			"type": "EV (Home charger)",
-			"power_limit": 6893,
-			"charge_profile": 0.03325990877215079,
-			"generator": true,
-			"curr_charge": 0.5733203041533121
+			"name": "EV (Public supercharger) 7",
+			"type": "EV (Public supercharger)",
+			"power_limit": 9177,
+			"charge_profile": 0.0063093963430734595,
+			"generator": false,
+			"curr_charge": 0.9388112213025617
 		},
 		{
 			"id": 8,
-			"name": "EV (Public supercharger) 8",
-			"type": "EV (Public supercharger)",
-			"power_limit": 8769,
-			"charge_profile": 0.03187082202138547,
-			"generator": false,
-			"curr_charge": 0.2963859012613599
+			"name": "Electric Bus 8",
+			"type": "Electric Bus",
+			"power_limit": 9578,
+			"charge_profile": 0.03587893284102963,
+			"generator": true,
+			"curr_charge": 0.2705409464425048
 		},
 		{
 			"id": 9,
-			"name": "Smartphone 9",
-			"type": "Smartphone",
-			"power_limit": 17,
-			"charge_profile": 0.05063982245301531,
+			"name": "EV (Public supercharger) 9",
+			"type": "EV (Public supercharger)",
+			"power_limit": 8642,
+			"charge_profile": 0.008659853338813762,
 			"generator": false,
-			"curr_charge": 0.12891859826877372
+			"curr_charge": 0.9242433163532515
 		},
 		{
 			"id": 10,
-			"name": "Bluetooth Speaker 10",
-			"type": "Bluetooth Speaker",
-			"power_limit": 20,
-			"charge_profile": 0.08043305011206923,
+			"name": "Smartphone 10",
+			"type": "Smartphone",
+			"power_limit": 17,
+			"charge_profile": 0.028959484597113307,
 			"generator": false,
-			"curr_charge": 0.36341282773995265
+			"curr_charge": 0.4519785257711919
 		},
 		{
 			"id": 11,
-			"name": "Laptop 11",
-			"type": "Laptop",
-			"power_limit": 103,
-			"charge_profile": 0.08673290817965273,
+			"name": "EV (Home charger) 11",
+			"type": "EV (Home charger)",
+			"power_limit": 7127,
+			"charge_profile": 0.03160019017126408,
 			"generator": false,
-			"curr_charge": 0.0046507182559096805
+			"curr_charge": 0.1925697844110179
 		},
 		{
 			"id": 12,
-			"name": "Smartphone 12",
-			"type": "Smartphone",
-			"power_limit": 17,
-			"charge_profile": 0.02731401210361282,
+			"name": "EV (Home charger) 12",
+			"type": "EV (Home charger)",
+			"power_limit": 7054,
+			"charge_profile": 0.08008660757186437,
 			"generator": false,
-			"curr_charge": 0.2767200867536126
+			"curr_charge": 0.9663950339215113
 		},
 		{
 			"id": 13,
-			"name": "EV (Public supercharger) 13",
-			"type": "EV (Public supercharger)",
-			"power_limit": 8745,
-			"charge_profile": 0.0596760025532199,
-			"generator": false,
-			"curr_charge": 0.7650715617735426
+			"name": "Home inverter 13",
+			"type": "Home inverter",
+			"power_limit": 1611,
+			"charge_profile": 0.030685069173203197,
+			"generator": true,
+			"curr_charge": 0.20866509230166685
 		},
 		{
 			"id": 14,
-			"name": "Laptop 14",
-			"type": "Laptop",
-			"power_limit": 99,
-			"charge_profile": 0.08469649662241355,
+			"name": "EV (Public supercharger) 14",
+			"type": "EV (Public supercharger)",
+			"power_limit": 8777,
+			"charge_profile": 0.02429875987792667,
 			"generator": false,
-			"curr_charge": 0.05644020298749375
+			"curr_charge": 0.26917988408556837
 		},
 		{
 			"id": 15,
-			"name": "Smartphone 15",
-			"type": "Smartphone",
-			"power_limit": 17,
-			"charge_profile": 0.07284804536313338,
-			"generator": false,
-			"curr_charge": 0.9401558058355988
+			"name": "EV (Home charger) 15",
+			"type": "EV (Home charger)",
+			"power_limit": 6931,
+			"charge_profile": 0.03382288712921351,
+			"generator": true,
+			"curr_charge": 0.5673425324682364
 		},
 		{
 			"id": 16,
-			"name": "Laptop 16",
-			"type": "Laptop",
-			"power_limit": 96,
-			"charge_profile": 0.06339182960618582,
+			"name": "EV (Home charger) 16",
+			"type": "EV (Home charger)",
+			"power_limit": 7295,
+			"charge_profile": 0.05246876704350556,
 			"generator": false,
-			"curr_charge": 0.056099265148429556
+			"curr_charge": 0.39567217310319047
 		},
 		{
 			"id": 17,
 			"name": "EV (Public supercharger) 17",
 			"type": "EV (Public supercharger)",
-			"power_limit": 9323,
-			"charge_profile": 0.07668788664770176,
+			"power_limit": 9383,
+			"charge_profile": 0.042537829487958145,
 			"generator": false,
-			"curr_charge": 0.48494868151077686
+			"curr_charge": 0.8926791421552085
 		},
 		{
 			"id": 18,
-			"name": "EV (Home charger) 18",
-			"type": "EV (Home charger)",
-			"power_limit": 7389,
-			"charge_profile": 0.0031537279201843795,
-			"generator": true,
-			"curr_charge": 0.575759770837337
+			"name": "Bluetooth Speaker 18",
+			"type": "Bluetooth Speaker",
+			"power_limit": 20,
+			"charge_profile": 0.04117247399243582,
+			"generator": false,
+			"curr_charge": 0.8252933167105683
 		},
 		{
 			"id": 19,
-			"name": "Electric Bus 19",
-			"type": "Electric Bus",
-			"power_limit": 10183,
-			"charge_profile": 0.07006862713371767,
-			"generator": true,
-			"curr_charge": 0.13648047023171483
+			"name": "Laptop 19",
+			"type": "Laptop",
+			"power_limit": 99,
+			"charge_profile": 0.05494385079338391,
+			"generator": false,
+			"curr_charge": 0.5352948162351829
 		},
 		{
 			"id": 20,
-			"name": "Bluetooth Speaker 20",
-			"type": "Bluetooth Speaker",
-			"power_limit": 20,
-			"charge_profile": 0.022540159265184403,
+			"name": "Electric Bus 20",
+			"type": "Electric Bus",
+			"power_limit": 10231,
+			"charge_profile": 0.00992361220348208,
 			"generator": false,
-			"curr_charge": 0.7599136236491557
+			"curr_charge": 0.6518984597214486
 		},
 		{
 			"id": 21,
 			"name": "Laptop 21",
 			"type": "Laptop",
-			"power_limit": 101,
-			"charge_profile": 0.07062589587349254,
+			"power_limit": 100,
+			"charge_profile": 0.09827844175483336,
 			"generator": false,
-			"curr_charge": 0.15573216814666568
+			"curr_charge": 0.7956145133842161
 		},
 		{
 			"id": 22,
-			"name": "Electric Bus 22",
-			"type": "Electric Bus",
-			"power_limit": 9940,
-			"charge_profile": 0.08754927882345193,
+			"name": "Laptop 22",
+			"type": "Laptop",
+			"power_limit": 102,
+			"charge_profile": 0.0350014727057212,
 			"generator": false,
-			"curr_charge": 0.1323693778472046
+			"curr_charge": 0.13231942277204234
 		},
 		{
 			"id": 23,
-			"name": "EV (Public supercharger) 23",
-			"type": "EV (Public supercharger)",
-			"power_limit": 8632,
-			"charge_profile": 0.0897663088971435,
-			"generator": false,
-			"curr_charge": 0.8847656325102573
+			"name": "EV (Home charger) 23",
+			"type": "EV (Home charger)",
+			"power_limit": 7140,
+			"charge_profile": 0.08395933732242161,
+			"generator": true,
+			"curr_charge": 0.8985526417621936
 		},
 		{
 			"id": 24,
-			"name": "EV (Home charger) 24",
-			"type": "EV (Home charger)",
-			"power_limit": 7174,
-			"charge_profile": 0.05083337970682869,
+			"name": "Bluetooth Speaker 24",
+			"type": "Bluetooth Speaker",
+			"power_limit": 20,
+			"charge_profile": 0.07256816125700083,
 			"generator": false,
-			"curr_charge": 0.5444600790625584
+			"curr_charge": 0.5581737321701177
 		},
 		{
 			"id": 25,
-			"name": "EV (Public supercharger) 25",
-			"type": "EV (Public supercharger)",
-			"power_limit": 8961,
-			"charge_profile": 0.0006100572622138811,
+			"name": "Home inverter 25",
+			"type": "Home inverter",
+			"power_limit": 1534,
+			"charge_profile": 0.021766648852932738,
 			"generator": false,
-			"curr_charge": 0.46852767587027433
+			"curr_charge": 0.8990884508512127
 		},
 		{
 			"id": 26,
-			"name": "EV (Home charger) 26",
-			"type": "EV (Home charger)",
-			"power_limit": 7125,
-			"charge_profile": 0.08239829151112073,
+			"name": "Smartphone 26",
+			"type": "Smartphone",
+			"power_limit": 17,
+			"charge_profile": 0.01945726856014618,
 			"generator": false,
-			"curr_charge": 0.9488114139992181
+			"curr_charge": 0.5571887626489385
 		},
 		{
 			"id": 27,
-			"name": "Laptop 27",
-			"type": "Laptop",
-			"power_limit": 99,
-			"charge_profile": 0.07307147300341577,
-			"generator": false,
-			"curr_charge": 0.4322368687950391
+			"name": "Home inverter 27",
+			"type": "Home inverter",
+			"power_limit": 1541,
+			"charge_profile": 0.0127927541629137,
+			"generator": true,
+			"curr_charge": 0.7322996162710991
 		},
 		{
 			"id": 28,
-			"name": "Home inverter 28",
-			"type": "Home inverter",
-			"power_limit": 1537,
-			"charge_profile": 0.06024884473057939,
-			"generator": true,
-			"curr_charge": 0.5568267782340832
+			"name": "EV (Home charger) 28",
+			"type": "EV (Home charger)",
+			"power_limit": 6961,
+			"charge_profile": 0.09169445966632339,
+			"generator": false,
+			"curr_charge": 0.6725855105664531
 		},
 		{
 			"id": 29,
-			"name": "Electric Bus 29",
-			"type": "Electric Bus",
-			"power_limit": 10394,
-			"charge_profile": 0.0002730549680867611,
-			"generator": false,
-			"curr_charge": 0.5701757129240035
+			"name": "Home inverter 29",
+			"type": "Home inverter",
+			"power_limit": 1536,
+			"charge_profile": 0.043441302803069175,
+			"generator": true,
+			"curr_charge": 0.508200699687912
 		},
 		{
 			"id": 30,
-			"name": "Bluetooth Speaker 30",
-			"type": "Bluetooth Speaker",
-			"power_limit": 20,
-			"charge_profile": 0.07189200000608383,
-			"generator": false,
-			"curr_charge": 0.17823719776862768
+			"name": "Electric Bus 30",
+			"type": "Electric Bus",
+			"power_limit": 9727,
+			"charge_profile": 0.01937452987580404,
+			"generator": true,
+			"curr_charge": 0.7744359041395092
 		},
 		{
 			"id": 31,
-			"name": "EV (Home charger) 31",
-			"type": "EV (Home charger)",
-			"power_limit": 7297,
-			"charge_profile": 0.03308704974622356,
-			"generator": false,
-			"curr_charge": 0.13799301473403758
+			"name": "Electric Bus 31",
+			"type": "Electric Bus",
+			"power_limit": 10119,
+			"charge_profile": 0.04304676759817392,
+			"generator": true,
+			"curr_charge": 0.7387856369857293
 		},
 		{
 			"id": 32,
 			"name": "Smartphone 32",
 			"type": "Smartphone",
 			"power_limit": 18,
-			"charge_profile": 0.04824310782001898,
+			"charge_profile": 0.034663882454182615,
 			"generator": false,
-			"curr_charge": 0.2421484721438194
+			"curr_charge": 0.38723299206873874
 		},
 		{
 			"id": 33,
-			"name": "Bluetooth Speaker 33",
-			"type": "Bluetooth Speaker",
-			"power_limit": 20,
-			"charge_profile": 0.007441073364444307,
+			"name": "EV (Home charger) 33",
+			"type": "EV (Home charger)",
+			"power_limit": 7219,
+			"charge_profile": 0.09334710188973677,
 			"generator": false,
-			"curr_charge": 0.7984284737382206
+			"curr_charge": 0.8379396655524116
 		},
 		{
 			"id": 34,
-			"name": "EV (Public supercharger) 34",
-			"type": "EV (Public supercharger)",
-			"power_limit": 9391,
-			"charge_profile": 0.0608471190088123,
+			"name": "Electric Bus 34",
+			"type": "Electric Bus",
+			"power_limit": 10340,
+			"charge_profile": 0.07328537765332062,
 			"generator": false,
-			"curr_charge": 0.5799749944866548
+			"curr_charge": 0.5795630638476856
 		},
 		{
 			"id": 35,
-			"name": "EV (Home charger) 35",
-			"type": "EV (Home charger)",
-			"power_limit": 7542,
-			"charge_profile": 0.08935680413845548,
+			"name": "Smartphone 35",
+			"type": "Smartphone",
+			"power_limit": 17,
+			"charge_profile": 0.006162282356368798,
 			"generator": false,
-			"curr_charge": 0.8725147341185102
+			"curr_charge": 0.3328615943941524
 		},
 		{
 			"id": 36,
-			"name": "Bluetooth Speaker 36",
-			"type": "Bluetooth Speaker",
-			"power_limit": 21,
-			"charge_profile": 0.07930268972676997,
+			"name": "Smartphone 36",
+			"type": "Smartphone",
+			"power_limit": 17,
+			"charge_profile": 0.061371329846659384,
 			"generator": false,
-			"curr_charge": 0.8557151362959947
+			"curr_charge": 0.7996490008767492
 		},
 		{
 			"id": 37,
-			"name": "Electric Bus 37",
-			"type": "Electric Bus",
-			"power_limit": 10202,
-			"charge_profile": 0.05153457503697334,
+			"name": "Home inverter 37",
+			"type": "Home inverter",
+			"power_limit": 1568,
+			"charge_profile": 0.0654115566306355,
 			"generator": false,
-			"curr_charge": 0.6325379768753348
+			"curr_charge": 0.4394267223076591
 		},
 		{
 			"id": 38,
 			"name": "EV (Home charger) 38",
 			"type": "EV (Home charger)",
-			"power_limit": 6861,
-			"charge_profile": 0.020073177723093673,
+			"power_limit": 7366,
+			"charge_profile": 0.09910604091901608,
 			"generator": true,
-			"curr_charge": 0.24842749213855608
+			"curr_charge": 0.0470972266571994
 		},
 		{
 			"id": 39,
 			"name": "EV (Public supercharger) 39",
 			"type": "EV (Public supercharger)",
-			"power_limit": 8796,
-			"charge_profile": 0.004015212005440283,
+			"power_limit": 8665,
+			"charge_profile": 0.006801587005706589,
 			"generator": false,
-			"curr_charge": 0.919473009586717
+			"curr_charge": 0.7092824598583136
 		},
 		{
 			"id": 40,
-			"name": "EV (Home charger) 40",
-			"type": "EV (Home charger)",
-			"power_limit": 6900,
-			"charge_profile": 0.01493622309228686,
+			"name": "Bluetooth Speaker 40",
+			"type": "Bluetooth Speaker",
+			"power_limit": 20,
+			"charge_profile": 0.0890765023288158,
 			"generator": false,
-			"curr_charge": 0.8331051940477174
+			"curr_charge": 0.8617925081868554
 		},
 		{
 			"id": 41,
-			"name": "Home inverter 41",
-			"type": "Home inverter",
-			"power_limit": 1644,
-			"charge_profile": 0.012660170969639607,
+			"name": "Laptop 41",
+			"type": "Laptop",
+			"power_limit": 103,
+			"charge_profile": 0.019911363886729053,
 			"generator": false,
-			"curr_charge": 0.12378597658064971
+			"curr_charge": 0.5201203152652001
 		},
 		{
 			"id": 42,
-			"name": "Smartphone 42",
-			"type": "Smartphone",
-			"power_limit": 18,
-			"charge_profile": 0.07034365896866102,
-			"generator": false,
-			"curr_charge": 0.18030529546651297
+			"name": "EV (Home charger) 42",
+			"type": "EV (Home charger)",
+			"power_limit": 7399,
+			"charge_profile": 0.04553675338025068,
+			"generator": true,
+			"curr_charge": 0.8798808348771392
 		},
 		{
 			"id": 43,
-			"name": "Laptop 43",
-			"type": "Laptop",
-			"power_limit": 103,
-			"charge_profile": 0.01740798328881197,
+			"name": "Bluetooth Speaker 43",
+			"type": "Bluetooth Speaker",
+			"power_limit": 21,
+			"charge_profile": 0.07742943640466693,
 			"generator": false,
-			"curr_charge": 0.5204339502481143
+			"curr_charge": 0.013401056586611393
 		},
 		{
 			"id": 44,
-			"name": "Bluetooth Speaker 44",
-			"type": "Bluetooth Speaker",
-			"power_limit": 20,
-			"charge_profile": 0.030840217398699823,
+			"name": "Smartphone 44",
+			"type": "Smartphone",
+			"power_limit": 17,
+			"charge_profile": 0.09256034161085672,
 			"generator": false,
-			"curr_charge": 0.9900517276859762
+			"curr_charge": 0.2566056141480768
 		},
 		{
 			"id": 45,
-			"name": "EV (Home charger) 45",
-			"type": "EV (Home charger)",
-			"power_limit": 7201,
-			"charge_profile": 0.08572471703613092,
+			"name": "Home inverter 45",
+			"type": "Home inverter",
+			"power_limit": 1575,
+			"charge_profile": 0.09610684274109989,
 			"generator": false,
-			"curr_charge": 0.5241869998504334
+			"curr_charge": 0.6157429554153839
 		},
 		{
 			"id": 46,
 			"name": "Home inverter 46",
 			"type": "Home inverter",
-			"power_limit": 1670,
-			"charge_profile": 0.09392686914731341,
-			"generator": false,
-			"curr_charge": 0.6543240689589249
+			"power_limit": 1646,
+			"charge_profile": 0.010249760621501115,
+			"generator": true,
+			"curr_charge": 0.7065104535699749
 		},
 		{
 			"id": 47,
-			"name": "Home inverter 47",
-			"type": "Home inverter",
-			"power_limit": 1532,
-			"charge_profile": 0.03371852160538698,
-			"generator": true,
-			"curr_charge": 0.6960628137668583
+			"name": "Laptop 47",
+			"type": "Laptop",
+			"power_limit": 105,
+			"charge_profile": 0.023304264323561454,
+			"generator": false,
+			"curr_charge": 0.4051582387417181
 		},
 		{
 			"id": 48,
-			"name": "Electric Bus 48",
-			"type": "Electric Bus",
-			"power_limit": 10207,
-			"charge_profile": 0.006897101197932765,
-			"generator": true,
-			"curr_charge": 0.17039878703946787
+			"name": "Laptop 48",
+			"type": "Laptop",
+			"power_limit": 97,
+			"charge_profile": 0.06978689665980085,
+			"generator": false,
+			"curr_charge": 0.9843421429626511
 		},
 		{
 			"id": 49,
-			"name": "Home inverter 49",
-			"type": "Home inverter",
-			"power_limit": 1629,
-			"charge_profile": 0.07832493458469557,
-			"generator": true,
-			"curr_charge": 0.9930492078341142
+			"name": "Smartphone 49",
+			"type": "Smartphone",
+			"power_limit": 18,
+			"charge_profile": 0.012362465085264973,
+			"generator": false,
+			"curr_charge": 0.10425982658781696
 		}
 	],
 	"users": [
 		{
-			"name": "Dot Ciel",
+			"name": "Issi Shantee",
 			"ogoal": "cost",
 			"devices": [
-				25,
-				32
+				47,
+				40
 			],
 			"schedules": [
-				"0-3/11.0-13.0",
-				"5-6/15.0-19.0"
+				"1-5/19.0-22.0",
+				"0-3/0.0-7.0"
+			],
+			"preferences": [
+				0.000017
 			]
 		},
 		{
-			"name": "Claudine Pippa",
+			"name": "Arluene Cher",
 			"ogoal": "cost",
 			"devices": [
-				38,
-				29
+				23
 			],
 			"schedules": [
-				"2-5/9.0-22.0",
-				"3-5/0.0-11.0"
+				"1-6/9.0-16.0"
+			],
+			"preferences": [
+				0.000015
 			]
 		},
 		{
-			"name": "Laurena Daisey",
+			"name": "Lottie Michaela",
+			"ogoal": "cost",
+			"devices": [
+				10,
+				0,
+				4,
+				46,
+				37
+			],
+			"schedules": [
+				"2-6/1.0-4.0",
+				"1-4/0.0-21.0",
+				"0-4/22.0-23.0",
+				"2-3/8.0-20.0",
+				"2-3/16.0-21.0"
+			],
+			"preferences": [
+				0.000017
+			]
+		},
+		{
+			"name": "Nessie Mair",
 			"ogoal": "cost",
 			"devices": [
 				42,
-				49,
-				35
-			],
-			"schedules": [
-				"2-4/4.0-12.0",
-				"2-3/21.0-22.0",
-				"3-6/22.0-23.0"
-			]
-		},
-		{
-			"name": "Catherina Monika",
-			"ogoal": "cost",
-			"devices": [
-				6,
-				40,
-				15,
-				2,
-				36,
-				48,
+				7,
+				21,
+				17,
+				4,
 				28
 			],
 			"schedules": [
-				"3-5/1.0-5.0",
-				"3-6/3.0-7.0",
-				"2-4/4.0-6.0",
-				"2-5/2.0-23.0",
-				"0-1/4.0-8.0",
-				"0-5/13.0-22.0",
-				"1-2/3.0-18.0"
+				"4-5/8.0-22.0",
+				"1-3/17.0-23.0",
+				"4-5/21.0-23.0",
+				"1-3/1.0-21.0",
+				"0-2/9.0-21.0",
+				"4-5/12.0-23.0"
+			],
+			"preferences": [
+				0.000018
 			]
 		},
 		{
-			"name": "Flory Audrie",
+			"name": "Korie Sallyann",
 			"ogoal": "cost",
 			"devices": [
-				13
+				5,
+				15,
+				35
 			],
 			"schedules": [
-				"4-5/12.0-22.0"
-			]
-		},
-		{
-			"name": "Twila Tressa",
-			"ogoal": "cost",
-			"devices": [
-				25,
-				40,
-				27,
-				16,
-				28,
-				20
+				"2-6/7.0-19.0",
+				"1-4/11.0-20.0",
+				"0-6/15.0-23.0"
 			],
-			"schedules": [
-				"5-6/15.0-22.0",
-				"3-4/0.0-20.0",
-				"2-5/20.0-22.0",
-				"4-5/20.0-21.0",
-				"2-5/20.0-23.0",
-				"0-1/4.0-16.0"
+			"preferences": [
+				0.000019
 			]
 		},
 		{
-			"name": "Hilde Lurleen",
+			"name": "Mandy Aurel",
 			"ogoal": "cost",
 			"devices": [
-				42,
-				4
-			],
-			"schedules": [
-				"2-4/1.0-22.0",
-				"3-6/5.0-23.0"
-			]
-		},
-		{
-			"name": "Nita Giovanna",
-			"ogoal": "cost",
-			"devices": [
-				8
-			],
-			"schedules": [
-				"1-6/6.0-17.0"
-			]
-		},
-		{
-			"name": "Allene Thomasin",
-			"ogoal": "cost",
-			"devices": [
-				12,
-				13,
-				4
-			],
-			"schedules": [
-				"5-6/4.0-8.0",
-				"2-6/11.0-22.0",
-				"1-4/5.0-9.0"
-			]
-		},
-		{
-			"name": "Robinet Lynette",
-			"ogoal": "cost",
-			"devices": [
-				42,
-				20,
-				49,
-				1,
-				4
-			],
-			"schedules": [
-				"1-6/15.0-20.0",
-				"5-6/0.0-15.0",
-				"3-6/13.0-17.0",
-				"5-6/3.0-7.0",
-				"2-3/1.0-11.0"
-			]
-		},
-		{
-			"name": "Karly Lisa",
-			"ogoal": "cost",
-			"devices": [
-				2,
-				20,
+				29,
+				38,
+				23,
+				8,
+				5,
 				11,
-				27,
+				24
+			],
+			"schedules": [
+				"4-5/8.0-9.0",
+				"3-4/5.0-22.0",
+				"2-4/13.0-22.0",
+				"4-5/17.0-21.0",
+				"4-5/17.0-18.0",
+				"2-6/10.0-16.0",
+				"5-6/19.0-20.0"
+			],
+			"preferences": [
+				0.000016
+			]
+		},
+		{
+			"name": "Leanor Ashlan",
+			"ogoal": "cost",
+			"devices": [
+				42
+			],
+			"schedules": [
+				"5-6/16.0-23.0"
+			],
+			"preferences": [
+				0.000017
+			]
+		},
+		{
+			"name": "Faythe Anna",
+			"ogoal": "cost",
+			"devices": [
+				15,
 				48,
-				19,
+				38,
+				36,
+				4,
+				1,
 				46
 			],
 			"schedules": [
-				"0-3/9.0-15.0",
-				"3-5/17.0-19.0",
-				"5-6/3.0-14.0",
-				"4-5/1.0-17.0",
-				"1-5/21.0-22.0",
-				"4-5/17.0-21.0",
-				"2-5/19.0-20.0"
-			]
-		},
-		{
-			"name": "Philly Kania",
-			"ogoal": "cost",
-			"devices": [
-				2,
-				46,
-				16
+				"5-6/13.0-19.0",
+				"5-6/17.0-20.0",
+				"5-6/9.0-22.0",
+				"5-6/21.0-23.0",
+				"1-6/9.0-22.0",
+				"5-6/8.0-21.0",
+				"4-5/21.0-22.0"
 			],
-			"schedules": [
-				"5-6/20.0-23.0",
-				"2-6/10.0-21.0",
-				"1-3/14.0-17.0"
+			"preferences": [
+				0.000019
 			]
 		},
 		{
-			"name": "Paola Dianemarie",
+			"name": "Kristi Jackie",
 			"ogoal": "cost",
 			"devices": [
-				23,
-				37,
-				10,
-				8
-			],
-			"schedules": [
-				"0-1/3.0-13.0",
-				"3-4/4.0-16.0",
-				"5-6/20.0-21.0",
-				"2-6/12.0-15.0"
-			]
-		},
-		{
-			"name": "Odetta Caren",
-			"ogoal": "cost",
-			"devices": [
-				21
-			],
-			"schedules": [
-				"0-6/0.0-9.0"
-			]
-		},
-		{
-			"name": "Liesa Vally",
-			"ogoal": "cost",
-			"devices": [
-				3,
-				8,
+				48,
 				5,
-				28,
-				0,
-				7,
-				17
+				33,
+				45
 			],
 			"schedules": [
-				"1-3/0.0-21.0",
-				"1-2/17.0-20.0",
-				"0-6/22.0-23.0",
-				"2-6/12.0-16.0",
-				"2-5/5.0-16.0",
-				"2-4/20.0-21.0",
-				"5-6/3.0-16.0"
+				"1-4/21.0-23.0",
+				"3-5/8.0-10.0",
+				"1-2/12.0-15.0",
+				"1-4/21.0-22.0"
+			],
+			"preferences": [
+				0.000016
 			]
 		},
 		{
-			"name": "Shari Andria",
+			"name": "Leland Rochelle",
 			"ogoal": "cost",
 			"devices": [
+				13,
+				5
+			],
+			"schedules": [
+				"2-5/20.0-22.0",
+				"2-4/13.0-19.0"
+			],
+			"preferences": [
+				0.000016
+			]
+		},
+		{
+			"name": "Karine Miran",
+			"ogoal": "cost",
+			"devices": [
+				0,
+				4,
+				10,
+				13,
+				49
+			],
+			"schedules": [
+				"1-3/20.0-23.0",
+				"3-6/14.0-18.0",
+				"1-6/10.0-12.0",
+				"5-6/10.0-19.0",
+				"3-6/12.0-23.0"
+			],
+			"preferences": [
+				0.000017
+			]
+		},
+		{
+			"name": "Lyda Fionna",
+			"ogoal": "cost",
+			"devices": [
+				22,
 				7,
-				26,
-				14,
 				31
 			],
 			"schedules": [
-				"0-4/12.0-19.0",
-				"4-5/9.0-10.0",
-				"5-6/13.0-18.0",
-				"4-6/17.0-23.0"
+				"0-6/3.0-11.0",
+				"3-5/17.0-21.0",
+				"4-5/4.0-17.0"
+			],
+			"preferences": [
+				0.000018
 			]
 		},
 		{
-			"name": "Tate Rosene",
+			"name": "Sandie Karmen",
+			"ogoal": "cost",
+			"devices": [
+				3,
+				12,
+				37
+			],
+			"schedules": [
+				"3-6/9.0-21.0",
+				"0-2/19.0-20.0",
+				"5-6/4.0-19.0"
+			],
+			"preferences": [
+				0.000018
+			]
+		},
+		{
+			"name": "Eba Zitella",
 			"ogoal": "cost",
 			"devices": [
 				11,
-				30,
-				21
+				20
 			],
 			"schedules": [
-				"4-6/21.0-23.0",
-				"2-6/8.0-15.0",
-				"2-4/20.0-23.0"
+				"3-6/10.0-12.0",
+				"3-5/22.0-23.0"
+			],
+			"preferences": [
+				0.000019
 			]
 		},
 		{
-			"name": "Keely Eveleen",
+			"name": "Lorita Melisandra",
 			"ogoal": "cost",
 			"devices": [
-				28,
-				25,
-				46
+				45,
+				26,
+				22,
+				14,
+				21,
+				33,
+				20
 			],
 			"schedules": [
-				"4-6/10.0-12.0",
-				"2-4/3.0-9.0",
-				"4-6/4.0-19.0"
+				"0-4/14.0-23.0",
+				"2-3/18.0-19.0",
+				"1-3/15.0-21.0",
+				"2-3/11.0-16.0",
+				"5-6/18.0-23.0",
+				"3-4/11.0-16.0",
+				"1-5/19.0-23.0"
+			],
+			"preferences": [
+				0.000018
 			]
 		},
 		{
-			"name": "Joan Meagan",
+			"name": "Con Edy",
 			"ogoal": "cost",
 			"devices": [
-				12,
-				46,
-				30,
-				0
-			],
-			"schedules": [
-				"0-2/15.0-18.0",
-				"3-5/0.0-8.0",
-				"3-4/22.0-23.0",
-				"0-1/11.0-18.0"
-			]
-		},
-		{
-			"name": "Sandra Ranna",
-			"ogoal": "cost",
-			"devices": [
+				36,
+				31,
+				7,
+				4,
+				42,
 				10
 			],
 			"schedules": [
-				"1-4/13.0-14.0"
-			]
-		},
-		{
-			"name": "Philly Alexina",
-			"ogoal": "cost",
-			"devices": [
-				48,
-				35,
-				17
+				"4-5/2.0-10.0",
+				"4-6/20.0-22.0",
+				"5-6/10.0-19.0",
+				"5-6/7.0-13.0",
+				"1-4/20.0-23.0",
+				"1-4/9.0-18.0"
 			],
-			"schedules": [
-				"0-3/12.0-19.0",
-				"5-6/12.0-15.0",
-				"2-3/14.0-15.0"
+			"preferences": [
+				0.000019
 			]
 		},
 		{
-			"name": "Kissie Bianca",
+			"name": "Katina Con",
 			"ogoal": "cost",
 			"devices": [
-				28,
-				27,
-				26
-			],
-			"schedules": [
-				"0-6/12.0-22.0",
-				"4-6/5.0-12.0",
-				"2-4/18.0-22.0"
-			]
-		},
-		{
-			"name": "Bertie Dominga",
-			"ogoal": "cost",
-			"devices": [
-				21,
-				29,
-				11,
-				45
-			],
-			"schedules": [
-				"2-3/22.0-23.0",
-				"2-3/1.0-20.0",
-				"1-2/19.0-23.0",
-				"2-5/17.0-20.0"
-			]
-		},
-		{
-			"name": "Elke Blaire",
-			"ogoal": "cost",
-			"devices": [
-				28,
-				48,
-				33,
-				1
-			],
-			"schedules": [
-				"3-4/19.0-21.0",
-				"2-6/6.0-9.0",
-				"1-3/9.0-10.0",
-				"1-6/1.0-15.0"
-			]
-		},
-		{
-			"name": "Lura Cristionna",
-			"ogoal": "cost",
-			"devices": [
-				32,
-				5
-			],
-			"schedules": [
-				"0-6/17.0-22.0",
-				"3-4/5.0-19.0"
-			]
-		},
-		{
-			"name": "Lonni Lena",
-			"ogoal": "cost",
-			"devices": [
-				30,
-				35,
-				43,
-				12,
-				33,
-				28
-			],
-			"schedules": [
-				"3-4/1.0-7.0",
-				"5-6/20.0-21.0",
-				"0-3/20.0-22.0",
-				"0-2/6.0-8.0",
-				"3-5/19.0-20.0",
-				"0-2/1.0-21.0"
-			]
-		},
-		{
-			"name": "Kerrill Meggi",
-			"ogoal": "cost",
-			"devices": [
-				45,
-				11
-			],
-			"schedules": [
-				"3-4/1.0-15.0",
-				"5-6/14.0-18.0"
-			]
-		},
-		{
-			"name": "Nicholle Eddie",
-			"ogoal": "cost",
-			"devices": [
-				43,
-				35
-			],
-			"schedules": [
-				"3-5/3.0-18.0",
-				"1-4/4.0-21.0"
-			]
-		},
-		{
-			"name": "Kissee Margret",
-			"ogoal": "cost",
-			"devices": [
-				33,
-				30,
-				45
-			],
-			"schedules": [
-				"2-5/15.0-18.0",
-				"3-5/5.0-18.0",
-				"3-5/10.0-19.0"
-			]
-		},
-		{
-			"name": "Marjorie Veda",
-			"ogoal": "cost",
-			"devices": [
-				35,
-				3,
-				16,
-				13
-			],
-			"schedules": [
-				"4-5/22.0-23.0",
-				"2-5/11.0-19.0",
-				"4-6/4.0-21.0",
-				"2-6/21.0-22.0"
-			]
-		},
-		{
-			"name": "Leyla Freda",
-			"ogoal": "cost",
-			"devices": [
-				29,
-				31,
-				36,
-				44
-			],
-			"schedules": [
-				"1-3/1.0-16.0",
-				"1-6/20.0-21.0",
-				"1-3/5.0-16.0",
-				"0-6/22.0-23.0"
-			]
-		},
-		{
-			"name": "Sharleen Agnesse",
-			"ogoal": "cost",
-			"devices": [
-				43,
-				44,
-				45
-			],
-			"schedules": [
-				"5-6/9.0-15.0",
-				"5-6/15.0-21.0",
-				"0-5/5.0-11.0"
-			]
-		},
-		{
-			"name": "Silvie Amandy",
-			"ogoal": "cost",
-			"devices": [
-				4,
-				45,
-				43,
 				25,
-				17
-			],
-			"schedules": [
-				"4-5/21.0-22.0",
-				"4-6/14.0-15.0",
-				"0-4/7.0-16.0",
-				"1-3/16.0-20.0",
-				"1-2/9.0-19.0"
-			]
-		},
-		{
-			"name": "Olivia Devan",
-			"ogoal": "cost",
-			"devices": [
-				30,
-				28,
-				23,
-				21
-			],
-			"schedules": [
-				"0-5/20.0-23.0",
-				"5-6/19.0-20.0",
-				"2-3/13.0-23.0",
-				"0-5/5.0-7.0"
-			]
-		},
-		{
-			"name": "Lauren Claudie",
-			"ogoal": "cost",
-			"devices": [
-				4,
-				13
-			],
-			"schedules": [
-				"2-3/5.0-15.0",
-				"2-6/6.0-11.0"
-			]
-		},
-		{
-			"name": "Dawn Hettie",
-			"ogoal": "cost",
-			"devices": [
-				31,
-				29,
-				7,
-				8,
-				40,
-				12
-			],
-			"schedules": [
-				"1-5/22.0-23.0",
-				"5-6/16.0-19.0",
-				"2-6/13.0-19.0",
-				"4-5/6.0-18.0",
-				"3-6/19.0-20.0",
-				"2-5/4.0-17.0"
-			]
-		},
-		{
-			"name": "Elsinore Verla",
-			"ogoal": "cost",
-			"devices": [
-				4,
-				38
-			],
-			"schedules": [
-				"0-3/10.0-23.0",
-				"2-5/9.0-10.0"
-			]
-		},
-		{
-			"name": "Rebe Brenda",
-			"ogoal": "cost",
-			"devices": [
-				42,
-				41,
-				38
-			],
-			"schedules": [
-				"2-6/15.0-22.0",
-				"0-6/21.0-23.0",
-				"0-5/16.0-21.0"
-			]
-		},
-		{
-			"name": "Ortensia Juana",
-			"ogoal": "cost",
-			"devices": [
-				9,
-				44,
-				45,
+				43,
+				22,
+				3,
+				49,
 				33
 			],
 			"schedules": [
-				"5-6/14.0-16.0",
-				"0-3/18.0-23.0",
-				"1-2/12.0-19.0",
-				"3-4/10.0-11.0"
+				"0-2/7.0-15.0",
+				"4-6/20.0-22.0",
+				"0-5/14.0-18.0",
+				"5-6/3.0-7.0",
+				"5-6/18.0-22.0",
+				"5-6/6.0-10.0"
+			],
+			"preferences": [
+				0.000016
 			]
 		},
 		{
-			"name": "Meggi Adiana",
+			"name": "Sue Glad",
 			"ogoal": "cost",
 			"devices": [
-				49,
-				41,
-				10,
-				29,
-				5
+				15,
+				17,
+				37,
+				20,
+				43
 			],
 			"schedules": [
-				"4-6/1.0-8.0",
-				"1-6/18.0-23.0",
-				"0-6/3.0-22.0",
-				"2-4/13.0-22.0",
-				"5-6/14.0-19.0"
+				"0-4/9.0-11.0",
+				"0-5/20.0-21.0",
+				"4-6/9.0-18.0",
+				"5-6/11.0-18.0",
+				"5-6/22.0-23.0"
+			],
+			"preferences": [
+				0.000016
 			]
 		},
 		{
-			"name": "Belle Virgina",
+			"name": "Fawnia Katine",
 			"ogoal": "cost",
 			"devices": [
-				35,
+				7,
+				1,
+				25,
 				3
 			],
 			"schedules": [
-				"3-5/14.0-16.0",
-				"4-5/7.0-15.0"
+				"2-6/20.0-23.0",
+				"0-2/3.0-17.0",
+				"4-6/2.0-15.0",
+				"4-5/7.0-23.0"
+			],
+			"preferences": [
+				0.000016
 			]
 		},
 		{
-			"name": "Brittney Brett",
+			"name": "Brooke Janelle",
+			"ogoal": "cost",
+			"devices": [
+				24,
+				19
+			],
+			"schedules": [
+				"4-6/16.0-19.0",
+				"0-6/3.0-11.0"
+			],
+			"preferences": [
+				0.000019
+			]
+		},
+		{
+			"name": "Min Ginni",
+			"ogoal": "cost",
+			"devices": [
+				40,
+				17,
+				2,
+				12
+			],
+			"schedules": [
+				"2-6/17.0-19.0",
+				"2-5/6.0-17.0",
+				"1-2/16.0-17.0",
+				"4-6/21.0-23.0"
+			],
+			"preferences": [
+				0.000019
+			]
+		},
+		{
+			"name": "Liz Crissie",
+			"ogoal": "cost",
+			"devices": [
+				12,
+				14,
+				21,
+				41,
+				43,
+				8
+			],
+			"schedules": [
+				"4-5/18.0-19.0",
+				"1-6/2.0-15.0",
+				"1-6/16.0-18.0",
+				"0-2/8.0-15.0",
+				"0-2/3.0-13.0",
+				"3-4/22.0-23.0"
+			],
+			"preferences": [
+				0.000017
+			]
+		},
+		{
+			"name": "Sela Annabal",
+			"ogoal": "cost",
+			"devices": [
+				7,
+				37,
+				33,
+				28,
+				49,
+				31,
+				30
+			],
+			"schedules": [
+				"0-3/20.0-22.0",
+				"5-6/8.0-19.0",
+				"3-5/9.0-23.0",
+				"2-4/21.0-23.0",
+				"1-3/1.0-6.0",
+				"3-4/10.0-20.0",
+				"2-4/14.0-19.0"
+			],
+			"preferences": [
+				0.000019
+			]
+		},
+		{
+			"name": "Agna Gerianna",
+			"ogoal": "cost",
+			"devices": [
+				25,
+				5,
+				8,
+				19,
+				48,
+				24
+			],
+			"schedules": [
+				"4-6/8.0-20.0",
+				"0-6/19.0-21.0",
+				"5-6/15.0-22.0",
+				"4-5/19.0-21.0",
+				"5-6/3.0-20.0",
+				"0-3/5.0-8.0"
+			],
+			"preferences": [
+				0.000016
+			]
+		},
+		{
+			"name": "Bonnee Trisha",
+			"ogoal": "cost",
+			"devices": [
+				44,
+				41,
+				0,
+				15,
+				37,
+				5
+			],
+			"schedules": [
+				"2-4/8.0-12.0",
+				"2-6/17.0-20.0",
+				"4-5/10.0-20.0",
+				"1-4/17.0-18.0",
+				"1-4/15.0-20.0",
+				"0-1/14.0-21.0"
+			],
+			"preferences": [
+				0.000017
+			]
+		},
+		{
+			"name": "Roseanne Brianna",
+			"ogoal": "cost",
+			"devices": [
+				29,
+				38,
+				28,
+				43,
+				20,
+				48
+			],
+			"schedules": [
+				"1-4/11.0-13.0",
+				"4-5/8.0-22.0",
+				"5-6/1.0-12.0",
+				"5-6/14.0-15.0",
+				"2-4/9.0-20.0",
+				"1-3/14.0-18.0"
+			],
+			"preferences": [
+				0.000018
+			]
+		},
+		{
+			"name": "Sybilla Bella",
+			"ogoal": "cost",
+			"devices": [
+				42,
+				17,
+				45,
+				10,
+				11
+			],
+			"schedules": [
+				"4-5/7.0-18.0",
+				"5-6/0.0-21.0",
+				"0-5/8.0-17.0",
+				"2-3/12.0-21.0",
+				"3-4/12.0-21.0"
+			],
+			"preferences": [
+				0.000017
+			]
+		},
+		{
+			"name": "Verina Tandy",
+			"ogoal": "cost",
+			"devices": [
+				22,
+				39,
+				37,
+				46
+			],
+			"schedules": [
+				"1-4/7.0-13.0",
+				"5-6/22.0-23.0",
+				"4-6/12.0-22.0",
+				"0-5/10.0-19.0"
+			],
+			"preferences": [
+				0.000018
+			]
+		},
+		{
+			"name": "Lauryn Kaylyn",
+			"ogoal": "cost",
+			"devices": [
+				17,
+				8,
+				46
+			],
+			"schedules": [
+				"4-5/20.0-22.0",
+				"3-4/17.0-20.0",
+				"5-6/16.0-21.0"
+			],
+			"preferences": [
+				0.000017
+			]
+		},
+		{
+			"name": "Norean Ted",
+			"ogoal": "cost",
+			"devices": [
+				6,
+				29,
+				4,
+				5,
+				39,
+				26
+			],
+			"schedules": [
+				"1-3/11.0-21.0",
+				"0-5/9.0-21.0",
+				"5-6/18.0-20.0",
+				"4-5/22.0-23.0",
+				"5-6/21.0-23.0",
+				"4-5/1.0-23.0"
+			],
+			"preferences": [
+				0.000018
+			]
+		},
+		{
+			"name": "Eran Damara",
+			"ogoal": "cost",
+			"devices": [
+				46,
+				22
+			],
+			"schedules": [
+				"1-6/2.0-8.0",
+				"5-6/3.0-9.0"
+			],
+			"preferences": [
+				0.000017
+			]
+		},
+		{
+			"name": "Merrily Maurita",
 			"ogoal": "cost",
 			"devices": [
 				41,
-				35,
-				1
+				46,
+				38,
+				49
 			],
 			"schedules": [
-				"1-2/21.0-23.0",
-				"3-4/0.0-13.0",
-				"4-6/20.0-23.0"
+				"2-4/5.0-17.0",
+				"2-5/22.0-23.0",
+				"3-5/6.0-13.0",
+				"5-6/10.0-19.0"
+			],
+			"preferences": [
+				0.000015
 			]
 		},
 		{
-			"name": "Celie Etheline",
+			"name": "Rosalinde Freddie",
 			"ogoal": "cost",
 			"devices": [
-				35,
-				15,
-				34
-			],
-			"schedules": [
-				"5-6/18.0-22.0",
-				"0-5/16.0-19.0",
-				"3-5/10.0-21.0"
-			]
-		},
-		{
-			"name": "Lexine Leonanie",
-			"ogoal": "cost",
-			"devices": [
-				25,
-				19
-			],
-			"schedules": [
-				"0-4/6.0-9.0",
-				"3-5/17.0-21.0"
-			]
-		},
-		{
-			"name": "Nellie Randene",
-			"ogoal": "cost",
-			"devices": [
-				2,
-				26,
-				19
-			],
-			"schedules": [
-				"2-3/6.0-11.0",
-				"3-5/16.0-20.0",
-				"2-3/16.0-23.0"
-			]
-		},
-		{
-			"name": "Edi Fred",
-			"ogoal": "cost",
-			"devices": [
-				25,
 				21,
-				7,
+				19,
+				28,
 				35,
 				2
 			],
 			"schedules": [
-				"2-4/4.0-12.0",
-				"5-6/1.0-9.0",
-				"5-6/21.0-23.0",
-				"4-5/4.0-16.0",
-				"1-6/2.0-6.0"
+				"0-6/22.0-23.0",
+				"3-5/7.0-9.0",
+				"1-2/15.0-19.0",
+				"4-6/5.0-19.0",
+				"5-6/16.0-21.0"
+			],
+			"preferences": [
+				0.000019
 			]
 		},
 		{
-			"name": "Dyana Alexia",
+			"name": "Hedi Julianne",
 			"ogoal": "cost",
 			"devices": [
-				9,
-				28,
-				36,
-				15,
-				6,
-				45
+				10,
+				26,
+				43
 			],
 			"schedules": [
-				"3-6/9.0-11.0",
-				"5-6/10.0-15.0",
-				"0-1/7.0-23.0",
-				"2-3/9.0-16.0",
-				"4-5/16.0-23.0",
-				"2-6/14.0-17.0"
+				"3-5/14.0-21.0",
+				"5-6/5.0-22.0",
+				"1-5/3.0-16.0"
+			],
+			"preferences": [
+				0.000019
 			]
 		},
 		{
-			"name": "Brittani Noella",
+			"name": "Dinny Cheryl",
 			"ogoal": "cost",
 			"devices": [
-				16,
-				11,
-				2,
-				14
+				38,
+				7
 			],
 			"schedules": [
-				"3-4/3.0-19.0",
-				"0-2/21.0-22.0",
-				"4-5/8.0-16.0",
-				"2-3/22.0-23.0"
+				"1-2/6.0-9.0",
+				"5-6/14.0-23.0"
+			],
+			"preferences": [
+				0.000016
 			]
 		},
 		{
-			"name": "Susette Jasmine",
+			"name": "Jesselyn Leonanie",
 			"ogoal": "cost",
 			"devices": [
 				4,
-				47,
-				32
+				34,
+				45,
+				26,
+				42
 			],
 			"schedules": [
-				"4-5/17.0-21.0",
-				"3-5/3.0-4.0",
-				"1-3/19.0-23.0"
+				"3-6/18.0-23.0",
+				"2-4/16.0-20.0",
+				"4-6/11.0-15.0",
+				"3-5/17.0-20.0",
+				"1-6/7.0-19.0"
+			],
+			"preferences": [
+				0.000019
 			]
 		},
 		{
-			"name": "Leila Corri",
+			"name": "Prisca Meta",
 			"ogoal": "cost",
 			"devices": [
-				17,
-				44,
-				34,
-				18,
-				31
+				19,
+				10
 			],
 			"schedules": [
-				"2-3/3.0-12.0",
-				"5-6/13.0-23.0",
-				"0-4/9.0-11.0",
-				"1-6/13.0-17.0",
-				"4-6/21.0-23.0"
+				"5-6/19.0-23.0",
+				"0-1/8.0-20.0"
+			],
+			"preferences": [
+				0.000019
+			]
+		},
+		{
+			"name": "Mirabelle Clara",
+			"ogoal": "cost",
+			"devices": [
+				29,
+				47,
+				10,
+				32,
+				26
+			],
+			"schedules": [
+				"0-3/21.0-22.0",
+				"4-5/2.0-17.0",
+				"4-5/4.0-6.0",
+				"2-4/20.0-23.0",
+				"0-2/7.0-10.0"
+			],
+			"preferences": [
+				0.000019
+			]
+		},
+		{
+			"name": "Collie Ki",
+			"ogoal": "cost",
+			"devices": [
+				0
+			],
+			"schedules": [
+				"3-6/15.0-18.0"
+			],
+			"preferences": [
+				0.000016
+			]
+		},
+		{
+			"name": "Sally Joeann",
+			"ogoal": "cost",
+			"devices": [
+				6,
+				5
+			],
+			"schedules": [
+				"4-6/12.0-22.0",
+				"2-6/0.0-17.0"
+			],
+			"preferences": [
+				0.000015
+			]
+		},
+		{
+			"name": "Zorah Laurianne",
+			"ogoal": "cost",
+			"devices": [
+				39,
+				15,
+				30,
+				42,
+				40,
+				43
+			],
+			"schedules": [
+				"0-6/14.0-18.0",
+				"2-3/8.0-13.0",
+				"4-6/0.0-9.0",
+				"5-6/6.0-20.0",
+				"2-4/3.0-8.0",
+				"2-5/18.0-22.0"
+			],
+			"preferences": [
+				0.000016
+			]
+		},
+		{
+			"name": "Rois Godiva",
+			"ogoal": "cost",
+			"devices": [
+				19,
+				44,
+				2,
+				22,
+				26,
+				43
+			],
+			"schedules": [
+				"2-6/6.0-11.0",
+				"4-6/16.0-21.0",
+				"4-5/11.0-13.0",
+				"4-6/7.0-14.0",
+				"2-3/18.0-22.0",
+				"5-6/16.0-18.0"
+			],
+			"preferences": [
+				0.000018
+			]
+		},
+		{
+			"name": "Ibbie Marleen",
+			"ogoal": "cost",
+			"devices": [
+				24,
+				7,
+				2,
+				23
+			],
+			"schedules": [
+				"1-4/0.0-13.0",
+				"4-5/16.0-17.0",
+				"0-4/21.0-22.0",
+				"3-5/9.0-14.0"
+			],
+			"preferences": [
+				0.000015
+			]
+		},
+		{
+			"name": "Kassi Colene",
+			"ogoal": "cost",
+			"devices": [
+				49,
+				43
+			],
+			"schedules": [
+				"4-5/21.0-23.0",
+				"2-5/13.0-23.0"
+			],
+			"preferences": [
+				0.000016
+			]
+		},
+		{
+			"name": "Kimmy Tess",
+			"ogoal": "cost",
+			"devices": [
+				30
+			],
+			"schedules": [
+				"1-2/6.0-18.0"
+			],
+			"preferences": [
+				0.000015
+			]
+		},
+		{
+			"name": "Maiga Bambi",
+			"ogoal": "cost",
+			"devices": [
+				32,
+				42,
+				29,
+				18,
+				37
+			],
+			"schedules": [
+				"3-6/8.0-12.0",
+				"4-5/6.0-18.0",
+				"3-4/13.0-23.0",
+				"2-3/6.0-17.0",
+				"5-6/2.0-23.0"
+			],
+			"preferences": [
+				0.000017
+			]
+		},
+		{
+			"name": "Nydia Geralda",
+			"ogoal": "cost",
+			"devices": [
+				38,
+				35,
+				44,
+				8,
+				2
+			],
+			"schedules": [
+				"3-6/4.0-17.0",
+				"4-6/12.0-18.0",
+				"0-5/6.0-18.0",
+				"4-6/2.0-11.0",
+				"4-5/20.0-21.0"
+			],
+			"preferences": [
+				0.000018
+			]
+		},
+		{
+			"name": "Sharl Oralle",
+			"ogoal": "cost",
+			"devices": [
+				3,
+				37
+			],
+			"schedules": [
+				"1-4/9.0-11.0",
+				"3-5/0.0-23.0"
+			],
+			"preferences": [
+				0.000015
+			]
+		},
+		{
+			"name": "Lu Dayna",
+			"ogoal": "cost",
+			"devices": [
+				31,
+				16,
+				49,
+				35
+			],
+			"schedules": [
+				"0-2/10.0-11.0",
+				"5-6/7.0-11.0",
+				"2-5/13.0-16.0",
+				"2-5/3.0-6.0"
+			],
+			"preferences": [
+				0.000019
+			]
+		},
+		{
+			"name": "Bobette Lacie",
+			"ogoal": "cost",
+			"devices": [
+				8,
+				25,
+				43,
+				28,
+				35,
+				10
+			],
+			"schedules": [
+				"5-6/5.0-23.0",
+				"0-6/19.0-22.0",
+				"3-4/10.0-14.0",
+				"4-6/22.0-23.0",
+				"4-5/2.0-8.0",
+				"5-6/21.0-22.0"
+			],
+			"preferences": [
+				0.000017
 			]
 		}
 	]

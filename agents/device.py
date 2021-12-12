@@ -69,7 +69,7 @@ class DeviceAgent:
         
         if new_charge < 1.0:
             self._curr_charge = round(new_charge, 4)
-            if(not self.is_charging()):
+            if not self.is_charging():
                 self._power_source = power_source
                 self._power_source.connect_power(self.get_power_limit())
             self._is_charging = True
@@ -111,7 +111,6 @@ class DeviceAgent:
         return self._plugged
 
     def is_connected(self):
-        # return self._conn_to_dev_channel, self._conn_to_gen_channel
         return self._conn_to_dev_channel or self._conn_to_gen_channel
 
     def is_charged(self):
