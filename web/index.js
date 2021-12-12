@@ -7,6 +7,8 @@ var socket = io();
 
 let dataToSend = undefined
 
+let simFinished = false
+
 let updateInterval;
 
 let container = document.getElementById("vis");
@@ -78,6 +80,7 @@ function initSim() {
 		});
 	});
 	userid = uuidv4();
+	simFinished = false
 	socket.emit("init", { userid: userid, data: dataToSend, ogoal: parseInt(ogoalSelect.value) });
 }
 
@@ -96,7 +99,10 @@ socket.on("init-res", function (data) {
 });
 
 function updateSim() {
-	if (updateInterval == undefined) {
+	if (simFinished) {
+		initSim()
+	}
+	else if (updateInterval == undefined) {
 		updateInterval = setInterval(() => {
 			toolbarLastUpdate.innerText = new Date().toLocaleTimeString();
 			socket.emit("update", { userid: userid });
@@ -125,6 +131,8 @@ socket.on("update-res", function (data) {
 	// No more data to be showed
 	if (data.nodes.length == 0) {
 		clearInterval(updateInterval)
+		simFinished = true
+		toolbarTime.innerText = "Finished"
 		return
 	}
 
@@ -176,6 +184,8 @@ socket.on("skip-res", function (data) {
 	nodes.update(data.nodes);
 	edges.update(data.edges);
 	edges.remove(data.unlinks);
+	simFinished = true
+	toolbarTime.innerText = "Finished"
 });
 
 function pauseSim() {
