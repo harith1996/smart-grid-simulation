@@ -48,6 +48,7 @@
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
+        <li><a href="#usage">Usage</a></li>
       </ul>
     </li>
   </ol>
@@ -87,3 +88,6 @@ This project uses Python 3.9.9.
 5. Open the address ```http://127.0.0.1:5000/``` in a browser
 6. Follow the on screen instructions
 <p align="right">(<a href="#top">back to top</a>)</p>
+
+### Usage
+Refer this [youtube video tutorial](https://www.youtube.com/watch?v=r1kZ2-wz2hY)
